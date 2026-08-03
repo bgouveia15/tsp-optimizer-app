@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "latestYear": 2027,
+  "years": {
+    "2026": {
+      "url": "2026.json",
+      "rev": 3,
+      "sha256": "7fd8cb80756908bd4735ccf51b3fabfebe1ec2bd1305a8a1de8a87c18d4af8f0"
+    },
+    "2027": {
+      "url": "2027.json",
+      "rev": 1,
+      "sha256": "af56cb0300af133ba6cf20316d33b598546db798e7710df198ff84a3197ba695"
+    }
+  }
+}

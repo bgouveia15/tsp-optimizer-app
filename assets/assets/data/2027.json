@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "year": 2027,
+  "rev": 1,
+  "publishedDate": "2026-07-30",
+  "notes": "Estimate form: limits are projections pending the IRS Oct-Nov announcement; no payTable until the official DFAS table publishes (the app derives one from 2026 x projectedRaisePct). rothCatchupWageThreshold carried at the 2026 figure pending indexing.",
+  "limits": {
+    "electiveDeferral": { "amount": 25000, "official": false },
+    "annualAdditions": { "amount": 72000, "official": false },
+    "catchUp50": { "amount": 7500, "official": false },
+    "catchUp60to63": { "amount": 11250, "official": false },
+    "rothCatchupWageThreshold": { "amount": 150000, "official": false }
+  },
+  "hfpMonthly": 225,
+  "projectedRaisePct": 4.16
+}

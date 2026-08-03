@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "year": 2026,
-  "rev": 3,
+  "rev": 4,
   "publishedDate": "2026-01-01",
-  "notes": "rev 3: axisDateLabel on the AvIP byYears tables (v25 SS4, additive). 3.8% raise per NDAA FY26; limits per IRS Notice 2025-67. Catch-up figures are the prototype's estimates pending verification against the Notice.",
+  "notes": "rev 4 (v45 SS2): basicPayCapMonthly added — the statutory ceiling on monthly basic pay, 37 U.S.C. 203(a)(2) (O-7 through O-10 basic pay limited to Executive Schedule Level II). CY2026 figure $18,999.90/mo as printed in the official DFAS 2026 basic pay table, whose capped O-9/O-10 rows are already transcribed in this file's payTable — the key restates that in-file official figure with its rule; Cowork to verify against the DFAS table note verbatim. rev 3: axisDateLabel on the AvIP byYears tables (v25 SS4, additive). 3.8% raise per NDAA FY26; limits per IRS Notice 2025-67. Catch-up figures are the prototype's estimates pending verification against the Notice.",
   "limits": {
     "electiveDeferral": {
       "amount": 24500,
@@ -27,6 +27,7 @@
     }
   },
   "hfpMonthly": 225,
+  "basicPayCapMonthly": { "amount": 18999.90, "official": true },
   "projectedRaisePct": 4.16,
   "payTable": {
     "E-1": [

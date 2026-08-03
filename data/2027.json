@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "year": 2027,
-  "rev": 1,
+  "rev": 2,
   "publishedDate": "2026-07-30",
-  "notes": "Estimate form: limits are projections pending the IRS Oct-Nov announcement; no payTable until the official DFAS table publishes (the app derives one from 2026 x projectedRaisePct). rothCatchupWageThreshold carried at the 2026 figure pending indexing.",
+  "notes": "rev 2 (v45 SS2): basicPayCapMonthly carried at the CY2026 figure (37 U.S.C. 203(a)(2), Executive Schedule Level II — $18,999.90/mo), official:false: the ES schedule moves on OPM's calendar, NOT the military raise, so the figure is never scaled by projectedRaisePct; it swaps to the official CY2027 Level II when OPM publishes. Estimate form: limits are projections pending the IRS Oct-Nov announcement; no payTable until the official DFAS table publishes (the app derives one from 2026 x projectedRaisePct). rothCatchupWageThreshold carried at the 2026 figure pending indexing.",
   "limits": {
     "electiveDeferral": { "amount": 25000, "official": false },
     "annualAdditions": { "amount": 72000, "official": false },
@@ -12,5 +12,6 @@
     "rothCatchupWageThreshold": { "amount": 150000, "official": false }
   },
   "hfpMonthly": 225,
+  "basicPayCapMonthly": { "amount": 18999.90, "official": false },
   "projectedRaisePct": 4.16
 }

@@ -2,6 +2,6 @@
 # Written by cowork/deploy.sh. The carry-forward reads THIS,
 # not file timestamps — a shallow clone has neither history nor
 # meaningful mtimes, which is what it used to rely on.
+MaterialIcons-Regular.fac8eb094d76.otf
 MaterialIcons-Regular.c6a003546be0.otf
 MaterialIcons-Regular.515020d9b717.otf
-MaterialIcons-Regular.8c7ffb054fc8.otf

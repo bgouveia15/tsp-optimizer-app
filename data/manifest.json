@@ -4,13 +4,13 @@
   "years": {
     "2026": {
       "url": "2026.json",
-      "rev": 4,
-      "sha256": "a99c278c57967ff64d1c7fc5f95ccadd84b826b0708a7d76e3ff0f6a8d270824"
+      "rev": 5,
+      "sha256": "e33d26e2af42d14486ecda8877e5082962ab222276c2207238b7e9fc0238e6fe"
     },
     "2027": {
       "url": "2027.json",
-      "rev": 2,
-      "sha256": "f2dcbebf1045a297136740cc4864bb27fafd3f4c2738b8e8023f7d0307d233b5"
+      "rev": 3,
+      "sha256": "6d174c6b21c6f45ddc41f079a39f78bf8e725aca331dd263ab88593a490aee70"
     }
   }
 }

@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "year": 2026,
-  "rev": 4,
+  "rev": 5,
   "publishedDate": "2026-01-01",
-  "notes": "rev 4 (v45 SS2): basicPayCapMonthly added — the statutory ceiling on monthly basic pay, 37 U.S.C. 203(a)(2) (O-7 through O-10 basic pay limited to Executive Schedule Level II). CY2026 figure $18,999.90/mo as printed in the official DFAS 2026 basic pay table, whose capped O-9/O-10 rows are already transcribed in this file's payTable — the key restates that in-file official figure with its rule; Cowork to verify against the DFAS table note verbatim. rev 3: axisDateLabel on the AvIP byYears tables (v25 SS4, additive). 3.8% raise per NDAA FY26; limits per IRS Notice 2025-67. Catch-up figures are the prototype's estimates pending verification against the Notice.",
+  "notes": "rev 5 (v52-3): sgli block added — the VA-published SGLI premium table, transcribed verbatim from https://www.va.gov/life-insurance/options-eligibility/sgli/ (page states last updated 2025-09-19), carried as printed rather than derived from the rate; validation rejects any level that disagrees with the stated rate. rev 4 (v45 SS2): basicPayCapMonthly added — the statutory ceiling on monthly basic pay, 37 U.S.C. 203(a)(2) (O-7 through O-10 basic pay limited to Executive Schedule Level II). CY2026 figure $18,999.90/mo as printed in the official DFAS 2026 basic pay table, whose capped O-9/O-10 rows are already transcribed in this file's payTable — the key restates that in-file official figure with its rule; Cowork to verify against the DFAS table note verbatim. rev 3: axisDateLabel on the AvIP byYears tables (v25 SS4, additive). 3.8% raise per NDAA FY26; limits per IRS Notice 2025-67. Catch-up figures are the prototype's estimates pending verification against the Notice.",
   "limits": {
     "electiveDeferral": {
       "amount": 24500,
@@ -25,6 +25,25 @@
       "amount": 150000,
       "official": true
     }
+  },
+  "sgli": {
+    "official": true,
+    "asOf": "2025-09-19",
+    "source": "VA, \"Servicemembers' Group Life Insurance (SGLI)\", https://www.va.gov/life-insurance/options-eligibility/sgli/ — premium rate table transcribed verbatim; page states \"Last updated: September 19, 2025\". Coverage is offered to $500,000 in $50,000 increments at 5 cents per $1,000 per month, plus $1.00 per month for Traumatic Injury Protection (TSGLI). Cowork to verify against the page.",
+    "ratePer1000Monthly": 0.05,
+    "tsgliMonthly": 1.00,
+    "levels": [
+      [500000, 25.00],
+      [450000, 22.50],
+      [400000, 20.00],
+      [350000, 17.50],
+      [300000, 15.00],
+      [250000, 12.50],
+      [200000, 10.00],
+      [150000, 7.50],
+      [100000, 5.00],
+      [50000, 2.50]
+    ]
   },
   "hfpMonthly": 225,
   "basicPayCapMonthly": { "amount": 18999.90, "official": true },

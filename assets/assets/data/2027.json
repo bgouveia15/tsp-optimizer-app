@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "year": 2027,
-  "rev": 3,
+  "rev": 4,
   "publishedDate": "2026-07-30",
-  "notes": "rev 3 (v52-3): sgli block added, same transcription as 2026 — VA has published no separate future-year table, so this carries the current one and is superseded the moment VA prints a new one. rev 2 (v45 SS2): basicPayCapMonthly carried at the CY2026 figure (37 U.S.C. 203(a)(2), Executive Schedule Level II — $18,999.90/mo), official:false: the ES schedule moves on OPM's calendar, NOT the military raise, so the figure is never scaled by projectedRaisePct; it swaps to the official CY2027 Level II when OPM publishes. Estimate form: limits are projections pending the IRS Oct-Nov announcement; no payTable until the official DFAS table publishes (the app derives one from 2026 x projectedRaisePct). rothCatchupWageThreshold carried at the 2026 figure pending indexing.",
+  "notes": "rev 4 (v56 SS4): basicPayCapO6AndBelowMonthly carried FLAT from 2026, not scaled — the Executive Schedule moves on OPM's calendar and never on the military raise, so projectedRaisePct must never touch either ceiling. official:false because no 2027 Executive Schedule has been published. rev 3 (v52-3): sgli block added, same transcription as 2026 — VA has published no separate future-year table, so this carries the current one and is superseded the moment VA prints a new one. rev 2 (v45 SS2): basicPayCapMonthly carried at the CY2026 figure (37 U.S.C. 203(a)(2), Executive Schedule Level II — $18,999.90/mo), official:false: the ES schedule moves on OPM's calendar, NOT the military raise, so the figure is never scaled by projectedRaisePct; it swaps to the official CY2027 Level II when OPM publishes. Estimate form: limits are projections pending the IRS Oct-Nov announcement; no payTable until the official DFAS table publishes (the app derives one from 2026 x projectedRaisePct). rothCatchupWageThreshold carried at the 2026 figure pending indexing.",
   "limits": {
     "electiveDeferral": { "amount": 25000, "official": false },
     "annualAdditions": { "amount": 72000, "official": false },
@@ -32,5 +32,6 @@
   },
   "hfpMonthly": 225,
   "basicPayCapMonthly": { "amount": 18999.90, "official": false },
+  "basicPayCapO6AndBelowMonthly": { "amount": 15408.30, "official": false },
   "projectedRaisePct": 4.16
 }

@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "year": 2026,
-  "rev": 5,
+  "rev": 6,
   "publishedDate": "2026-01-01",
-  "notes": "rev 5 (v52-3): sgli block added — the VA-published SGLI premium table, transcribed verbatim from https://www.va.gov/life-insurance/options-eligibility/sgli/ (page states last updated 2025-09-19), carried as printed rather than derived from the rate; validation rejects any level that disagrees with the stated rate. rev 4 (v45 SS2): basicPayCapMonthly added — the statutory ceiling on monthly basic pay, 37 U.S.C. 203(a)(2) (O-7 through O-10 basic pay limited to Executive Schedule Level II). CY2026 figure $18,999.90/mo as printed in the official DFAS 2026 basic pay table, whose capped O-9/O-10 rows are already transcribed in this file's payTable — the key restates that in-file official figure with its rule; Cowork to verify against the DFAS table note verbatim. rev 3: axisDateLabel on the AvIP byYears tables (v25 SS4, additive). 3.8% raise per NDAA FY26; limits per IRS Notice 2025-67. Catch-up figures are the prototype's estimates pending verification against the Notice.",
+  "notes": "rev 6 (v56 SS2, audit D-19): CATCH-UP CORRECTION. catchUp50 was 7500 flagged official:false — an estimate carried over from the prototype and never verified. The real CY2026 figure is 8000, transcribed from IRS Notice 2025-67 (issued 13 November 2025, https://www.irs.gov/pub/irs-drop/n-25-67.pdf; summary IR-2025-111 at https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500, which states the age-50 catch-up 'is increased to $8,000'). A member aged 50+ planning against 7500 left $500 of tax-advantaged room unused each year, silently and unrecoverably after 31 December. catchUp60to63 stays 11250 — the same notice states this higher limit 'remains $11,250' — and is now flagged official:true, which it always should have been. NOTE FOR ANYONE TEMPTED BY THE STATUTE: the super catch-up is defined as the greater of $10,000 or 150% of the standard catch-up, and 150% of 8000 is 12000, which is NOT the published 11250. Transcribe, never derive. rev 5 (v52-3): sgli block added — the VA-published SGLI premium table, transcribed verbatim from https://www.va.gov/life-insurance/options-eligibility/sgli/ (page states last updated 2025-09-19), carried as printed rather than derived from the rate; validation rejects any level that disagrees with the stated rate. rev 4 (v45 SS2): basicPayCapMonthly added — the statutory ceiling on monthly basic pay, 37 U.S.C. 203(a)(2) (O-7 through O-10 basic pay limited to Executive Schedule Level II). CY2026 figure $18,999.90/mo as printed in the official DFAS 2026 basic pay table, whose capped O-9/O-10 rows are already transcribed in this file's payTable — the key restates that in-file official figure with its rule; Cowork to verify against the DFAS table note verbatim. rev 3: axisDateLabel on the AvIP byYears tables (v25 SS4, additive). 3.8% raise per NDAA FY26; limits per IRS Notice 2025-67.",
   "limits": {
     "electiveDeferral": {
       "amount": 24500,
@@ -14,12 +14,12 @@
       "official": true
     },
     "catchUp50": {
-      "amount": 7500,
-      "official": false
+      "amount": 8000,
+      "official": true
     },
     "catchUp60to63": {
       "amount": 11250,
-      "official": false
+      "official": true
     },
     "rothCatchupWageThreshold": {
       "amount": 150000,
@@ -47,6 +47,7 @@
   },
   "hfpMonthly": 225,
   "basicPayCapMonthly": { "amount": 18999.90, "official": true },
+  "basicPayCapO6AndBelowMonthly": { "amount": 15408.30, "official": true },
   "projectedRaisePct": 4.16,
   "payTable": {
     "E-1": [

@@ -868,7 +868,7 @@ p.ac4()
 return p},
 b4g(a){return new A.aax($.aF,a)},
 aOc(){var s,r,q,p,o=v.G,n=o.window,m=A.b3S(n.navigator)
-if(m==null||m.length===0)return B.te
+if(m==null||m.length===0)return B.td
 s=A.b([],t.ss)
 for(n=m.length,r=0;r<m.length;m.length===n||(0,A.x)(m),++r){q=m[r]
 p=new o.Intl.Locale(q)
@@ -10914,8 +10914,8 @@ break
 case 4:s=l.a
 s===$&&A.a()
 s=A.bW(s,200)
-r=A.bW(A.a9i(l,B.tf,B.PU),24)
-q=A.bW(A.a9i(l,B.tf,B.T9),32)
+r=A.bW(A.a9i(l,B.te,B.PU),24)
+q=A.bW(A.a9i(l,B.te,B.T9),32)
 p=A.bW(l.a,10)
 o=A.bW(l.a,12)
 l.d===$&&A.a()
@@ -10925,8 +10925,8 @@ break
 case 5:s=l.a
 s===$&&A.a()
 s=A.bW(A.Dz(s+240),40)
-r=A.bW(A.a9i(l,B.ti,B.Vl),24)
-q=A.bW(A.a9i(l,B.ti,B.Vo),32)
+r=A.bW(A.a9i(l,B.th,B.Vl),24)
+q=A.bW(A.a9i(l,B.th,B.Vo),32)
 p=A.bW(l.a+15,8)
 o=A.bW(l.a+15,12)
 l.d===$&&A.a()
@@ -11770,7 +11770,7 @@ aTD(a,b,c){if(b!=null&&!b.j(0,B.H))return A.Bd(b.b5(A.b4b(c)),a)
 return a},
 b4b(a){var s,r,q,p,o,n
 if(a<0)return 0
-for(s=0;r=B.tg[s],q=r.a,a>=q;){if(a===q||s+1===6)return r.b;++s}p=B.tg[s-1]
+for(s=0;r=B.tf[s],q=r.a,a>=q;){if(a===q||s+1===6)return r.b;++s}p=B.tf[s-1]
 o=p.a
 n=p.b
 return n+(a-o)/(q-o)*(r.b-n)},
@@ -34872,7 +34872,7 @@ $1(a){this.a.b=A.b_4(a.getOutputBounds(A.cw(this.b)))},
 $S:3}
 A.B1.prototype={
 gaov(){var s,r,q=new Float32Array(20)
-for(s=this.a,r=0;r<20;++r)if(B.d.n(B.Oo,r))q[r]=s[r]/255
+for(s=this.a,r=0;r<20;++r)if(B.d.n(B.On,r))q[r]=s[r]/255
 else q[r]=s[r]
 return q},
 an0(){return $.bL.bU().ColorFilter.MakeMatrix(this.gaov())},
@@ -44826,11 +44826,11 @@ ga3Y(){var s=this.a
 if(s instanceof A.fP)return s
 return this.a=new A.fP(s)},
 gaED(){var s,r,q,p,o,n=this
-if(n.c===1)return B.tw
+if(n.c===1)return B.tv
 s=n.d
 r=J.b7(s)
 q=r.gD(s)-J.dg(n.e)-n.f
-if(q===0)return B.tw
+if(q===0)return B.tv
 p=[]
 for(o=0;o<q;++o)p.push(r.h(s,o))
 p.$flags=3
@@ -49771,7 +49771,7 @@ m===$&&A.a()
 n.T=m+1
 m=n.p1
 m===$&&A.a()
-s=(B.ta[b]+256+1)*2
+s=(B.t9[b]+256+1)*2
 r=m[s]
 m.$flags&2&&A.f(m)
 m[s]=r+1
@@ -49811,10 +49811,10 @@ r=m.xr
 r===$&&A.a()
 p=l[r+s]&255;++s
 if(q===0)m.tP(p,a)
-else{o=B.ta[p]
+else{o=B.t9[p]
 m.tP(o+256+1,a)
 n=B.rW[o]
-if(n!==0)m.fH(p-B.NA[o],n);--q
+if(n!==0)m.fH(p-B.Nz[o],n);--q
 o=A.aXn(q)
 m.tP(o,b)
 n=B.jC[o]
@@ -49867,7 +49867,7 @@ if(o<=p)p=o}else{o=m+5
 p=o
 q=0}if(m+4<=p&&s!==-1)n.Zc(s,m,a)
 else if(o===p){n.fH(2+(a?1:0),3)
-n.T0(B.jD,B.tc)}else{n.fH(4+(a?1:0),3)
+n.T0(B.jD,B.tb)}else{n.fH(4+(a?1:0),3)
 m=n.p4.b
 m===$&&A.a()
 s=n.R8.b
@@ -54939,7 +54939,7 @@ n=o.e
 o=o.cx
 r=q.ganJ()
 q.a.toString
-return new A.Hc(p,p,p,new A.az3(),p,p,p,p,p,n,B.XV,p,p,p,B.tu,q.ganS(),o,p,B.a6Y,s,p,r,p,p,B.te,!1,!1,p,p,p,new A.re(q,t.bT))},
+return new A.Hc(p,p,p,new A.az3(),p,p,p,p,p,n,B.XV,p,p,p,B.tt,q.ganS(),o,p,B.a6Y,s,p,r,p,p,B.td,!1,!1,p,p,p,new A.re(q,t.bT))},
 F(a){var s,r=this.adZ(a)
 this.a.toString
 s=this.d
@@ -57908,7 +57908,7 @@ return new A.zi(s.d,s.c,null)},
 $S:522}
 A.zi.prototype={
 F(a){var s=null
-return A.aU2(A.aV5(B.M,s,s,B.tu,A.aZX(),s,new A.azR(this),s,A.b([new A.uq(this.d,s,s)],t.Ql),!1,s,B.aaj))}}
+return A.aU2(A.aV5(B.M,s,s,B.tt,A.aZX(),s,new A.azR(this),s,A.b([new A.uq(this.d,s,s)],t.Ql),!1,s,B.aaj))}}
 A.azR.prototype={
 $2(a,b){this.a.c.$1(b)
 return!1},
@@ -64704,7 +64704,7 @@ gFr(){return 14},
 gac_(){return 48},
 gac0(){return 40},
 gRq(){return 52},
-gFS(){return B.tv},
+gFS(){return B.tu},
 gvA(){return 32},
 gvC(){return 52},
 gG2(){return B.a31},
@@ -68846,8 +68846,8 @@ s=r.a0
 r.fh=s==null?null:s.gA_()
 a.a=!1},
 qC(a,b,c){var s,r,q,p,o=this
-o.k_=A.aVO(o.k_,B.tx)
-o.k0=A.aVO(o.k0,B.tx)
+o.k_=A.aVO(o.k_,B.tw)
+o.k0=A.aVO(o.k0,B.tw)
 s=o.k_
 r=s!=null&&!s.gac(s)
 s=o.k0
@@ -87542,7 +87542,7 @@ gvp(){var s=this.a,r=this.b
 if(r==null)s=null
 else{r.a.toString
 s=!0}return s===!0},
-gz5(){return B.tt},
+gz5(){return B.ts},
 nT(){},
 pb(){var s=A.aPy()
 s.cA(new A.alp(this),t.H)
@@ -88205,7 +88205,7 @@ F(a){var s,r,q=this,p=null,o=q.gal7(),n=A.l5(a),m=q.bN$,l=q.d
 l===$&&A.a()
 s=q.a.ay
 if(l.ga_()==null){r=q.gRV()
-r=J.oq(r.slice(0),A.ab(r).c)}else r=B.tt
+r=J.oq(r.slice(0),A.ab(r).c)}else r=B.ts
 return A.aU2(new A.d9(new A.ahF(q,a),A.Do(B.cT,new A.Np(!1,A.aOj(A.o9(!0,p,A.H0(m,new A.x7(r,s,l)),p,p,p,q.y,!1,p,p,p,p,p,!0),n),p),o,q.gaol(),p,p,o),p,t.w3))}}
 A.ahA.prototype={
 $1(a){var s=this.a.c
@@ -98165,7 +98165,7 @@ b0.a.l(0,b1,e)}catch(b5){continue}}}b8.e=b7
 return!1},
 X9(a,b){var s,r,q,p,o,n,m,l=a.V(),k=a.V(),j=a.M(),i=new A.Ym(l,null)
 if(k>=14)return i
-s=B.tk[k]
+s=B.tj[k]
 r=j*B.n0[k]
 q=a.d
 if((r>4?a.d=a.M()+b:q)+r>a.c)return i
@@ -100711,7 +100711,7 @@ q=B.b.J(r+7,3)
 p=B.b.J(r*a8+7,3)
 o=A.b([null,null],t.nx)
 n=A.b([0,0,0,0],t.t)
-for(a0=a6>1,m=a6-a4,l=a5,k=0,j=0;k<a9;++k,l+=a7,++a.e){i=B.tz[J.m(a2.a,a2.d++)]
+for(a0=a6>1,m=a6-a4,l=a5,k=0,j=0;k<a9;++k,l+=a7,++a.e){i=B.ty[J.m(a2.a,a2.d++)]
 h=a2.ej(p)
 a2.d=a2.d+(h.c-h.d)
 a1=h.dc()
@@ -100741,7 +100741,7 @@ k=A.b([0,0,0,0],t.t)
 a=a2.a
 j=a.gP(a)
 j.p()
-for(i=0,h=0;i<p;++i,h=e){g=B.tz[J.m(a1.a,a1.d++)]
+for(i=0,h=0;i<p;++i,h=e){g=B.ty[J.m(a1.a,a1.d++)]
 f=a1.ej(o)
 a1.d=a1.d+(f.c-f.d)
 a=f.dc()
@@ -101972,7 +101972,7 @@ a7=c5.zI()
 a8=B.bL[m][2]
 a9=c6.zI()
 b0=B.bL[m][3]
-b1=B.tn[n+o&3]
+b1=B.tm[n+o&3]
 b2=b1[0]
 b3=b1[1]
 b4=B.b.J((e.a*d+c.a*b+a.a*a0+a1.a*a2)*b2+(a3.a*a4+a5.a*a6+a7.a*a8+a9.a*b0)*b3,7)
@@ -102020,7 +102020,7 @@ c=e.a6(0,new A.fN(d.a*c,d.b*c,d.c*c,d.d*c))
 d=b5.zK()
 e=B.bL[m][3]
 a0=c.a6(0,new A.fN(d.a*e,d.b*e,d.c*e,d.d*e))
-a1=B.tn[n+o&3]
+a1=B.tm[n+o&3]
 e=a1[0]
 d=a1[1]
 a2=B.b.J(a.a*e+a0.a*d,7)
@@ -102281,7 +102281,7 @@ r+=s}},
 Ic(a,b,c){var s,r,q,p,o,n,m,l,k=this
 k.d=0
 for(s=k.a,r=!0;c<s;){while(r){q=k.oL(10)
-p=B.tr[q]
+p=B.tq[q]
 o=B.b.J(p,1)&15
 if(o===12){p=B.jF[(q<<2&12|k.j8(2))>>>0]
 n=B.b.J(p,1)
@@ -102297,7 +102297,7 @@ k.x=s+1
 k.w=0}break}while(!r){p=B.rZ[k.j8(4)]
 m=p>>>5&2047
 l=!0
-if(m===100){p=B.t9[k.oL(9)]
+if(m===100){p=B.t8[k.oL(9)]
 o=B.b.J(p,1)&15
 m=B.b.J(p,5)&2047
 if(o===12){k.fI(5)
@@ -102347,7 +102347,7 @@ if(!(m<s))break
 a0.UF(l,k,q)
 i=q[0]
 h=q[1]
-g=B.to[a0.j8(7)]&255
+g=B.tn[a0.j8(7)]&255
 f=g>>>3&15
 e=g&7
 if(f===0){if(!k){h.toString
@@ -102405,7 +102405,7 @@ if(!(l<s))break
 a4.UF(k,j,q)
 h=q[0]
 g=q[1]
-f=B.to[a4.j8(7)]&255
+f=B.tn[a4.j8(7)]&255
 e=f>>>3&15
 d=f&7
 if(e===0){if(!j){g.toString
@@ -102459,7 +102459,7 @@ a4.d=i+1
 o+=r}},
 AT(){var s,r,q,p,o,n,m=this
 for(s=0,r=!0;r;){q=m.oL(10)
-p=B.tr[q]
+p=B.tq[q]
 o=B.b.J(p,1)&15
 if(o===12){p=B.jF[(q<<2&12|m.j8(2))>>>0]
 n=B.b.J(p,1)
@@ -102472,7 +102472,7 @@ if((p&1)===0)r=!1}}return s},
 AS(){var s,r,q,p,o,n,m=this
 for(s=0,r=!1;!r;){q=B.rZ[m.j8(4)]
 p=q>>>5&2047
-if(p===100){q=B.t9[m.oL(9)]
+if(p===100){q=B.t8[m.oL(9)]
 o=B.b.J(q,1)&15
 n=B.b.J(q,5)
 if(o===12){m.fI(5)
@@ -102601,7 +102601,7 @@ for(s=d.a,r=0;r<a;++r){q=a0.V()
 p=a0.V()
 o=a0.M()
 if(p>13){a0.d+=4
-continue}n=B.tk[p]
+continue}n=B.tj[p]
 if(o*B.n0[p]>4)m=a0.M()
 else{m=a0.d
 a0.d=m+4}l=new A.V1(q,n,o,m,b)
@@ -103183,7 +103183,7 @@ o.b=p
 o.c=(r<<8>>>0)+q[n]>>>0
 o.d=s+8}n=s-r
 o.d=n
-return B.b.cN(o.c,n)&B.Ov[r-9]},
+return B.b.cN(o.c,n)&B.Ou[r-9]},
 VU(){var s,r,q=this
 q.y=new Uint8Array(4096)
 s=new Uint32Array(4096)
@@ -103388,7 +103388,7 @@ f[1]=B.n2[e]}},
 apO(){var s,r,q,p,o,n,m=this,l=m.fr
 for(s=0;s<4;++s)for(r=0;r<8;++r)for(q=0;q<3;++q)for(p=0;p<11;++p){o=m.c
 o===$&&A.a()
-n=o.dF(B.UI[s][r][q][p])!==0?m.c.cH(8):B.Os[s][r][q][p]
+n=o.dF(B.UI[s][r][q][p])!==0?m.c.cH(8):B.Or[s][r][q][p]
 o=l.b[s][r].a[q]
 o.$flags&2&&A.f(o)
 o[p]=n}o=m.c
@@ -103635,8 +103635,8 @@ a4.TO(i,new A.fI(j,o,Math.min(384,384),o,!1),c)}}o=n.f
 o===$&&A.a()
 l=A.aWX(p,a6,n.d)
 l.toString
-B.tb[l].$1(r)
-B.tb[l].$1(q)
+B.ta[l].$1(r)
+B.ta[l].$1(q)
 l=Math.min(384,384)
 b=new A.fI(j,256,l,256,!1)
 if((o&255)!==0){f=a4.e
@@ -104189,9 +104189,9 @@ s+=3+B.b.bE(8,q)}return s},
 IV(a,b,c,d,e,f){var s,r,q,p,o,n,m,l,k=b[e].a[c]
 for(;e<16;e=s){if(a.dF(k[0])===0)return e
 while(a.dF(k[1])===0){++e
-k=b[B.ty[e]].a[0]
+k=b[B.tx[e]].a[0]
 if(e===16)return 16}s=e+1
-r=b[B.ty[s]].a
+r=b[B.tx[s]].a
 if(a.dF(k[2])===0){k=r[1]
 q=1}else{q=this.ait(a,k)
 k=r[2]}p=B.RY[e]
@@ -104199,8 +104199,8 @@ o=a.b
 o===$&&A.a()
 n=a.Sa(B.b.J(o,1))
 o=a.b
-m=B.tq[o]
-a.b=B.tp[o]
+m=B.tp[o]
+a.b=B.to[o]
 o=a.d
 o===$&&A.a()
 a.d=o-m
@@ -104225,8 +104225,8 @@ B.q.eS(f,0,4,r)}else{q=s.c
 for(i=f.$flags|0,p=0,o=0;o<4;++o,p=k){r=f[o]
 for(n=0;n<4;++n){e=h+n
 m=B.S8[g[e]][r]
-l=B.tj[j.c.dF(m[0])]
-while(l>0)l=B.tj[2*l+j.c.dF(m[l])]
+l=B.ti[j.c.dF(m[0])]
+while(l>0)l=B.ti[2*l+j.c.dF(m[l])]
 r=-l
 g.$flags&2&&A.f(g)
 g[e]=r}k=p+4
@@ -104285,8 +104285,8 @@ return 1}else{n.b=a
 return 0}},
 asY(){var s,r=this,q=r.b
 q===$&&A.a()
-s=B.tq[q]
-r.b=B.tp[q]
+s=B.tp[q]
+r.b=B.to[q]
 q=r.d
 q===$&&A.a()
 r.d=q-s}}
@@ -104773,8 +104773,8 @@ q&2&&A.f(a0)
 a0[o]=k
 if(k!==0)p=k
 o=j}else{i=k-16
-h=B.NC[i]
-g=B.NO[i]
+h=B.NB[i]
+g=B.NN[i]
 f=s.eb(h)+g
 if(o+f>b)return!1
 e=k===16?p:0
@@ -104818,10 +104818,10 @@ for(q=0;q<a8;++q)r[q]=A.b4Y()
 a4=new A.Q6(new A.CG())
 a4.Rv(a8*a5)
 a1.ay=a4
-for(a4=!a6,p=0;p<a9;++p)if(a4&&b0[p]===-1)for(o=0;o<5;++o){n=B.t7[o]
+for(a4=!a6,p=0;p<a9;++p)if(a4&&b0[p]===-1)for(o=0;o<5;++o){n=B.t6[o]
 if(a1.Xb(o===0&&a3?n+B.b.bE(1,a7):n,s,a2)===0)return a2}else{m=r[a6?p:b0[p]]
 l=m.a
-for(k=0,j=!0,i=0,o=0;o<5;++o){n=B.t7[o]
+for(k=0,j=!0,i=0,o=0;o<5;++o){n=B.t6[o]
 if(o===0&&a3)n+=B.b.bE(1,a7)
 h=a1.Xb(n,s,a1.ay)
 g=a1.ay.b
@@ -109525,7 +109525,7 @@ A.arE.prototype={
 $2(a,b){var s,r,q,p,o,n,m,l,k,j,i=this,h=null,g=i.b,f=t.p,e=A.b([],f)
 if($.yA!=null){s=A.M()
 s=s.gG().b<A.a1(s.b.$0())}else s=!1
-if(s)e.push(A.ar(h,A.k(("Using "+A.M().gG().b+" figures \u2014 a newer version of the app will have "+A.a1(A.M().b.$0())).toUpperCase(),h,h,h,h,B.aj.eX(B.n,10),B.aM,h,h),B.k,B.iS,h,h,h,h,h,h,B.hr,h,h,1/0))
+if(s)e.push(A.ar(h,A.k(("Using "+A.M().gG().b+" figures \u2014 your "+A.a1(A.M().b.$0())+" pay may differ. A newer version of the app will have the new figures").toUpperCase(),h,h,h,h,B.aj.eX(B.n,10),B.aM,h,h),B.k,B.iS,h,h,h,h,h,h,B.hr,h,h,1/0))
 s=i.c
 if(s.U==="next"){r=i.a.d
 r=r!==B.lX&&r!==B.jd}else r=!1
@@ -109802,7 +109802,7 @@ $1(a){return"."+a},
 $S:77}
 A.aKA.prototype={
 $1(a){var s,r,q,p,o,n=this.a.files
-if(n==null||J.d(n.length,0)){this.b.fU(B.ts)
+if(n==null||J.d(n.length,0)){this.b.fU(B.tr)
 return}s=A.b([],t.gE)
 for(r=t.hA,q=t.mV,p=0;p<n.length;++p){o=n.item(p)
 if(o==null)continue
@@ -109812,7 +109812,7 @@ A.aKy.prototype={
 $1(a){return new A.dO(this.a.name,A.Ru(a,0,null))},
 $S:588}
 A.aKB.prototype={
-$1(a){return this.a.fU(B.ts)},
+$1(a){return this.a.fU(B.tr)},
 $S:3}
 A.Qw.prototype={
 k(a){return"ImageTextUnavailable: no on-device text recognition is available in this build yet"},
@@ -110915,7 +110915,7 @@ A.jE.prototype={
 F(a){var s=null,r=A.ah(12),q=A.ah(12),p=A.cy(B.G,1),o=A.ah(12),n=t.p
 return new A.t(B.Kz,A.eb(B.X,!0,r,A.az(!1,q,!0,A.ar(s,A.b9(A.b([A.bl(A.aW(A.b([A.k(this.c,s,s,s,s,B.x.p6(B.aa),s,s,s),new A.t(B.ah,A.k(this.d,s,s,s,s,B.f,s,s,s),s)],n),B.T,s,B.m,B.o),1),B.mS],n),B.t,s,B.m,B.o,s),B.k,s,s,new A.at(s,s,p,o,s,s,B.r),s,s,s,s,B.KS,s,s,s),s,!0,s,s,s,s,s,s,s,s,this.e,s,s,s),B.k,B.l,0,s,s,s,s,s,B.bi),s)}}
 A.VL.prototype={
-F(a){var s=null,r=$.yA!=null?A.M().nB(A.a1(A.M().b.$0())):s,q=t.p,p=A.b([B.dp,A.k("Mil Pay Planner Beta",s,s,s,s,B.x.p6(B.aa),s,s,s),new A.t(B.ah,A.k("Version 1.0.0, build 39",B.aez,s,s,s,B.f,s,s,s),s),new A.t(B.aY,A.k("This app works out how much to put into your TSP each month, and what to enter in MyPay to make it happen. It reads the numbers off your own Leave and Earnings Statement so you are planning against what you are actually paid, not an estimate.",s,s,s,s,B.x,s,s,s),s)],q),o=r==null,n=A.b([new A.t(B.Q,A.k(o?"Pay tables and contribution limits come from the app's yearly data file.":"Pay tables and contribution limits for "+A.a1(A.M().b.$0())+" come from the app's yearly data file (revision "+r.c+", published "+r.d+"). In its own words:",s,s,s,s,B.x,s,s,s),s)],q)
+F(a){var s=null,r=$.yA!=null?A.M().nB(A.a1(A.M().b.$0())):s,q=t.p,p=A.b([B.dp,A.k("Mil Pay Planner Beta",s,s,s,s,B.x.p6(B.aa),s,s,s),new A.t(B.ah,A.k("Version 1.0.0, build 40",B.aez,s,s,s,B.f,s,s,s),s),new A.t(B.aY,A.k("This app works out how much to put into your TSP each month, and what to enter in MyPay to make it happen. It reads the numbers off your own Leave and Earnings Statement so you are planning against what you are actually paid, not an estimate.",s,s,s,s,B.x,s,s,s),s)],q),o=r==null,n=A.b([new A.t(B.Q,A.k(o?"Pay tables and contribution limits come from the app's yearly data file.":"Pay tables and contribution limits for "+A.a1(A.M().b.$0())+" come from the app's yearly data file (revision "+r.c+", published "+r.d+"). In its own words:",s,s,s,s,B.x,s,s,s),s)],q)
 if(!o)n.push(new A.t(B.Q,A.k(r.e,B.acE,s,s,s,B.f,s,s,s),s))
 return A.fX(A.b([new A.cb("About this app",!0,p,s),new A.cb("Where the figures come from",!0,n,s),new A.cb("Please read",!0,A.b([new A.t(B.Q,A.k("This app is not affiliated with, endorsed by, or connected to DFAS, the Department of Defense, or the Federal Retirement Thrift Investment Board. It is a planning tool. The figures it shows are yours to check against your own statement and MyPay before you act on them.",B.adA,s,s,s,B.x,s,s,s),s)],q),s)],q),s,B.acP,B.ea,s,!1)}}
 A.a3N.prototype={
@@ -110927,7 +110927,7 @@ r===$&&A.a()
 r=B.e.cl(r[s]).length!==0}else r=!0
 if(r)m.push(s)}q=m.length
 m=t.p
-r=A.b([new A.t(B.Q,A.k("Everything you enter stays on this device. The app does not send anything anywhere \u2014 not your pay, not your statements, not your plan, and nothing about how you use it. Reading a statement happens entirely on your own device.",B.adU,o,o,o,B.x,o,o,o),o)],m)
+r=A.b([new A.t(B.Q,A.k("Everything you enter stays on this device. The app does not send your information anywhere \u2014 not your pay, not your statements, not your plan, and nothing about how you use it. Reading a statement happens entirely on your own device.",B.adU,o,o,o,B.x,o,o,o),o)],m)
 if(q===0)p="Your profile, and no recorded months yet."
 else{p=q===1?"month":"months"
 p="Your profile, and "+q+" recorded "+p+" of contributions for "+A.a1(A.M().b.$0())+"."}return A.fX(A.b([new A.cb("Your data stays here",!0,r,o),new A.cb("What is kept",!0,A.b([new A.t(B.Q,A.k(p,B.ac0,o,o,o,B.x,o,o,o),o),new A.t(B.Q,A.k("Statement images are not kept yet \u2014 when the app starts keeping them, this is where their number and size will appear.",o,o,o,o,B.f,o,o,o),o)],m),o),B.ahE,new A.cb("Erase everything",!0,A.b([new A.t(B.Q,A.k("This removes your profile, your pay details and every month you have recorded, from this device. It cannot be undone, and there is no copy anywhere else \u2014 so the confirmation offers you a backup first.",o,o,o,o,B.x,o,o,o),o),new A.t(B.D,new A.Pl(n,o),o)],m),o)],m),o,B.afi,B.ea,o,!1)}}
@@ -111033,8 +111033,8 @@ aa(){return new A.YS()}}
 A.YS.prototype={
 F(a){var s,r,q,p,o=null,n=t.p,m=A.b([],n)
 for(s=t.O,r=0;r<8;++r){q=""+r
-p=A.b([new A.kX(this.d===r,new A.ax8(this,r),o,B.t5[r][0],o,new A.o("faq-"+q,s))],n)
-if(this.d===r)p.push(new A.t(B.L3,A.k(B.t5[r][1],new A.o("faq-body-"+q,s),o,o,o,B.x,o,o,o),o))
+p=A.b([new A.kX(this.d===r,new A.ax8(this,r),o,B.tz[r][0],o,new A.o("faq-"+q,s))],n)
+if(this.d===r)p.push(new A.t(B.L3,A.k(B.tz[r][1],new A.o("faq-body-"+q,s),o,o,o,B.x,o,o,o),o))
 m.push(new A.t(B.D,A.aW(p,B.T,o,B.m,B.o),o))}return A.fX(A.b([new A.cb("Help and FAQ",!0,m,o)],n),o,B.acu,B.ea,o,!1)}}
 A.ax8.prototype={
 $0(){var s=this.a
@@ -112061,7 +112061,7 @@ $0(){return this.a.a.c.a=this.b},
 $S:0}
 A.AM.prototype={
 F(a){var s=null
-return new A.cp("Branch of service",A.qS(s,!0,!1,B.t8,B.abI,new A.a6L(this),s,this.c.ap,t.N),4,s,s)}}
+return new A.cp("Branch of service",A.qS(s,!0,!1,B.t7,B.abI,new A.a6L(this),s,this.c.ap,t.N),4,s,s)}}
 A.a6L.prototype={
 $1(a){var s=this.a
 new A.a6K(s,a).$0()
@@ -115326,7 +115326,7 @@ else{n=o==null?0:o
 l=c.w
 m=A.aMY(q,l==null?"E-1":l,n)}n=A.k(u.g,b,b,b,b,B.f,b,b,b)
 l=t.N
-k=A.qS(b,!0,!1,B.t8,B.acx,new A.axt(c),b,c.d,l)
+k=A.qS(b,!0,!1,B.t7,B.acx,new A.axt(c),b,c.d,l)
 j=A.k("Which pay?",b,b,b,b,B.f,b,b,b)
 i=s?b:c.e
 h=A.k("choose\u2026",b,b,b,b,B.f,b,b,b)
@@ -120811,13 +120811,13 @@ B.CG=new A.xf(2,"previous")
 B.Nw=s([B.a_C,B.CF,B.CG],A.an("w<xf>"))
 B.rY=s([292,260,226,226],t.t)
 B.Y=s(["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],t.s)
-B.NA=s([0,1,2,3,4,5,6,7,8,10,12,14,16,20,24,28,32,40,48,56,64,80,96,112,128,160,192,224,0],t.t)
-B.NC=s([2,3,7],t.t)
+B.Nz=s([0,1,2,3,4,5,6,7,8,10,12,14,16,20,24,28,32,40,48,56,64,80,96,112,128,160,192,224,0],t.t)
+B.NB=s([2,3,7],t.t)
 B.rZ=s([3226,6412,200,168,38,38,134,134,100,100,100,100,68,68,68,68],t.t)
-B.NE=s([0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,3,7],t.t)
+B.ND=s([0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,3,7],t.t)
 B.mY=s(["E-1","E-2","E-3","E-4","E-5","E-6","E-7","E-8","E-9","W-1","W-2","W-3","W-4","W-5","O-1E","O-2E","O-3E","O-1","O-2","O-3","O-4","O-5","O-6","O-7","O-8","O-9","O-10"],t.s)
-B.NO=s([3,3,11],t.t)
-B.Oo=s([4,9,14,19],t.t)
+B.NN=s([3,3,11],t.t)
+B.On=s([4,9,14,19],t.t)
 B.n7=s([128,128,128,128,128,128,128,128,128,128,128],t.t)
 B.t1=s([B.n7,B.n7,B.n7],t.q)
 B.Ph=s([253,136,254,255,228,219,128,128,128,128,128],t.t)
@@ -120825,9 +120825,9 @@ B.QN=s([189,129,242,255,227,213,255,219,128,128,128],t.t)
 B.QT=s([106,126,227,252,214,209,255,255,128,128,128],t.t)
 B.T2=s([B.Ph,B.QN,B.QT],t.q)
 B.Ta=s([1,98,248,255,236,226,255,255,128,128,128],t.t)
-B.O9=s([181,133,238,254,221,234,255,154,128,128,128],t.t)
-B.NT=s([78,134,202,247,198,180,255,219,128,128,128],t.t)
-B.TY=s([B.Ta,B.O9,B.NT],t.q)
+B.O8=s([181,133,238,254,221,234,255,154,128,128,128],t.t)
+B.NS=s([78,134,202,247,198,180,255,219,128,128,128],t.t)
+B.TY=s([B.Ta,B.O8,B.NS],t.q)
 B.P6=s([1,185,249,255,243,255,128,128,128,128,128],t.t)
 B.T6=s([184,150,247,255,236,224,128,128,128,128,128],t.t)
 B.Vc=s([77,110,216,255,236,230,128,128,128,128,128],t.t)
@@ -120840,14 +120840,14 @@ B.Ra=s([1,204,254,255,245,255,128,128,128,128,128],t.t)
 B.VF=s([207,160,250,255,238,128,128,128,128,128,128],t.t)
 B.VD=s([102,103,231,255,211,171,128,128,128,128,128],t.t)
 B.PT=s([B.Ra,B.VF,B.VD],t.q)
-B.OG=s([1,152,252,255,240,255,128,128,128,128,128],t.t)
+B.OF=s([1,152,252,255,240,255,128,128,128,128,128],t.t)
 B.VL=s([177,135,243,255,234,225,128,128,128,128,128],t.t)
 B.Sc=s([80,129,211,255,194,224,128,128,128,128,128],t.t)
-B.T1=s([B.OG,B.VL,B.Sc],t.q)
-B.t6=s([1,1,255,128,128,128,128,128,128,128,128],t.t)
+B.T1=s([B.OF,B.VL,B.Sc],t.q)
+B.t5=s([1,1,255,128,128,128,128,128,128,128,128],t.t)
 B.Ty=s([246,1,255,128,128,128,128,128,128,128,128],t.t)
 B.RQ=s([255,128,128,128,128,128,128,128,128,128,128],t.t)
-B.W_=s([B.t6,B.Ty,B.RQ],t.q)
+B.W_=s([B.t5,B.Ty,B.RQ],t.q)
 B.PL=s([B.t1,B.T2,B.TY,B.Sn,B.OT,B.PT,B.T1,B.W_],t.wX)
 B.Vi=s([198,35,237,223,193,187,162,160,145,155,62],t.t)
 B.Pg=s([131,45,198,221,172,176,220,157,252,221,1],t.t)
@@ -120863,12 +120863,12 @@ B.T3=s([23,91,163,242,170,187,247,210,255,255,128],t.t)
 B.RS=s([B.UH,B.Vx,B.T3],t.q)
 B.Qh=s([1,200,246,255,234,255,128,128,128,128,128],t.t)
 B.UE=s([109,178,241,255,231,245,255,255,128,128,128],t.t)
-B.Nz=s([44,130,201,253,205,192,255,255,128,128,128],t.t)
-B.V3=s([B.Qh,B.UE,B.Nz],t.q)
-B.Oq=s([1,132,239,251,219,209,255,165,128,128,128],t.t)
+B.Ny=s([44,130,201,253,205,192,255,255,128,128,128],t.t)
+B.V3=s([B.Qh,B.UE,B.Ny],t.q)
+B.Op=s([1,132,239,251,219,209,255,165,128,128,128],t.t)
 B.Nc=s([94,136,225,251,218,190,255,255,128,128,128],t.t)
 B.UK=s([22,100,174,245,186,161,255,199,128,128,128],t.t)
-B.Sv=s([B.Oq,B.Nc,B.UK],t.q)
+B.Sv=s([B.Op,B.Nc,B.UK],t.q)
 B.Um=s([1,182,249,255,232,235,128,128,128,128,128],t.t)
 B.ST=s([124,143,241,255,227,234,128,128,128,128,128],t.t)
 B.QJ=s([35,77,181,251,193,211,255,205,128,128,128],t.t)
@@ -120878,9 +120878,9 @@ B.PH=s([121,141,235,255,225,227,255,255,128,128,128],t.t)
 B.UF=s([45,99,188,251,195,217,255,224,128,128,128],t.t)
 B.OO=s([B.W0,B.PH,B.UF],t.q)
 B.Nd=s([1,1,251,255,213,255,128,128,128,128,128],t.t)
-B.NG=s([203,1,248,255,255,128,128,128,128,128,128],t.t)
+B.NF=s([203,1,248,255,255,128,128,128,128,128,128],t.t)
 B.Uq=s([137,1,177,255,224,255,128,128,128,128,128],t.t)
-B.OI=s([B.Nd,B.NG,B.Uq],t.q)
+B.OI=s([B.Nd,B.NF,B.Uq],t.q)
 B.Uc=s([B.Rt,B.UW,B.RS,B.V3,B.Sv,B.QW,B.OO,B.OI],t.wX)
 B.Q1=s([253,9,248,251,207,208,255,192,128,128,128],t.t)
 B.Tz=s([175,13,224,243,193,185,249,198,255,255,128],t.t)
@@ -120901,20 +120901,20 @@ B.UG=s([B.QQ,B.SD,B.T7],t.q)
 B.Rw=s([1,16,248,255,255,128,128,128,128,128,128],t.t)
 B.PE=s([190,36,230,255,236,255,128,128,128,128,128],t.t)
 B.Pj=s([149,1,255,128,128,128,128,128,128,128,128],t.t)
-B.Or=s([B.Rw,B.PE,B.Pj],t.q)
+B.Oq=s([B.Rw,B.PE,B.Pj],t.q)
 B.T5=s([1,226,255,128,128,128,128,128,128,128,128],t.t)
 B.To=s([247,192,255,128,128,128,128,128,128,128,128],t.t)
 B.Va=s([240,128,255,128,128,128,128,128,128,128,128],t.t)
-B.NJ=s([B.T5,B.To,B.Va],t.q)
+B.NI=s([B.T5,B.To,B.Va],t.q)
 B.V2=s([1,134,252,255,255,128,128,128,128,128,128],t.t)
 B.SS=s([213,62,250,255,255,128,128,128,128,128,128],t.t)
 B.VJ=s([55,93,255,128,128,128,128,128,128,128,128],t.t)
 B.T4=s([B.V2,B.SS,B.VJ],t.q)
-B.P2=s([B.Tk,B.Ul,B.U5,B.UG,B.Or,B.NJ,B.T4,B.t1],t.wX)
+B.P2=s([B.Tk,B.Ul,B.U5,B.UG,B.Oq,B.NI,B.T4,B.t1],t.wX)
 B.SU=s([202,24,213,235,186,191,220,160,240,175,255],t.t)
 B.Pd=s([126,38,182,232,169,184,228,174,255,187,128],t.t)
-B.Ot=s([61,46,138,219,151,178,240,170,255,216,128],t.t)
-B.Ui=s([B.SU,B.Pd,B.Ot],t.q)
+B.Os=s([61,46,138,219,151,178,240,170,255,216,128],t.t)
+B.Ui=s([B.SU,B.Pd,B.Os],t.q)
 B.Sb=s([1,112,230,250,199,191,247,159,255,255,128],t.t)
 B.ON=s([166,109,228,252,211,215,255,174,128,128,128],t.t)
 B.SA=s([39,77,162,232,172,180,245,178,255,255,128],t.t)
@@ -120941,10 +120941,10 @@ B.Ti=s([42,80,160,240,162,185,255,205,128,128,128],t.t)
 B.R_=s([B.RC,B.Sj,B.Ti],t.q)
 B.VS=s([244,1,255,128,128,128,128,128,128,128,128],t.t)
 B.N9=s([238,1,255,128,128,128,128,128,128,128,128],t.t)
-B.Tr=s([B.t6,B.VS,B.N9],t.q)
+B.Tr=s([B.t5,B.VS,B.N9],t.q)
 B.Nt=s([B.Ui,B.Ue,B.Ud,B.Vr,B.UC,B.Py,B.R_,B.Tr],t.wX)
-B.Os=s([B.PL,B.Uc,B.P2,B.Nt],t.B1)
-B.Ov=s([511,1023,2047,4095],t.t)
+B.Or=s([B.PL,B.Uc,B.P2,B.Nt],t.B1)
+B.Ou=s([511,1023,2047,4095],t.t)
 B.oY=new A.Ks(0,"named")
 B.Fm=new A.Ks(1,"anonymous")
 B.OH=s([B.oY,B.Fm],A.an("w<Ks>"))
@@ -120970,8 +120970,8 @@ B.Pl=s([8,8,4,2],t.t)
 B.Nm=s([173,148,140],t.t)
 B.Nn=s([176,155,140,135],t.t)
 B.Nk=s([180,157,141,134,130],t.t)
-B.NF=s([254,254,243,230,196,177,153,140,133,130,129],t.t)
-B.Pm=s([B.Nm,B.Nn,B.Nk,B.NF],t.q)
+B.NE=s([254,254,243,230,196,177,153,140,133,130,129],t.t)
+B.Pm=s([B.Nm,B.Nn,B.Nk,B.NE],t.q)
 B.agD=new A.ib(0,1)
 B.agI=new A.ib(0.5,1)
 B.agL=new A.ib(0.5375,0.75)
@@ -120996,7 +120996,7 @@ B.Pr=s([B.ds,B.ac,B.aM,B.id,B.aA,B.ie],A.an("w<nb>"))
 B.a4q=new A.bO("Both plans land within a dollar of each other this year.",null,null,B.P,null,null,null,null,null,null,null)
 B.Pw=s([B.a4q],t.R)
 B.QX=s([2,1.13276676],t.n)
-B.NS=s([2.18349805,1.20311921],t.n)
+B.NR=s([2.18349805,1.20311921],t.n)
 B.U7=s([2.33888662,1.28698796],t.n)
 B.Uf=s([2.48660575,1.36351941],t.n)
 B.PJ=s([2.62226596,1.44717976],t.n)
@@ -121006,7 +121006,7 @@ B.Rf=s([4.08649929,2.23811846],t.n)
 B.S3=s([4.85481134,2.47563463],t.n)
 B.PW=s([5.62945551,2.72948597],t.n)
 B.QZ=s([6.43023796,2.98020421],t.n)
-B.t2=s([B.QX,B.NS,B.U7,B.Uf,B.PJ,B.Qb,B.Su,B.Rf,B.S3,B.PW,B.QZ],t.zg)
+B.t2=s([B.QX,B.NR,B.U7,B.Uf,B.PJ,B.Qb,B.Su,B.Rf,B.S3,B.PW,B.QZ],t.zg)
 B.PA=s([5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5],t.t)
 B.PI=s([B.le,B.lf],A.an("w<Ay>"))
 B.PN=s([0,1,3,7,15,31,63,127,255,511,1023,2047,4095],t.t)
@@ -121017,16 +121017,7 @@ B.a1c=new A.cc(!1,"Legacy / High-3",t.Bp)
 B.Q0=s([B.Da,B.a1c],t.cI)
 B.n0=s([0,1,1,2,4,8,1,1,2,4,8,4,8,4],t.t)
 B.Q2=s([2954,2956,2958,2962,2970,2986,3018,3082,3212,3468,3980,5004],t.t)
-B.QE=s(["What does this app actually do?","It works out how to spread your TSP contributions across the year so you finish it the way you meant to \u2014 reaching the annual limit if that is your aim, without running into it early and losing months of matching. It reads your pay, your election and what you have already contributed, and tells you the percentage to enter in MyPay."],t.s)
-B.VO=s(["Where do the numbers come from?","Pay tables, contribution limits and allowance figures are transcribed from the official published sources and carried in the app as dated files with their citations. Nothing is estimated and nothing is worked out from a rule of thumb. If the app does not have a figure it says so rather than guessing one."],t.s)
-B.Ny=s(["Does anything I enter leave my device?","No. Nothing leaves your device, because the app does not send anything anywhere at all \u2014 there are no accounts, no servers, and nothing it reports back. Reading a statement happens right here, including the picture or PDF itself. The pay tables it works from are built into the app, which is why a new year's figures arrive with a new version of the app rather than over the internet."],t.s)
-B.Qn=s(["Why does it ask for a statement?","A statement carries the facts the plan needs \u2014 your pay, your current election, and what you have contributed so far this year \u2014 and reading them is faster and more accurate than typing them. You never have to: everything can be entered by hand, and you can correct anything the app reads."],t.s)
-B.UX=s(["What do I do with the percentage it gives me?","Enter it in MyPay as your TSP contribution election. The app shows the figure for each remaining month, because a plan that gets you to the limit usually changes at least once during the year."],t.s)
-B.S2=s(["Why did my plan change after I entered a month?","Because the plan is worked out from where you actually are, not from where you expected to be. A month that came in higher or lower than planned changes what the remaining months have to do. That is the app working, not the app being inconsistent."],t.s)
-B.TA=s(["Is this official?","No. This is not a government application and it is not affiliated with DFAS, the TSP or any branch of service. It is a planning tool. Your statement, MyPay and the TSP are the record; if they disagree with this app, they are right."],t.s)
-B.R6=s(["Something looks wrong. What do I do?","Send feedback from the More menu and say what you saw. It also helps to check the pay year shown on the plan, since a plan built for last year against this year of pay will look wrong in exactly the way you would expect."],t.s)
-B.t5=s([B.QE,B.VO,B.Ny,B.Qn,B.UX,B.S2,B.TA,B.R6],A.an("w<R<v>>"))
-B.t7=s([280,256,256,256,40],t.t)
+B.t6=s([280,256,256,256,40],t.t)
 B.Q9=s(["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],t.s)
 B.a9k=new A.cf("\u2014",null,null,null,null,null,null,null,null,null)
 B.K8=new A.eu("",!0,B.a9k,B.bm,null,t.b7)
@@ -121042,14 +121033,14 @@ B.a9z=new A.cf("Space Force",null,null,null,null,null,null,null,null,null)
 B.K5=new A.eu("spaceforce",!0,B.a9z,B.bm,null,t.b7)
 B.a9t=new A.cf("Coast Guard",null,null,null,null,null,null,null,null,null)
 B.K6=new A.eu("coastguard",!0,B.a9t,B.bm,null,t.b7)
-B.t8=s([B.K8,B.K2,B.K3,B.K7,B.K4,B.K5,B.K6],t.FG)
-B.t9=s([62,62,30,30,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,588,588,588,588,588,588,588,588,1680,1680,20499,22547,24595,26643,1776,1776,1808,1808,-24557,-22509,-20461,-18413,1904,1904,1936,1936,-16365,-14317,782,782,782,782,814,814,814,814,-12269,-10221,10257,10257,12305,12305,14353,14353,16403,18451,1712,1712,1744,1744,28691,30739,-32749,-30701,-28653,-26605,2061,2061,2061,2061,2061,2061,2061,2061,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,750,750,750,750,1616,1616,1648,1648,1424,1424,1456,1456,1488,1488,1520,1520,1840,1840,1872,1872,1968,1968,8209,8209,524,524,524,524,524,524,524,524,556,556,556,556,556,556,556,556,1552,1552,1584,1584,2000,2000,2032,2032,976,976,1008,1008,1040,1040,1072,1072,1296,1296,1328,1328,718,718,718,718,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,490,490,490,490,490,490,490,490,490,490,490,490,490,490,490,490,4113,4113,6161,6161,848,848,880,880,912,912,944,944,622,622,622,622,654,654,654,654,1104,1104,1136,1136,1168,1168,1200,1200,1232,1232,1264,1264,686,686,686,686,1360,1360,1392,1392,12,12,12,12,12,12,12,12,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390],t.t)
+B.t7=s([B.K8,B.K2,B.K3,B.K7,B.K4,B.K5,B.K6],t.FG)
+B.t8=s([62,62,30,30,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,3225,588,588,588,588,588,588,588,588,1680,1680,20499,22547,24595,26643,1776,1776,1808,1808,-24557,-22509,-20461,-18413,1904,1904,1936,1936,-16365,-14317,782,782,782,782,814,814,814,814,-12269,-10221,10257,10257,12305,12305,14353,14353,16403,18451,1712,1712,1744,1744,28691,30739,-32749,-30701,-28653,-26605,2061,2061,2061,2061,2061,2061,2061,2061,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,424,750,750,750,750,1616,1616,1648,1648,1424,1424,1456,1456,1488,1488,1520,1520,1840,1840,1872,1872,1968,1968,8209,8209,524,524,524,524,524,524,524,524,556,556,556,556,556,556,556,556,1552,1552,1584,1584,2000,2000,2032,2032,976,976,1008,1008,1040,1040,1072,1072,1296,1296,1328,1328,718,718,718,718,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,456,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,358,490,490,490,490,490,490,490,490,490,490,490,490,490,490,490,490,4113,4113,6161,6161,848,848,880,880,912,912,944,944,622,622,622,622,654,654,654,654,1104,1104,1136,1136,1168,1168,1200,1200,1232,1232,1264,1264,686,686,686,686,1360,1360,1392,1392,12,12,12,12,12,12,12,12,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390,390],t.t)
 B.n1=s([4,5,6,7,8,9,10,10,11,12,13,14,15,16,17,17,18,19,20,20,21,21,22,22,23,23,24,25,25,26,27,28,29,30,31,32,33,34,35,36,37,37,38,39,40,41,42,43,44,45,46,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,76,77,78,79,80,81,82,83,84,85,86,87,88,89,91,93,95,96,98,100,101,102,104,106,108,110,112,114,116,118,122,124,126,128,130,132,134,136,138,140,143,145,148,151,154,157],t.t)
 B.Qj=s([24,7,23,25,40,6,39,41,22,26,38,42,56,5,55,57,21,27,54,58,37,43,72,4,71,73,20,28,53,59,70,74,36,44,88,69,75,52,60,3,87,89,19,29,86,90,35,45,68,76,85,91,51,61,104,2,103,105,18,30,102,106,34,46,84,92,67,77,101,107,50,62,120,1,119,121,83,93,17,31,100,108,66,78,118,122,33,47,117,123,49,63,99,109,82,94,0,116,124,65,79,16,32,98,110,48,115,125,81,95,64,114,126,97,111,80,113,127,96,112],t.t)
 B.n2=s([4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,60,62,64,66,68,70,72,74,76,78,80,82,84,86,88,90,92,94,96,98,100,102,104,106,108,110,112,114,116,119,122,125,128,131,134,137,140,143,146,149,152,155,158,161,164,167,170,173,177,181,185,189,193,197,201,205,209,213,217,221,225,229,234,239,245,249,254,259,264,269,274,279,284],t.t)
 B.Hg=new A.Cq()
 B.dG=s([B.Hg],t.xS)
-B.ta=s([0,1,2,3,4,5,6,7,8,8,9,9,10,10,11,11,12,12,12,12,13,13,13,13,14,14,14,14,15,15,15,15,16,16,16,16,16,16,16,16,17,17,17,17,17,17,17,17,18,18,18,18,18,18,18,18,19,19,19,19,19,19,19,19,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,21,21,21,21,21,21,21,21,21,21,21,21,21,21,21,21,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,28],t.t)
+B.t9=s([0,1,2,3,4,5,6,7,8,8,9,9,10,10,11,11,12,12,12,12,13,13,13,13,14,14,14,14,15,15,15,15,16,16,16,16,16,16,16,16,17,17,17,17,17,17,17,17,18,18,18,18,18,18,18,18,19,19,19,19,19,19,19,19,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,21,21,21,21,21,21,21,21,21,21,21,21,21,21,21,21,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,28],t.t)
 B.a11=new A.cc("max","IRS max",t.F)
 B.a0Z=new A.cc("custom","Custom $",t.F)
 B.Qv=s([B.a11,B.a0Z],t.eE)
@@ -121064,8 +121055,8 @@ B.a16=new A.cc("match","Match only",t.F)
 B.QB=s([B.a1a,B.a0X,B.a16],t.eE)
 B.R4=s([254,253,251,247,239,223,191,127],t.t)
 B.jD=s([12,8,140,8,76,8,204,8,44,8,172,8,108,8,236,8,28,8,156,8,92,8,220,8,60,8,188,8,124,8,252,8,2,8,130,8,66,8,194,8,34,8,162,8,98,8,226,8,18,8,146,8,82,8,210,8,50,8,178,8,114,8,242,8,10,8,138,8,74,8,202,8,42,8,170,8,106,8,234,8,26,8,154,8,90,8,218,8,58,8,186,8,122,8,250,8,6,8,134,8,70,8,198,8,38,8,166,8,102,8,230,8,22,8,150,8,86,8,214,8,54,8,182,8,118,8,246,8,14,8,142,8,78,8,206,8,46,8,174,8,110,8,238,8,30,8,158,8,94,8,222,8,62,8,190,8,126,8,254,8,1,8,129,8,65,8,193,8,33,8,161,8,97,8,225,8,17,8,145,8,81,8,209,8,49,8,177,8,113,8,241,8,9,8,137,8,73,8,201,8,41,8,169,8,105,8,233,8,25,8,153,8,89,8,217,8,57,8,185,8,121,8,249,8,5,8,133,8,69,8,197,8,37,8,165,8,101,8,229,8,21,8,149,8,85,8,213,8,53,8,181,8,117,8,245,8,13,8,141,8,77,8,205,8,45,8,173,8,109,8,237,8,29,8,157,8,93,8,221,8,61,8,189,8,125,8,253,8,19,9,275,9,147,9,403,9,83,9,339,9,211,9,467,9,51,9,307,9,179,9,435,9,115,9,371,9,243,9,499,9,11,9,267,9,139,9,395,9,75,9,331,9,203,9,459,9,43,9,299,9,171,9,427,9,107,9,363,9,235,9,491,9,27,9,283,9,155,9,411,9,91,9,347,9,219,9,475,9,59,9,315,9,187,9,443,9,123,9,379,9,251,9,507,9,7,9,263,9,135,9,391,9,71,9,327,9,199,9,455,9,39,9,295,9,167,9,423,9,103,9,359,9,231,9,487,9,23,9,279,9,151,9,407,9,87,9,343,9,215,9,471,9,55,9,311,9,183,9,439,9,119,9,375,9,247,9,503,9,15,9,271,9,143,9,399,9,79,9,335,9,207,9,463,9,47,9,303,9,175,9,431,9,111,9,367,9,239,9,495,9,31,9,287,9,159,9,415,9,95,9,351,9,223,9,479,9,63,9,319,9,191,9,447,9,127,9,383,9,255,9,511,9,0,7,64,7,32,7,96,7,16,7,80,7,48,7,112,7,8,7,72,7,40,7,104,7,24,7,88,7,56,7,120,7,4,7,68,7,36,7,100,7,20,7,84,7,52,7,116,7,3,8,131,8,67,8,195,8,35,8,163,8,99,8,227,8],t.t)
-B.tb=s([A.bgf(),A.bg7(),A.bgm(),A.bgk(),A.bgh(),A.bgg(),A.bgi()],t.ox)
-B.tc=s([0,5,16,5,8,5,24,5,4,5,20,5,12,5,28,5,2,5,18,5,10,5,26,5,6,5,22,5,14,5,30,5,1,5,17,5,9,5,25,5,5,5,21,5,13,5,29,5,3,5,19,5,11,5,27,5,7,5,23,5],t.t)
+B.ta=s([A.bgf(),A.bg7(),A.bgm(),A.bgk(),A.bgh(),A.bgg(),A.bgi()],t.ox)
+B.tb=s([0,5,16,5,8,5,24,5,4,5,20,5,12,5,28,5,2,5,18,5,10,5,26,5,6,5,22,5,14,5,30,5,1,5,17,5,9,5,25,5,5,5,21,5,13,5,29,5,3,5,19,5,11,5,27,5,7,5,23,5],t.t)
 B.br=new A.fx(0,"icon")
 B.bS=new A.fx(1,"input")
 B.aQ=new A.fx(2,"label")
@@ -121079,15 +121070,15 @@ B.cM=new A.fx(9,"counter")
 B.dT=new A.fx(10,"container")
 B.R7=s([B.br,B.bS,B.aQ,B.c2,B.c3,B.c4,B.aN,B.bB,B.cL,B.cM,B.dT],A.an("w<fx>"))
 B.W9=new A.rL("en",null,"US")
-B.te=s([B.W9],t.ss)
-B.tf=s([0,41,61,101,131,181,251,301,360],t.n)
+B.td=s([B.W9],t.ss)
+B.te=s([0,41,61,101,131,181,251,301,360],t.n)
 B.agm=new A.ns(0,0)
 B.agr=new A.ns(1,0.05)
 B.agp=new A.ns(3,0.08)
 B.agq=new A.ns(6,0.11)
 B.ago=new A.ns(8,0.12)
 B.agn=new A.ns(12,0.14)
-B.tg=s([B.agm,B.agr,B.agp,B.agq,B.ago,B.agn],A.an("w<ns>"))
+B.tf=s([B.agm,B.agr,B.agp,B.agq,B.ago,B.agn],A.an("w<ns>"))
 B.oA=new A.eW(0,"whiteIsZero")
 B.a9X=new A.eW(1,"blackIsZero")
 B.aa3=new A.eW(2,"rgb")
@@ -121107,7 +121098,7 @@ B.aa2=new A.eW(15,"depth")
 B.oB=new A.eW(16,"unknown")
 B.Re=s([B.oA,B.a9X,B.aa3,B.oC,B.aa4,B.EG,B.aa5,B.aa6,B.aa7,B.aa8,B.a9Y,B.a9Z,B.aa_,B.aa0,B.aa1,B.aa2,B.oB],A.an("w<eW>"))
 B.Rq=s(["assets/data/2026.json","assets/data/2027.json"],t.s)
-B.ti=s([0,21,51,121,151,191,271,321,360],t.n)
+B.th=s([0,21,51,121,151,191,271,321,360],t.n)
 B.Rs=s(["fewest","smallest","ramp","dollar","custom"],t.s)
 B.CD=new A.Eq(0,"source")
 B.CE=new A.Eq(1,"over")
@@ -121118,13 +121109,13 @@ B.ak=new A.ua(2,"int")
 B.ii=new A.ua(3,"float")
 B.RB=s([B.a9P,B.EE,B.ak,B.ii],A.an("w<ua>"))
 B.RD=s([17,18,0,1,2,3,4,5,16,6,7,8,9,10,11,12,13,14,15],t.t)
-B.tj=s([-0.0,1,-1,2,-2,3,4,6,-3,5,-4,-5,-6,7,-7,8,-8,-9],t.t)
+B.ti=s([-0.0,1,-1,2,-2,3,4,6,-3,5,-4,-5,-6,7,-7,8,-8,-9],t.t)
 B.FJ=new A.NQ(2,"outer")
 B.q7=new A.I(0.09803921568627451,0,0,0,B.h)
 B.i=new A.i(0,0)
 B.GE=new A.bS(0.2,B.FJ,B.q7,B.i,11)
 B.RI=s([B.GE],t.J)
-B.tk=s([B.v,B.rC,B.aC,B.ar,B.bK,B.ch,B.rH,B.fe,B.rI,B.rJ,B.rD,B.rE,B.rF,B.rG],A.an("w<fG>"))
+B.tj=s([B.v,B.rC,B.aC,B.ar,B.bK,B.ch,B.rH,B.fe,B.rI,B.rJ,B.rD,B.rE,B.rF,B.rG],A.an("w<fG>"))
 B.E8=new A.Gb(0,"left")
 B.E9=new A.Gb(1,"right")
 B.RT=s([B.E8,B.E9],A.an("w<Gb>"))
@@ -121145,25 +121136,25 @@ B.n3=s([B.aD,B.ai],A.an("w<Gt>"))
 B.Te=s([231,120,48,89,115,113,120,152,112],t.t)
 B.Nu=s([152,179,64,126,170,118,46,70,95],t.t)
 B.RX=s([175,69,143,80,85,82,72,155,103],t.t)
-B.Oh=s([56,58,10,171,218,189,17,13,152],t.t)
+B.Og=s([56,58,10,171,218,189,17,13,152],t.t)
 B.Sy=s([114,26,17,163,44,195,21,10,173],t.t)
 B.SN=s([121,24,80,195,26,62,44,64,85],t.t)
 B.St=s([144,71,10,38,171,213,144,34,26],t.t)
 B.UO=s([170,46,55,19,136,160,33,206,71],t.t)
 B.Qk=s([63,20,8,114,114,208,12,9,226],t.t)
 B.Rb=s([81,40,11,96,182,84,29,16,36],t.t)
-B.Ne=s([B.Te,B.Nu,B.RX,B.Oh,B.Sy,B.SN,B.St,B.UO,B.Qk,B.Rb],t.q)
+B.Ne=s([B.Te,B.Nu,B.RX,B.Og,B.Sy,B.SN,B.St,B.UO,B.Qk,B.Rb],t.q)
 B.PD=s([134,183,89,137,98,101,106,165,148],t.t)
 B.Ut=s([72,187,100,130,157,111,32,75,80],t.t)
 B.SZ=s([66,102,167,99,74,62,40,234,128],t.t)
-B.NI=s([41,53,9,178,241,141,26,8,107],t.t)
+B.NH=s([41,53,9,178,241,141,26,8,107],t.t)
 B.R5=s([74,43,26,146,73,166,49,23,157],t.t)
 B.Qu=s([65,38,105,160,51,52,31,115,128],t.t)
 B.QA=s([104,79,12,27,217,255,87,17,7],t.t)
 B.RV=s([87,68,71,44,114,51,15,186,23],t.t)
 B.Ug=s([47,41,14,110,182,183,21,17,194],t.t)
 B.Tx=s([66,45,25,102,197,189,23,18,22],t.t)
-B.V8=s([B.PD,B.Ut,B.SZ,B.NI,B.R5,B.Qu,B.QA,B.RV,B.Ug,B.Tx],t.q)
+B.V8=s([B.PD,B.Ut,B.SZ,B.NH,B.R5,B.Qu,B.QA,B.RV,B.Ug,B.Tx],t.q)
 B.Td=s([88,88,147,150,42,46,45,196,205],t.t)
 B.SB=s([43,97,183,117,85,38,35,179,61],t.t)
 B.QK=s([39,53,200,87,26,21,43,232,171],t.t)
@@ -121177,26 +121168,26 @@ B.Vn=s([62,18,78,95,85,57,50,48,51],t.t)
 B.PZ=s([B.Td,B.SB,B.QK,B.RP,B.Sp,B.Qp,B.Nf,B.US,B.PC,B.Vn],t.q)
 B.Sl=s([193,101,35,159,215,111,89,46,111],t.t)
 B.P1=s([60,148,31,172,219,228,21,18,111],t.t)
-B.Op=s([112,113,77,85,179,255,38,120,114],t.t)
+B.Oo=s([112,113,77,85,179,255,38,120,114],t.t)
 B.Vj=s([40,42,1,196,245,209,10,25,109],t.t)
 B.Rz=s([88,43,29,140,166,213,37,43,154],t.t)
 B.Qr=s([61,63,30,155,67,45,68,1,209],t.t)
 B.QS=s([100,80,8,43,154,1,51,26,71],t.t)
-B.NM=s([142,78,78,16,255,128,34,197,171],t.t)
+B.NL=s([142,78,78,16,255,128,34,197,171],t.t)
 B.Sa=s([41,40,5,102,211,183,4,1,221],t.t)
 B.Q7=s([51,50,17,168,209,192,23,25,82],t.t)
-B.PV=s([B.Sl,B.P1,B.Op,B.Vj,B.Rz,B.Qr,B.QS,B.NM,B.Sa,B.Q7],t.q)
+B.PV=s([B.Sl,B.P1,B.Oo,B.Vj,B.Rz,B.Qr,B.QS,B.NL,B.Sa,B.Q7],t.q)
 B.QH=s([138,31,36,171,27,166,38,44,229],t.t)
 B.PR=s([67,87,58,169,82,115,26,59,179],t.t)
 B.TX=s([63,59,90,180,59,166,93,73,154],t.t)
 B.V5=s([40,40,21,116,143,209,34,39,175],t.t)
-B.NR=s([47,15,16,183,34,223,49,45,183],t.t)
+B.NQ=s([47,15,16,183,34,223,49,45,183],t.t)
 B.Pc=s([46,17,33,183,6,98,15,32,183],t.t)
 B.W8=s([57,46,22,24,128,1,54,17,37],t.t)
 B.QV=s([65,32,73,115,28,128,23,128,205],t.t)
 B.SY=s([40,3,9,115,51,192,18,6,223],t.t)
 B.R2=s([87,37,9,115,59,77,64,21,47],t.t)
-B.S9=s([B.QH,B.PR,B.TX,B.V5,B.NR,B.Pc,B.W8,B.QV,B.SY,B.R2],t.q)
+B.S9=s([B.QH,B.PR,B.TX,B.V5,B.NQ,B.Pc,B.W8,B.QV,B.SY,B.R2],t.q)
 B.VR=s([104,55,44,218,9,54,53,130,226],t.t)
 B.OM=s([64,90,70,205,40,41,23,26,57],t.t)
 B.TV=s([54,57,112,184,5,41,38,166,213],t.t)
@@ -121228,8 +121219,8 @@ B.Vs=s([63,9,92,136,28,64,32,201,85],t.t)
 B.Ux=s([75,15,9,9,64,255,184,119,16],t.t)
 B.PP=s([86,6,28,5,64,255,25,248,1],t.t)
 B.Tt=s([56,8,17,132,137,255,55,116,128],t.t)
-B.Ox=s([58,15,20,82,135,57,26,121,40],t.t)
-B.Ss=s([B.R0,B.VA,B.R3,B.Nj,B.W3,B.Vs,B.Ux,B.PP,B.Tt,B.Ox],t.q)
+B.Ow=s([58,15,20,82,135,57,26,121,40],t.t)
+B.Ss=s([B.R0,B.VA,B.R3,B.Nj,B.W3,B.Vs,B.Ux,B.PP,B.Tt,B.Ow],t.q)
 B.SL=s([164,50,31,137,154,133,25,35,218],t.t)
 B.PO=s([51,103,44,131,131,123,31,6,158],t.t)
 B.Vq=s([86,40,64,135,148,224,45,183,128],t.t)
@@ -121245,13 +121236,13 @@ B.Ub=s([190,80,35,99,180,80,126,54,45],t.t)
 B.UN=s([85,126,47,87,176,51,41,20,32],t.t)
 B.TS=s([101,75,128,139,118,146,116,128,85],t.t)
 B.Ur=s([56,41,15,176,236,85,37,9,62],t.t)
-B.OF=s([71,30,17,119,118,255,17,18,138],t.t)
+B.OE=s([71,30,17,119,118,255,17,18,138],t.t)
 B.Sr=s([101,38,60,138,55,70,43,26,142],t.t)
 B.RN=s([146,36,19,30,171,255,97,27,20],t.t)
 B.Tb=s([138,45,61,62,219,1,81,188,64],t.t)
 B.Vk=s([32,41,20,117,151,142,20,21,163],t.t)
 B.UP=s([112,19,12,61,195,128,48,4,24],t.t)
-B.U4=s([B.Ub,B.UN,B.TS,B.Ur,B.OF,B.Sr,B.RN,B.Tb,B.Vk,B.UP],t.q)
+B.U4=s([B.Ub,B.UN,B.TS,B.Ur,B.OE,B.Sr,B.RN,B.Tb,B.Vk,B.UP],t.q)
 B.S8=s([B.Ne,B.V8,B.PZ,B.PV,B.S9,B.VW,B.RU,B.Ss,B.RG,B.U4],t.wX)
 B.ky=new A.hw(0,"none")
 B.dQ=new A.hw(1,"palette")
@@ -121289,21 +121280,21 @@ B.agj=new A.nr(B.F6,B.F5)
 B.SW=s([B.agh,B.agk,B.agi,B.agj],A.an("w<nr>"))
 B.n_=s([8,0,8,0],t.t)
 B.OL=s([5,3,5,3],t.t)
-B.NP=s([3,5,3,5],t.t)
+B.NO=s([3,5,3,5],t.t)
 B.rV=s([0,8,0,8],t.t)
 B.t_=s([4,4,4,4],t.t)
-B.On=s([4,4,0,0],t.t)
-B.tn=s([B.n_,B.OL,B.NP,B.rV,B.n_,B.t_,B.On,B.rV],t.q)
+B.Om=s([4,4,0,0],t.t)
+B.tm=s([B.n_,B.OL,B.NO,B.rV,B.n_,B.t_,B.Om,B.rV],t.q)
 B.a19=new A.cc("lower","Lower",t.F)
 B.a1f=new A.cc("standard","Standard",t.F)
 B.a17=new A.cc("higher","Higher",t.F)
 B.SX=s([B.a19,B.a1f,B.a17],t.eE)
 B.T_=s([0.1,0.25,0.5,1],t.n)
-B.to=s([80,88,23,71,30,30,62,62,4,4,4,4,4,4,4,4,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41],t.t)
+B.tn=s([80,88,23,71,30,30,62,62,4,4,4,4,4,4,4,4,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41],t.t)
 B.T9=s([35,30,20,25,30,35,30,25,25],t.n)
 B.jE=s([0,1,4,5,16,17,20,21,64,65,68,69,80,81,84,85,256,257,260,261,272,273,276,277,320,321,324,325,336,337,340,341,1024,1025,1028,1029,1040,1041,1044,1045,1088,1089,1092,1093,1104,1105,1108,1109,1280,1281,1284,1285,1296,1297,1300,1301,1344,1345,1348,1349,1360,1361,1364,1365,4096,4097,4100,4101,4112,4113,4116,4117,4160,4161,4164,4165,4176,4177,4180,4181,4352,4353,4356,4357,4368,4369,4372,4373,4416,4417,4420,4421,4432,4433,4436,4437,5120,5121,5124,5125,5136,5137,5140,5141,5184,5185,5188,5189,5200,5201,5204,5205,5376,5377,5380,5381,5392,5393,5396,5397,5440,5441,5444,5445,5456,5457,5460,5461,16384,16385,16388,16389,16400,16401,16404,16405,16448,16449,16452,16453,16464,16465,16468,16469,16640,16641,16644,16645,16656,16657,16660,16661,16704,16705,16708,16709,16720,16721,16724,16725,17408,17409,17412,17413,17424,17425,17428,17429,17472,17473,17476,17477,17488,17489,17492,17493,17664,17665,17668,17669,17680,17681,17684,17685,17728,17729,17732,17733,17744,17745,17748,17749,20480,20481,20484,20485,20496,20497,20500,20501,20544,20545,20548,20549,20560,20561,20564,20565,20736,20737,20740,20741,20752,20753,20756,20757,20800,20801,20804,20805,20816,20817,20820,20821,21504,21505,21508,21509,21520,21521,21524,21525,21568,21569,21572,21573,21584,21585,21588,21589,21760,21761,21764,21765,21776,21777,21780,21781,21824,21825,21828,21829,21840,21841,21844,21845],t.t)
-B.tp=s([127,127,191,127,159,191,223,127,143,159,175,191,207,223,239,127,135,143,151,159,167,175,183,191,199,207,215,223,231,239,247,127,131,135,139,143,147,151,155,159,163,167,171,175,179,183,187,191,195,199,203,207,211,215,219,223,227,231,235,239,243,247,251,127,129,131,133,135,137,139,141,143,145,147,149,151,153,155,157,159,161,163,165,167,169,171,173,175,177,179,181,183,185,187,189,191,193,195,197,199,201,203,205,207,209,211,213,215,217,219,221,223,225,227,229,231,233,235,237,239,241,243,245,247,249,251,253,127],t.t)
-B.tq=s([7,6,6,5,5,5,5,4,4,4,4,4,4,4,4,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0],t.t)
+B.to=s([127,127,191,127,159,191,223,127,143,159,175,191,207,223,239,127,135,143,151,159,167,175,183,191,199,207,215,223,231,239,247,127,131,135,139,143,147,151,155,159,163,167,171,175,179,183,187,191,195,199,203,207,211,215,219,223,227,231,235,239,243,247,251,127,129,131,133,135,137,139,141,143,145,147,149,151,153,155,157,159,161,163,165,167,169,171,173,175,177,179,181,183,185,187,189,191,193,195,197,199,201,203,205,207,209,211,213,215,217,219,221,223,225,227,229,231,233,235,237,239,241,243,245,247,249,251,253,127],t.t)
+B.tp=s([7,6,6,5,5,5,5,4,4,4,4,4,4,4,4,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0],t.t)
 B.jF=s([28679,28679,31752,-32759,-31735,-30711,-29687,-28663,29703,29703,30727,30727,-27639,-26615,-25591,-24567],t.t)
 B.Tm=s(["click","scroll"],t.s)
 B.H3=new A.nJ()
@@ -121311,24 +121302,24 @@ B.k9=new A.TI(1,"page")
 B.ka=new A.fs(B.bT,B.k9)
 B.Tq=s([B.H3,B.ka],A.an("w<bg>"))
 B.Tu=s(["army","navy","airforce","marines","spaceforce","coastguard"],t.s)
-B.tr=s([6430,6400,6400,6400,3225,3225,3225,3225,944,944,944,944,976,976,976,976,1456,1456,1456,1456,1488,1488,1488,1488,718,718,718,718,718,718,718,718,750,750,750,750,750,750,750,750,1520,1520,1520,1520,1552,1552,1552,1552,428,428,428,428,428,428,428,428,428,428,428,428,428,428,428,428,654,654,654,654,654,654,654,654,1072,1072,1072,1072,1104,1104,1104,1104,1136,1136,1136,1136,1168,1168,1168,1168,1200,1200,1200,1200,1232,1232,1232,1232,622,622,622,622,622,622,622,622,1008,1008,1008,1008,1040,1040,1040,1040,44,44,44,44,44,44,44,44,44,44,44,44,44,44,44,44,396,396,396,396,396,396,396,396,396,396,396,396,396,396,396,396,1712,1712,1712,1712,1744,1744,1744,1744,846,846,846,846,846,846,846,846,1264,1264,1264,1264,1296,1296,1296,1296,1328,1328,1328,1328,1360,1360,1360,1360,1392,1392,1392,1392,1424,1424,1424,1424,686,686,686,686,686,686,686,686,910,910,910,910,910,910,910,910,1968,1968,1968,1968,2000,2000,2000,2000,2032,2032,2032,2032,16,16,16,16,10257,10257,10257,10257,12305,12305,12305,12305,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,878,878,878,878,878,878,878,878,1904,1904,1904,1904,1936,1936,1936,1936,-18413,-18413,-16365,-16365,-14317,-14317,-10221,-10221,590,590,590,590,590,590,590,590,782,782,782,782,782,782,782,782,1584,1584,1584,1584,1616,1616,1616,1616,1648,1648,1648,1648,1680,1680,1680,1680,814,814,814,814,814,814,814,814,1776,1776,1776,1776,1808,1808,1808,1808,1840,1840,1840,1840,1872,1872,1872,1872,6157,6157,6157,6157,6157,6157,6157,6157,6157,6157,6157,6157,6157,6157,6157,6157,-12275,-12275,-12275,-12275,-12275,-12275,-12275,-12275,-12275,-12275,-12275,-12275,-12275,-12275,-12275,-12275,14353,14353,14353,14353,16401,16401,16401,16401,22547,22547,24595,24595,20497,20497,20497,20497,18449,18449,18449,18449,26643,26643,28691,28691,30739,30739,-32749,-32749,-30701,-30701,-28653,-28653,-26605,-26605,-24557,-24557,-22509,-22509,-20461,-20461,8207,8207,8207,8207,8207,8207,8207,8207,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,524,524,524,524,524,524,524,524,524,524,524,524,524,524,524,524,556,556,556,556,556,556,556,556,556,556,556,556,556,556,556,556,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,492,492,492,492,492,492,492,492,492,492,492,492,492,492,492,492,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232],t.t)
+B.tq=s([6430,6400,6400,6400,3225,3225,3225,3225,944,944,944,944,976,976,976,976,1456,1456,1456,1456,1488,1488,1488,1488,718,718,718,718,718,718,718,718,750,750,750,750,750,750,750,750,1520,1520,1520,1520,1552,1552,1552,1552,428,428,428,428,428,428,428,428,428,428,428,428,428,428,428,428,654,654,654,654,654,654,654,654,1072,1072,1072,1072,1104,1104,1104,1104,1136,1136,1136,1136,1168,1168,1168,1168,1200,1200,1200,1200,1232,1232,1232,1232,622,622,622,622,622,622,622,622,1008,1008,1008,1008,1040,1040,1040,1040,44,44,44,44,44,44,44,44,44,44,44,44,44,44,44,44,396,396,396,396,396,396,396,396,396,396,396,396,396,396,396,396,1712,1712,1712,1712,1744,1744,1744,1744,846,846,846,846,846,846,846,846,1264,1264,1264,1264,1296,1296,1296,1296,1328,1328,1328,1328,1360,1360,1360,1360,1392,1392,1392,1392,1424,1424,1424,1424,686,686,686,686,686,686,686,686,910,910,910,910,910,910,910,910,1968,1968,1968,1968,2000,2000,2000,2000,2032,2032,2032,2032,16,16,16,16,10257,10257,10257,10257,12305,12305,12305,12305,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,330,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,878,878,878,878,878,878,878,878,1904,1904,1904,1904,1936,1936,1936,1936,-18413,-18413,-16365,-16365,-14317,-14317,-10221,-10221,590,590,590,590,590,590,590,590,782,782,782,782,782,782,782,782,1584,1584,1584,1584,1616,1616,1616,1616,1648,1648,1648,1648,1680,1680,1680,1680,814,814,814,814,814,814,814,814,1776,1776,1776,1776,1808,1808,1808,1808,1840,1840,1840,1840,1872,1872,1872,1872,6157,6157,6157,6157,6157,6157,6157,6157,6157,6157,6157,6157,6157,6157,6157,6157,-12275,-12275,-12275,-12275,-12275,-12275,-12275,-12275,-12275,-12275,-12275,-12275,-12275,-12275,-12275,-12275,14353,14353,14353,14353,16401,16401,16401,16401,22547,22547,24595,24595,20497,20497,20497,20497,18449,18449,18449,18449,26643,26643,28691,28691,30739,30739,-32749,-32749,-30701,-30701,-28653,-28653,-26605,-26605,-24557,-24557,-22509,-22509,-20461,-20461,8207,8207,8207,8207,8207,8207,8207,8207,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,266,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,524,524,524,524,524,524,524,524,524,524,524,524,524,524,524,524,556,556,556,556,556,556,556,556,556,556,556,556,556,556,556,556,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,136,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,168,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,460,492,492,492,492,492,492,492,492,492,492,492,492,492,492,492,492,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,2059,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232,232],t.t)
 B.Tw=s(["down","up"],t.s)
 B.Tv=s(["down","up"],t.ee)
 B.TC=s(["elective","additions"],t.s)
 B.TB=s(["elective","additions"],t.ee)
 B.TJ=s([],t.QP)
-B.tv=s([],t.J)
-B.tx=s([],A.an("w<bgQ>"))
+B.tu=s([],t.J)
+B.tw=s([],A.an("w<bgQ>"))
 B.TL=s([],t.E)
 B.TF=s([],t.qD)
 B.TN=s([],t.fJ)
 B.TP=s([],t.ER)
 B.ai4=s([],t.ss)
-B.tu=s([],t.tc)
+B.tt=s([],t.tc)
 B.jG=s([],t.jl)
-B.tt=s([],t.wi)
+B.ts=s([],t.wi)
 B.TG=s([],A.an("w<lm<@>>"))
-B.ts=s([],A.an("w<dO>"))
+B.tr=s([],A.an("w<dO>"))
 B.n5=s([],t.AO)
 B.TH=s([],t.D1)
 B.n6=s([],t.QF)
@@ -121336,19 +121327,28 @@ B.TM=s([],t.Lx)
 B.TO=s([],t.AS)
 B.fh=s([],t.p)
 B.TE=s([],t.t)
-B.tw=s([],t.ee)
+B.tv=s([],t.ee)
 B.TK=s([],t.XS)
 B.TT=s(["fewest","smallest","ramp","dollar"],t.ee)
 B.TZ=s(["S","M","T","W","T","F","S"],t.s)
 B.U2=s(["goal","match","max"],t.s)
 B.U1=s(["goal","match","max"],t.ee)
-B.ty=s([0,1,2,3,6,4,5,6,6,6,6,6,6,6,6,7,0],t.t)
+B.tx=s([0,1,2,3,6,4,5,6,6,6,6,6,6,6,6,7,0],t.t)
 B.a_D=new A.oO(0,"none")
 B.a_E=new A.oO(1,"sub")
 B.a_F=new A.oO(2,"up")
 B.a_G=new A.oO(3,"average")
 B.a_H=new A.oO(4,"paeth")
-B.tz=s([B.a_D,B.a_E,B.a_F,B.a_G,B.a_H],A.an("w<oO>"))
+B.ty=s([B.a_D,B.a_E,B.a_F,B.a_G,B.a_H],A.an("w<oO>"))
+B.QE=s(["What does this app actually do?","It works out how to spread your TSP contributions across the year so you finish it the way you meant to \u2014 reaching the annual limit if that is your aim, without running into it early and losing months of matching. It reads your pay, your election and what you have already contributed, and tells you the percentage to enter in MyPay."],t.s)
+B.VO=s(["Where do the numbers come from?","Pay tables, contribution limits and allowance figures are transcribed from the official published sources and carried in the app as dated files with their citations. Nothing is estimated and nothing is worked out from a rule of thumb. If the app does not have a figure it says so rather than guessing one."],t.s)
+B.OG=s(["Does anything I enter leave my device?","No. Nothing about you leaves your device. There are no accounts, nothing to sign in to, and nothing the app reports back. Reading a statement happens right here, including the picture or PDF itself. If you are using the app in a browser, your browser downloads the app the same way it downloads any web page \u2014 that is the only thing that crosses the internet, and it carries nothing about you. The pay tables the app works from are built in, which is why a new year's figures arrive with a new version of the app."],t.s)
+B.Qn=s(["Why does it ask for a statement?","A statement carries the facts the plan needs \u2014 your pay, your current election, and what you have contributed so far this year \u2014 and reading them is faster and more accurate than typing them. You never have to: everything can be entered by hand, and you can correct anything the app reads."],t.s)
+B.UX=s(["What do I do with the percentage it gives me?","Enter it in MyPay as your TSP contribution election. The app shows the figure for each remaining month, because a plan that gets you to the limit usually changes at least once during the year."],t.s)
+B.S2=s(["Why did my plan change after I entered a month?","Because the plan is worked out from where you actually are, not from where you expected to be. A month that came in higher or lower than planned changes what the remaining months have to do. That is the app working, not the app being inconsistent."],t.s)
+B.TA=s(["Is this official?","No. This is not a government application and it is not affiliated with DFAS, the TSP or any branch of service. It is a planning tool. Your statement, MyPay and the TSP are the record; if they disagree with this app, they are right."],t.s)
+B.R6=s(["Something looks wrong. What do I do?","Send feedback from the More menu and say what you saw. It also helps to check the pay year shown on the plan, since a plan built for last year against this year of pay will look wrong in exactly the way you would expect."],t.s)
+B.tz=s([B.QE,B.VO,B.OG,B.Qn,B.UX,B.S2,B.TA,B.R6],A.an("w<R<v>>"))
 B.jW=new A.i(0,2)
 B.GC=new A.bS(0.75,B.af,B.q7,B.jW,1.5)
 B.Uh=s([B.GC],t.J)
@@ -121371,16 +121371,16 @@ B.Vp=s([255,246,254,255,255,255,255,255,255,255,255],t.t)
 B.Tn=s([239,253,254,255,255,255,255,255,255,255,255],t.t)
 B.tA=s([254,255,254,255,255,255,255,255,255,255,255],t.t)
 B.Uu=s([B.Vp,B.Tn,B.tA],t.q)
-B.td=s([255,248,254,255,255,255,255,255,255,255,255],t.t)
+B.tc=s([255,248,254,255,255,255,255,255,255,255,255],t.t)
 B.Qe=s([251,255,254,255,255,255,255,255,255,255,255],t.t)
-B.SM=s([B.td,B.Qe,B.cv],t.q)
+B.SM=s([B.tc,B.Qe,B.cv],t.q)
 B.mZ=s([255,253,254,255,255,255,255,255,255,255,255],t.t)
 B.SK=s([251,254,254,255,255,255,255,255,255,255,255],t.t)
 B.Qo=s([B.mZ,B.SK,B.tA],t.q)
-B.Of=s([255,254,253,255,254,255,255,255,255,255,255],t.t)
+B.Oe=s([255,254,253,255,254,255,255,255,255,255,255],t.t)
 B.R9=s([250,255,254,255,254,255,255,255,255,255,255],t.t)
 B.jH=s([254,255,255,255,255,255,255,255,255,255,255],t.t)
-B.RA=s([B.Of,B.R9,B.jH],t.q)
+B.RA=s([B.Oe,B.R9,B.jH],t.q)
 B.QO=s([B.fi,B.S6,B.PM,B.Uu,B.SM,B.Qo,B.RA,B.fi],t.wX)
 B.Ns=s([217,255,255,255,255,255,255,255,255,255,255],t.t)
 B.RJ=s([225,252,241,253,255,255,254,255,255,255,255],t.t)
@@ -121391,18 +121391,18 @@ B.Pz=s([223,254,254,255,255,255,255,255,255,255,255],t.t)
 B.P5=s([238,253,254,254,255,255,255,255,255,255,255],t.t)
 B.Tj=s([B.nd,B.Pz,B.P5],t.q)
 B.R1=s([249,254,255,255,255,255,255,255,255,255,255],t.t)
-B.Vm=s([B.td,B.R1,B.cv],t.q)
+B.Vm=s([B.tc,B.R1,B.cv],t.q)
 B.UU=s([255,253,255,255,255,255,255,255,255,255,255],t.t)
 B.SJ=s([247,254,255,255,255,255,255,255,255,255,255],t.t)
 B.Sw=s([B.UU,B.SJ,B.cv],t.q)
 B.P0=s([252,255,255,255,255,255,255,255,255,255,255],t.t)
-B.NK=s([B.mZ,B.P0,B.cv],t.q)
+B.NJ=s([B.mZ,B.P0,B.cv],t.q)
 B.tF=s([255,254,254,255,255,255,255,255,255,255,255],t.t)
 B.P3=s([B.tF,B.tE,B.cv],t.q)
 B.Th=s([255,254,253,255,255,255,255,255,255,255,255],t.t)
-B.th=s([250,255,255,255,255,255,255,255,255,255,255],t.t)
-B.P_=s([B.Th,B.th,B.jH],t.q)
-B.Oi=s([B.UQ,B.Tj,B.Vm,B.Sw,B.NK,B.P3,B.P_,B.fi],t.wX)
+B.tg=s([250,255,255,255,255,255,255,255,255,255,255],t.t)
+B.P_=s([B.Th,B.tg,B.jH],t.q)
+B.Oh=s([B.UQ,B.Tj,B.Vm,B.Sw,B.NJ,B.P3,B.P_,B.fi],t.wX)
 B.U6=s([186,251,250,255,255,255,255,255,255,255,255],t.t)
 B.Q8=s([234,251,244,254,255,255,255,255,255,255,255],t.t)
 B.Uw=s([251,251,243,253,254,255,254,255,255,255,255],t.t)
@@ -121415,15 +121415,15 @@ B.Qc=s([B.tF,B.Ua,B.cv],t.q)
 B.UD=s([254,254,255,255,255,255,255,255,255,255,255],t.t)
 B.Qf=s([B.nd,B.UD,B.jH],t.q)
 B.tG=s([B.cv,B.jH,B.cv],t.q)
-B.Og=s([B.Ql,B.Rr,B.Qc,B.Qf,B.tG,B.fi,B.fi,B.fi],t.wX)
+B.Of=s([B.Ql,B.Rr,B.Qc,B.Qf,B.tG,B.fi,B.fi,B.fi],t.wX)
 B.R8=s([248,255,255,255,255,255,255,255,255,255,255],t.t)
 B.Qx=s([250,254,252,254,255,255,255,255,255,255,255],t.t)
 B.Q6=s([248,254,249,253,255,255,255,255,255,255,255],t.t)
 B.Ru=s([B.R8,B.Qx,B.Q6],t.q)
-B.NU=s([255,253,253,255,255,255,255,255,255,255,255],t.t)
+B.NT=s([255,253,253,255,255,255,255,255,255,255,255],t.t)
 B.V1=s([246,253,253,255,255,255,255,255,255,255,255],t.t)
 B.Qm=s([252,254,251,254,254,255,255,255,255,255,255],t.t)
-B.V0=s([B.NU,B.V1,B.Qm],t.q)
+B.V0=s([B.NT,B.V1,B.Qm],t.q)
 B.W1=s([255,254,252,255,255,255,255,255,255,255,255],t.t)
 B.Q4=s([248,254,253,255,255,255,255,255,255,255,255],t.t)
 B.OZ=s([253,255,254,254,255,255,255,255,255,255,255],t.t)
@@ -121440,9 +121440,9 @@ B.VQ=s([249,255,254,255,255,255,255,255,255,255,255],t.t)
 B.QC=s([255,255,254,255,255,255,255,255,255,255,255],t.t)
 B.Ni=s([B.OV,B.VQ,B.QC],t.q)
 B.W4=s([255,255,253,255,255,255,255,255,255,255,255],t.t)
-B.Qd=s([B.W4,B.th,B.cv],t.q)
+B.Qd=s([B.W4,B.tg,B.cv],t.q)
 B.OY=s([B.Ru,B.V0,B.SV,B.Pp,B.Uj,B.Ni,B.Qd,B.tG],t.wX)
-B.UI=s([B.QO,B.Oi,B.Og,B.OY],t.B1)
+B.UI=s([B.QO,B.Oh,B.Of,B.OY],t.B1)
 B.FK=new A.fA(1,"rle8")
 B.FP=new A.fA(2,"rle4")
 B.FQ=new A.fA(4,"jpeg")
@@ -121550,21 +121550,21 @@ B.a0a=new A.af(0.9594,1.3212)
 B.a0f=new A.af(0.9653,1.3032)
 B.a0q=new A.af(0.9705,1.288)
 B.tM=s([B.a0k,B.a08,B.a0y,B.a04,B.a0d,B.a05,B.a07,B.a06,B.a0e,B.a01,B.a0a,B.a0f,B.a0q],A.an("w<+(N,N)>"))
-B.ND=s([2,6,2,6],t.t)
+B.NC=s([2,6,2,6],t.t)
 B.OW=s([6,2,6,2],t.t)
-B.NB=s([2,2,6,6],t.t)
+B.NA=s([2,2,6,6],t.t)
 B.Nr=s([1,3,3,9],t.t)
-B.Ol=s([4,0,12,0],t.t)
-B.NN=s([3,1,9,3],t.t)
+B.Ok=s([4,0,12,0],t.t)
+B.NM=s([3,1,9,3],t.t)
 B.Pk=s([8,8,0,0],t.t)
-B.Om=s([4,12,0,0],t.t)
+B.Ol=s([4,12,0,0],t.t)
 B.Nl=s([16,0,0,0],t.t)
 B.Nh=s([12,4,0,0],t.t)
 B.OX=s([6,6,2,2],t.t)
-B.NQ=s([3,9,1,3],t.t)
+B.NP=s([3,9,1,3],t.t)
 B.Ng=s([12,0,4,0],t.t)
 B.Pu=s([9,3,3,1],t.t)
-B.bL=s([B.t_,B.ND,B.n_,B.OW,B.NB,B.Nr,B.Ol,B.NN,B.Pk,B.Om,B.Nl,B.Nh,B.OX,B.NQ,B.Ng,B.Pu],t.q)
+B.bL=s([B.t_,B.NC,B.n_,B.OW,B.NA,B.Nr,B.Ok,B.NM,B.Pk,B.Ol,B.Nl,B.Nh,B.OX,B.NP,B.Ng,B.Pu],t.q)
 B.fj=s([0,-128,64,-64,32,-96,96,-32,16,-112,80,-48,48,-80,112,-16,8,-120,72,-56,40,-88,104,-24,24,-104,88,-40,56,-72,120,-8,4,-124,68,-60,36,-92,100,-28,20,-108,84,-44,52,-76,116,-12,12,-116,76,-52,44,-84,108,-20,28,-100,92,-36,60,-68,124,-4,2,-126,66,-62,34,-94,98,-30,18,-110,82,-46,50,-78,114,-14,10,-118,74,-54,42,-86,106,-22,26,-102,90,-38,58,-70,122,-6,6,-122,70,-58,38,-90,102,-26,22,-106,86,-42,54,-74,118,-10,14,-114,78,-50,46,-82,110,-18,30,-98,94,-34,62,-66,126,-2,1,-127,65,-63,33,-95,97,-31,17,-111,81,-47,49,-79,113,-15,9,-119,73,-55,41,-87,105,-23,25,-103,89,-39,57,-71,121,-7,5,-123,69,-59,37,-91,101,-27,21,-107,85,-43,53,-75,117,-11,13,-115,77,-51,45,-83,109,-19,29,-99,93,-35,61,-67,125,-3,3,-125,67,-61,35,-93,99,-29,19,-109,83,-45,51,-77,115,-13,11,-117,75,-53,43,-85,107,-21,27,-101,91,-37,59,-69,123,-5,7,-121,71,-57,39,-89,103,-25,23,-105,87,-41,55,-73,119,-9,15,-113,79,-49,47,-81,111,-17,31,-97,95,-33,63,-65,127,-1],t.t)
 B.y=new A.Dr(0,"ignored")
 B.bM=new A.h(4294967304)
@@ -121621,7 +121621,7 @@ B.Gy=new A.bS(-1,B.af,B.cO,B.jW,4)
 B.yW=new A.i(0,4)
 B.GI=new A.bS(0,B.af,B.cP,B.yW,5)
 B.GD=new A.bS(0,B.af,B.cE,B.cZ,10)
-B.NH=s([B.Gy,B.GI,B.GD],t.J)
+B.NG=s([B.Gy,B.GI,B.GD],t.J)
 B.Gq=new A.bS(-1,B.af,B.cO,B.dK,5)
 B.yX=new A.i(0,6)
 B.GN=new A.bS(0,B.af,B.cP,B.yX,10)
@@ -121632,7 +121632,7 @@ B.Gv=new A.bS(-3,B.af,B.cO,B.nD,5)
 B.nE=new A.i(0,8)
 B.GH=new A.bS(1,B.af,B.cP,B.nE,10)
 B.GU=new A.bS(2,B.af,B.cE,B.dK,14)
-B.Oj=s([B.Gv,B.GH,B.GU],t.J)
+B.Oi=s([B.Gv,B.GH,B.GU],t.J)
 B.Gr=new A.bS(-3,B.af,B.cO,B.nD,6)
 B.yY=new A.i(0,9)
 B.GQ=new A.bS(1,B.af,B.cP,B.yY,12)
@@ -121655,7 +121655,7 @@ B.Z_=new A.i(0,24)
 B.GR=new A.bS(3,B.af,B.cP,B.Z_,38)
 B.GK=new A.bS(8,B.af,B.cE,B.yY,46)
 B.RH=s([B.Gx,B.GR,B.GK],t.J)
-B.XE=new A.cR([0,B.tv,1,B.UZ,2,B.Px,3,B.Uk,4,B.NH,6,B.Qa,8,B.Oj,9,B.OQ,12,B.QU,16,B.QR,24,B.RH],A.an("cR<p,R<bS>>"))
+B.XE=new A.cR([0,B.tu,1,B.UZ,2,B.Px,3,B.Uk,4,B.NG,6,B.Qa,8,B.Oi,9,B.OQ,12,B.QU,16,B.QR,24,B.RH],A.an("cR<p,R<bS>>"))
 B.cX=new A.h(4294968065)
 B.o6=new A.aq(B.cX,!1,!1,!0,!1,B.y)
 B.cG=new A.h(4294968066)
@@ -122180,40 +122180,40 @@ B.nt=new A.bM(B.bO,[],A.an("bM<iS,rd<dD>>"))
 B.XY=new A.bM(B.bO,[],A.an("bM<p,F>"))
 B.XX=new A.bM(B.bO,[],A.an("bM<p,Q>"))
 B.nu=new A.bM(B.bO,[],A.an("bM<@,@>"))
-B.O7=s([42,null,null,8589935146],t.Z)
-B.O8=s([43,null,null,8589935147],t.Z)
-B.Oa=s([45,null,null,8589935149],t.Z)
-B.Ob=s([46,null,null,8589935150],t.Z)
-B.Oc=s([47,null,null,8589935151],t.Z)
-B.Od=s([48,null,null,8589935152],t.Z)
-B.Oe=s([49,null,null,8589935153],t.Z)
-B.Ou=s([50,null,null,8589935154],t.Z)
-B.Ow=s([51,null,null,8589935155],t.Z)
-B.Oy=s([52,null,null,8589935156],t.Z)
-B.Oz=s([53,null,null,8589935157],t.Z)
-B.OA=s([54,null,null,8589935158],t.Z)
-B.OB=s([55,null,null,8589935159],t.Z)
-B.OC=s([56,null,null,8589935160],t.Z)
-B.OE=s([57,null,null,8589935161],t.Z)
+B.O6=s([42,null,null,8589935146],t.Z)
+B.O7=s([43,null,null,8589935147],t.Z)
+B.O9=s([45,null,null,8589935149],t.Z)
+B.Oa=s([46,null,null,8589935150],t.Z)
+B.Ob=s([47,null,null,8589935151],t.Z)
+B.Oc=s([48,null,null,8589935152],t.Z)
+B.Od=s([49,null,null,8589935153],t.Z)
+B.Ot=s([50,null,null,8589935154],t.Z)
+B.Ov=s([51,null,null,8589935155],t.Z)
+B.Ox=s([52,null,null,8589935156],t.Z)
+B.Oy=s([53,null,null,8589935157],t.Z)
+B.Oz=s([54,null,null,8589935158],t.Z)
+B.OA=s([55,null,null,8589935159],t.Z)
+B.OB=s([56,null,null,8589935160],t.Z)
+B.OD=s([57,null,null,8589935161],t.Z)
 B.Se=s([8589934852,8589934852,8589934853,null],t.Z)
-B.NX=s([4294967555,null,4294967555,null],t.Z)
-B.NY=s([4294968065,null,null,8589935154],t.Z)
-B.NZ=s([4294968066,null,null,8589935156],t.Z)
-B.O_=s([4294968067,null,null,8589935158],t.Z)
-B.O0=s([4294968068,null,null,8589935160],t.Z)
-B.O5=s([4294968321,null,null,8589935157],t.Z)
+B.NW=s([4294967555,null,4294967555,null],t.Z)
+B.NX=s([4294968065,null,null,8589935154],t.Z)
+B.NY=s([4294968066,null,null,8589935156],t.Z)
+B.NZ=s([4294968067,null,null,8589935158],t.Z)
+B.O_=s([4294968068,null,null,8589935160],t.Z)
+B.O4=s([4294968321,null,null,8589935157],t.Z)
 B.Sf=s([8589934848,8589934848,8589934849,null],t.Z)
-B.NW=s([4294967423,null,null,8589935150],t.Z)
-B.O1=s([4294968069,null,null,8589935153],t.Z)
-B.NV=s([4294967309,null,null,8589935117],t.Z)
-B.O2=s([4294968070,null,null,8589935159],t.Z)
-B.O6=s([4294968327,null,null,8589935152],t.Z)
+B.NV=s([4294967423,null,null,8589935150],t.Z)
+B.O0=s([4294968069,null,null,8589935153],t.Z)
+B.NU=s([4294967309,null,null,8589935117],t.Z)
+B.O1=s([4294968070,null,null,8589935159],t.Z)
+B.O5=s([4294968327,null,null,8589935152],t.Z)
 B.Sg=s([8589934854,8589934854,8589934855,null],t.Z)
-B.O3=s([4294968071,null,null,8589935155],t.Z)
-B.O4=s([4294968072,null,null,8589935161],t.Z)
+B.O2=s([4294968071,null,null,8589935155],t.Z)
+B.O3=s([4294968072,null,null,8589935161],t.Z)
 B.Sh=s([8589934850,8589934850,8589934851,null],t.Z)
-B.yM=new A.cR(["*",B.O7,"+",B.O8,"-",B.Oa,".",B.Ob,"/",B.Oc,"0",B.Od,"1",B.Oe,"2",B.Ou,"3",B.Ow,"4",B.Oy,"5",B.Oz,"6",B.OA,"7",B.OB,"8",B.OC,"9",B.OE,"Alt",B.Se,"AltGraph",B.NX,"ArrowDown",B.NY,"ArrowLeft",B.NZ,"ArrowRight",B.O_,"ArrowUp",B.O0,"Clear",B.O5,"Control",B.Sf,"Delete",B.NW,"End",B.O1,"Enter",B.NV,"Home",B.O2,"Insert",B.O6,"Meta",B.Sg,"PageDown",B.O3,"PageUp",B.O4,"Shift",B.Sh],A.an("cR<v,R<p?>>"))
-B.OD=s([B.tT,null,null,B.yz],t.L)
+B.yM=new A.cR(["*",B.O6,"+",B.O7,"-",B.O9,".",B.Oa,"/",B.Ob,"0",B.Oc,"1",B.Od,"2",B.Ot,"3",B.Ov,"4",B.Ox,"5",B.Oy,"6",B.Oz,"7",B.OA,"8",B.OB,"9",B.OD,"Alt",B.Se,"AltGraph",B.NW,"ArrowDown",B.NX,"ArrowLeft",B.NY,"ArrowRight",B.NZ,"ArrowUp",B.O_,"Clear",B.O4,"Control",B.Sf,"Delete",B.NV,"End",B.O0,"Enter",B.NU,"Home",B.O1,"Insert",B.O5,"Meta",B.Sg,"PageDown",B.O2,"PageUp",B.O3,"Shift",B.Sh],A.an("cR<v,R<p?>>"))
+B.OC=s([B.tT,null,null,B.yz],t.L)
 B.U_=s([B.yl,null,null,B.yA],t.L)
 B.QD=s([B.ym,null,null,B.yB],t.L)
 B.So=s([B.yn,null,null,B.ek],t.L)
@@ -122245,7 +122245,7 @@ B.Pa=s([B.hN,B.hN,B.jQ,null],t.L)
 B.Ro=s([B.hI,null,null,B.hP],t.L)
 B.TD=s([B.hJ,null,null,B.hR],t.L)
 B.Pb=s([B.dH,B.dH,B.ej,null],t.L)
-B.Y_=new A.cR(["*",B.OD,"+",B.U_,"-",B.QD,".",B.So,"/",B.N7,"0",B.Ve,"1",B.Uv,"2",B.OU,"3",B.Vz,"4",B.Us,"5",B.OP,"6",B.Nx,"7",B.PB,"8",B.U3,"9",B.U9,"Alt",B.P8,"AltGraph",B.Vf,"ArrowDown",B.Rj,"ArrowLeft",B.Rk,"ArrowRight",B.Rl,"ArrowUp",B.Vt,"Clear",B.Uo,"Control",B.P9,"Delete",B.Tc,"End",B.Rm,"Enter",B.OK,"Home",B.Rn,"Insert",B.Up,"Meta",B.Pa,"PageDown",B.Ro,"PageUp",B.TD,"Shift",B.Pb],A.an("cR<v,R<h?>>"))
+B.Y_=new A.cR(["*",B.OC,"+",B.U_,"-",B.QD,".",B.So,"/",B.N7,"0",B.Ve,"1",B.Uv,"2",B.OU,"3",B.Vz,"4",B.Us,"5",B.OP,"6",B.Nx,"7",B.PB,"8",B.U3,"9",B.U9,"Alt",B.P8,"AltGraph",B.Vf,"ArrowDown",B.Rj,"ArrowLeft",B.Rk,"ArrowRight",B.Rl,"ArrowUp",B.Vt,"Clear",B.Uo,"Control",B.P9,"Delete",B.Tc,"End",B.Rm,"Enter",B.OK,"Home",B.Rn,"Insert",B.Up,"Meta",B.Pa,"PageDown",B.Ro,"PageUp",B.TD,"Shift",B.Pb],A.an("cR<v,R<h?>>"))
 B.YP={airforce:0}
 B.Y0=new A.bM(B.YP,["YYMMDD"],t.li)
 B.YG={ytdDeductions:0,ytdDeferred:1,ytdExempt:2,ytdRoth:3,ytdAgcyAuto:4,ytdAgcyMatch:5,monthRoth:6,monthTrad:7,cmAgcyAuto:8,cmAgcyMatch:9,basePay:10,netAmt:11,eomPay:12,totEnt:13,totDed:14,totAlmt:15,rothRate:16,tradRate:17,yrsSvc:18}
@@ -122273,8 +122273,8 @@ B.S5=s(["AGCY-AUTO","AGCY AUTO"],t.s)
 B.n4=s(["YTD"],t.s)
 B.tD=s(["AGCY CONTR","CM"],t.s)
 B.N3=new A.eo(B.S5,B.n4,B.tD,2e5)
-B.NL=s(["AGC-MATCH","AGCY-MATCH","AGCY MATCH"],t.s)
-B.MT=new A.eo(B.NL,B.n4,B.tD,2e5)
+B.NK=s(["AGC-MATCH","AGCY-MATCH","AGCY MATCH"],t.s)
+B.MT=new A.eo(B.NK,B.n4,B.tD,2e5)
 B.Pi=s(["BASE PAY"],t.s)
 B.RM=s(["RATE","PLAN","CURRENT"],t.s)
 B.MS=new A.eo(B.Pi,B.RM,B.a1,5e4)
@@ -122289,12 +122289,12 @@ B.MQ=new A.eo(B.Nq,B.n4,B.a1,2e5)
 B.SF=s(["TOT ALMT","TOTAL ALLOTMENTS"],t.s)
 B.N_=new A.eo(B.SF,B.a1,B.a1,2e5)
 B.t4=s(["BASE PAY RATE"],t.s)
-B.tm=s(["TRADITIONAL"],t.s)
-B.tl=s(["ROTH"],t.s)
-B.MX=new A.eo(B.t4,B.tm,B.tl,100)
-B.MR=new A.eo(B.t4,B.tl,B.tm,100)
-B.Ok=s(["YRS SVC","YEARS SVC","YRS SERVICE"],t.s)
-B.N1=new A.eo(B.Ok,B.a1,B.a1,60)
+B.tl=s(["TRADITIONAL"],t.s)
+B.tk=s(["ROTH"],t.s)
+B.MX=new A.eo(B.t4,B.tl,B.tk,100)
+B.MR=new A.eo(B.t4,B.tk,B.tl,100)
+B.Oj=s(["YRS SVC","YEARS SVC","YRS SERVICE"],t.s)
+B.N1=new A.eo(B.Oj,B.a1,B.a1,60)
 B.Y1=new A.bM(B.YG,[B.MP,B.N5,B.N2,B.MU,B.MY,B.MW,B.N0,B.N4,B.N3,B.MT,B.MS,B.MV,B.MO,B.MZ,B.MQ,B.N_,B.MX,B.MR,B.N1],A.an("bM<v,eo>"))
 B.YM={KeyA:0,KeyB:1,KeyC:2,KeyD:3,KeyE:4,KeyF:5,KeyG:6,KeyH:7,KeyI:8,KeyJ:9,KeyK:10,KeyL:11,KeyM:12,KeyN:13,KeyO:14,KeyP:15,KeyQ:16,KeyR:17,KeyS:18,KeyT:19,KeyU:20,KeyV:21,KeyW:22,KeyX:23,KeyY:24,KeyZ:25,Digit1:26,Digit2:27,Digit3:28,Digit4:29,Digit5:30,Digit6:31,Digit7:32,Digit8:33,Digit9:34,Digit0:35,Minus:36,Equal:37,BracketLeft:38,BracketRight:39,Backslash:40,Semicolon:41,Quote:42,Backquote:43,Comma:44,Period:45,Slash:46}
 B.yN=new A.bM(B.YM,["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","1","2","3","4","5","6","7","8","9","0","-","=","[","]","\\",";","'","`",",",".","/"],t.li)
@@ -124434,8 +124434,8 @@ r($,"blh","bR",()=>$.aRv())
 r($,"bkM","aNg",()=>{A.b8f()
 return B.Hj})
 s($,"bjC","b0N",()=>A.aQ8(B.jD,B.rW,257,286,15))
-s($,"bjB","b0M",()=>A.aQ8(B.tc,B.jC,0,30,15))
-s($,"bjA","b0L",()=>A.aQ8(null,B.NE,0,19,7))
+s($,"bjB","b0M",()=>A.aQ8(B.tb,B.jC,0,30,15))
+s($,"bjA","b0L",()=>A.aQ8(null,B.ND,0,19,7))
 s($,"bhm","b_x",()=>A.Q5(B.VM))
 s($,"bhl","b_w",()=>A.Q5(B.PA))
 s($,"bkk","b1e",()=>A.aom(1,1,500))

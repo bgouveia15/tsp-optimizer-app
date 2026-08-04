@@ -8,8 +8,11 @@
     The path provided below has to start and end with a slash "/" in order for
     it to work correctly.
 
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+    For more details, see MDN's page on the HTML <base> element.
+    (The bare URL was removed deliberately: the T-26 deploy gate treats
+    any non-local origin in this file as something to be justified by
+    hand, and a documentation link is not worth an allowlist entry that
+    would also wave through a real one.)
 
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
@@ -38,8 +41,9 @@
     This is useful to provide a custom configuration to the Flutter loader
     or to give the user feedback during the initialization process.
 
-    For more details:
-    * https://docs.flutter.dev/platform-integration/web/initialization
+    For more details, see the Flutter docs on web initialization.
+    (Bare URL removed for the same reason as the one above — see the
+    T-26 note there.)
   -->
   <script src="flutter_bootstrap.js" async></script>
 </body>

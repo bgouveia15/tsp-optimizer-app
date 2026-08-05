@@ -110964,7 +110964,7 @@ A.jI.prototype={
 F(a){var s=null,r=A.ah(12),q=A.ah(12),p=A.cx(B.G,1),o=A.ah(12),n=t.p
 return new A.t(B.KC,A.ec(B.X,!0,r,A.az(!1,q,!0,A.as(s,A.b6(A.b([A.bl(A.aW(A.b([A.k(this.c,s,s,s,s,B.y.p6(B.a9),s,s,s),new A.t(B.ah,A.k(this.d,s,s,s,s,B.f,s,s,s),s)],n),B.T,s,B.m,B.o),1),B.n_],n),B.t,s,B.m,B.o,s),B.k,s,s,new A.av(s,s,p,o,s,s,B.r),s,s,s,s,B.KV,s,s,s),s,!0,s,s,s,s,s,s,s,s,this.e,s,s,s),B.k,B.l,0,s,s,s,s,s,B.bi),s)}}
 A.VP.prototype={
-F(a){var s=null,r=$.yB!=null?A.M().nB(A.a1(A.M().b.$0())):s,q=t.p,p=A.b([B.dq,A.k("Mil Pay Planner Beta",s,s,s,s,B.y.p6(B.a9),s,s,s),new A.t(B.ah,A.k("Version 1.0.0 \xb7 Build 49",B.aeL,s,s,s,B.f,s,s,s),s),new A.t(B.aY,A.k("This app works out how much to put into your TSP each month, and what to enter in MyPay to make it happen. It reads the numbers off your own Leave and Earnings Statement so you are planning against what you are actually paid, not an estimate.",s,s,s,s,B.y,s,s,s),s)],q),o=r==null,n=A.b([new A.t(B.Q,A.k(o?"Pay tables and contribution limits come from the app's yearly data file.":"Pay tables and contribution limits for "+A.a1(A.M().b.$0())+" come from the app's yearly data file (revision "+r.c+", published "+r.d+"). In its own words:",s,s,s,s,B.y,s,s,s),s)],q)
+F(a){var s=null,r=$.yB!=null?A.M().nB(A.a1(A.M().b.$0())):s,q=t.p,p=A.b([B.dq,A.k("Mil Pay Planner Beta",s,s,s,s,B.y.p6(B.a9),s,s,s),new A.t(B.ah,A.k("Version 1.0.0 \xb7 Build 50",B.aeL,s,s,s,B.f,s,s,s),s),new A.t(B.aY,A.k("This app works out how much to put into your TSP each month, and what to enter in MyPay to make it happen. It reads the numbers off your own Leave and Earnings Statement so you are planning against what you are actually paid, not an estimate.",s,s,s,s,B.y,s,s,s),s)],q),o=r==null,n=A.b([new A.t(B.Q,A.k(o?"Pay tables and contribution limits come from the app's yearly data file.":"Pay tables and contribution limits for "+A.a1(A.M().b.$0())+" come from the app's yearly data file (revision "+r.c+", published "+r.d+"). In its own words:",s,s,s,s,B.y,s,s,s),s)],q)
 if(!o)n.push(new A.t(B.Q,A.k(r.e,B.acQ,s,s,s,B.f,s,s,s),s))
 return A.fX(A.b([new A.cb("About this app",!0,p,s),new A.cb("Where the figures come from",!0,n,s),new A.cb("Please read",!0,A.b([new A.t(B.Q,A.k("This app is not affiliated with, endorsed by, or connected to DFAS, the Department of Defense, or the Federal Retirement Thrift Investment Board. It is a planning tool. The figures it shows are yours to check against your own statement and MyPay before you act on them.",B.adM,s,s,s,B.y,s,s,s),s)],q),s)],q),s,B.ad0,B.eb,s,!1)}}
 A.a3S.prototype={
@@ -111113,7 +111113,7 @@ $S:0}
 A.HD.prototype={
 aa(){return new A.WC()}}
 A.WC.prototype={
-F(a){var s=this,r=null,q=s.a.c,p=q.gq2()?s.d:"this",o=new A.asC(s),n=A.b([B.YE,new A.xZ(q.gq2(),new A.asy(q),B.abW,r,r)],t.p)
+F(a){var s=this,r=null,q=s.a.c,p=q.gq2()?s.d:"this",o=new A.asC(s),n=A.b([B.YF,new A.xZ(q.gq2(),new A.asy(q),B.abW,r,r)],t.p)
 if(q.gq2())n.push(new A.G8(s.d,new A.asz(s),B.ae_,r))
 n.push(o.$5("Monthly",q.a1h(p),"/mo",new A.asA(q,p),B.aev))
 n.push(o.$5("Yearly",q.a1f(p),"/yr",new A.asB(q,p),B.ad8))
@@ -111627,7 +111627,7 @@ k=new A.aN(q.h(0,m)===!0?B.w:B.G,1,B.A,-1)
 j=new A.aM(8,8)
 i=B.Y[m]
 h=q.h(0,m)===!0?B.l:B.L
-o.push(A.az(!1,f,!0,A.as(B.a5,A.k(i,f,f,f,f,new A.u(!0,h,f,f,f,f,11,B.a9,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f),f,f,f),B.k,f,f,new A.av(l,f,new A.cM(k,k,k,k),new A.cD(j,j,j,j),f,f,B.r),f,f,f,f,f,f,f,f),f,!0,f,f,f,new A.o("cz-"+m,n),f,f,f,f,new A.atu(g,q,m),f,f,f))}d=A.b([new A.cp("Year",new A.eE(s,d,new A.atv(g),!1,B.af2,t.J1),4,f,f),B.YF,new A.t(B.D,A.aU8(1.6,o,6,4,4,B.yZ,!0),f)],c)
+o.push(A.az(!1,f,!0,A.as(B.a5,A.k(i,f,f,f,f,new A.u(!0,h,f,f,f,f,11,B.a9,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f),f,f,f),B.k,f,f,new A.av(l,f,new A.cM(k,k,k,k),new A.cD(j,j,j,j),f,f,B.r),f,f,f,f,f,f,f,f),f,!0,f,f,f,new A.o("cz-"+m,n),f,f,f,f,new A.atu(g,q,m),f,f,f))}d=A.b([new A.cp("Year",new A.eE(s,d,new A.atv(g),!1,B.af2,t.J1),4,f,f),B.YE,new A.t(B.D,A.aU8(1.6,o,6,4,4,B.yZ,!0),f)],c)
 if(r!==0)B.d.O(d,A.b([new A.t(B.D,A.k(p?"Officer exclusion caps at "+A.a9(A.aLB(f),0)+"/mo (senior enlisted rate + HFP) \u2014 pay above that stays taxable even in-zone.":"Enlisted/warrant: all pay in these months is tax-exempt.",f,f,f,f,B.f,f,f,f),f),new A.t(B.aY,A.cF(A.am(A.b([B.a4x,new A.iY(new A.la("The two limits","The "+A.a9(A.M().gG().r.a,0)+" \"annual additions\" limit (IRC 415(c)) caps everything that lands in your TSP for the year \u2014 your money, the agency's, and exempt combat-zone contributions \u2014 and it's separate from the "+A.a9(A.M().gG().f.a,0)+" elective limit. Deployed months matter because exempt Traditional dollars skip the elective limit and count only against this one, so a CZ year can legally go far past "+A.a9(A.M().gG().f.a,0)+". Roth always counts against the elective limit, even in-zone.",B.abV),B.i0,B.B,f)],t.R),f,f,f,f,f,f,f,f,B.f,f),f,f,f,f,f),f),new A.t(B.KO,A.aq1("Never taxed going in, never taxed coming out \u2014 the classic deployment play. Your Roth/Traditional setting still governs the other months.",B.aef,e,e,f,new A.atw(g),B.adI,g.a.c.y5(g.d)),f),new A.t(B.D,A.k("Splitting your YTD across the two limits? The CONTRIBUTIONS TOTALS box lives in the Contributions card below \u2014 it opens itself once CZ months are marked.",f,f,f,f,B.f,f,f,f),f)],c))
 return new A.cb("Combat zone months (CZTE)",!0,d,f)}}
 A.atv.prototype={
@@ -116519,7 +116519,7 @@ return A.ad1(this.b,r,s.w)},
 $S:0}
 A.Vr.prototype={
 F(a){var s=null,r=A.a5v(a).a
-return new A.t(new A.ac(0,18,0,r[2]+r[1]+8),A.iq(A.k("Version 1.0.0 \xb7 Build 49",B.acN,s,s,s,B.f.eX(B.L,11),B.aI,s,s),s,s),s)}}
+return new A.t(new A.ac(0,18,0,r[2]+r[1]+8),A.iq(A.k("Version 1.0.0 \xb7 Build 50",B.acN,s,s,s,B.f.eX(B.L,11),B.aI,s,s),s,s),s)}}
 A.rV.prototype={
 dd(a){var s=a.a,r=this.a,q=s[8]
 r.$flags&2&&A.f(r)
@@ -122709,8 +122709,8 @@ B.YB=new A.E3(null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.yZ=new A.RA(null)
 B.YC=new A.t1("The share of each election that goes to Roth.","A % of your election, not of pay. Seeds new plans and blank what-ifs. Each plan then owns its own split \u2014 set that on the Plan page; changing this never moves an existing plan.",4,null)
 B.YD=new A.t1("No month is planned above whichever limit applies.","True-up included. If that makes your target unreachable, the plan totals show how much is left.",8,null)
-B.YE=new A.t1("Your standing numbers for My goal mode.",'Set either or both. Plan-page tweaks won\'t change them; a "back to default" button appears there when they differ. Monthly caps each month at your number; yearly plans to hit it exactly (true-up).',4,null)
-B.YF=new A.t1("Tap any months that qualify.","They don't need to be consecutive. Also toggleable from each month's \u25b8 details on the Plan page.",4,null)
+B.YE=new A.t1("Tap any months that qualify.","They don't need to be consecutive. You can also set them by opening a month on the Plan page.",4,null)
+B.YF=new A.t1("Your standing numbers for My goal mode.",'Set either or both. Plan-page tweaks won\'t change them; a "back to default" button appears there when they differ. Monthly caps each month at your number; yearly plans to hit it exactly (true-up).',4,null)
 B.z0=new A.f9(B.i,B.i)
 B.Z1=new A.i(0,20)
 B.Z3=new A.i(0,26)

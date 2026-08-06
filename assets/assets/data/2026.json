@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "year": 2026,
-  "rev": 9,
+  "rev": 11,
   "verifiedOn": "2026-08-06",
   "sources": [
     {
@@ -44,10 +44,22 @@
       "date": "2025-11-13"
     },
     {
+      "figure": "siPayTables.hdipFlyingCrew, siPayTables.hdipFlyingNonCrew",
+      "authority": "DoD Financial Management Regulation",
+      "document": "DoD 7000.14-R Volume 7A, Chapter 22 (March 2024 edition), Table 22-5 'Hazardous Duty Incentive Pay (HDIP) for Flying', chapter page 22-25 — captured to cowork/reference/fmr-2026/Combined_Volume1-16.pdf, sha256 eb842e9474647ff707d7dfd81d8b5cadb60511d5177411b60962e0b921a10ea2. VERIFIED 2026-08-06: all 24 by-grade crew rates and the 150 non-crew rate match the app's copies exactly; the table states EFFECTIVE OCTOBER 1, 1998, now recorded as the figures' effectiveFrom. CONFLICT, ESCALATED not resolved: the same FMR page says 'For the most current rates, see the... table on dfas.mil', and DFAS's current service pages print DIFFERENT rates in a different shape (Army/Navy/AF air crew 250 flat; Marines by years of service 150-240) — e.g. an Army E-5 air crew member is 190 by this table and 250 by DFAS. Two current authorities disagreeing is exactly what ruling D-17 says escalates. The app's table remains the FMR transcription it always was; which shape the app should offer awaits the ruling.",
+      "date": "2026-08-06"
+    },
+    {
+      "figure": "limits.* effective windows (all five)",
+      "authority": "Internal Revenue Service",
+      "document": "IRS Notice 2025-67 — captured to cowork/reference/irs-2026/n-25-67.pdf, sha256 1eea8f141b0cddd182f9f09b3bc8ffad683d27ceb806dfc6da126811dc0a1f8d, provenance proven by re-fetch (bytes identical to irs.gov). Window transcribed from the notice's own designation: heading 'Cost-of-Living Adjusted Limitations for 2026', opening 'Effective January 1, 2026' (p.1); 415(c) $72,000 'increased in 2026' (p.1); 402(g) $24,500 and 414(v)(2)(B)(i) $8,000 (p.1); 414(v)(2)(E)(i) 'remains $11,250' for those attaining 60-63 in 2026 and the $150,000 Roth catch-up wage threshold governing 2026 (p.2). All five amounts re-verified against the app's copies during this transcription: all match.",
+      "date": "2026-08-06"
+    },
+    {
       "figure": "basicPayCapO7AndAboveMonthly, basicPayCapO6AndBelowMonthly",
       "authority": "DFAS",
-      "document": "DFAS basic pay table notes 4 and 5 (Executive Schedule Level II and Level V), 37 U.S.C. 203(a)(2). NOT verified in the 2026-08-05 run — the captured pages carry the table rows, and these ceilings are stated in the notes rather than as cells.",
-      "date": "2026-08-05"
+      "document": "DFAS basic pay table notes 4 and 5 (Executive Schedule Level II and Level V), 37 U.S.C. 203(a)(2). NOT verified in the 2026-08-05 run — the captured pages carry the table rows, and these ceilings are stated in the notes rather than as cells. RULED 4a on that record (user ruling 2026-08-06, build 57 §3): prior published value, carried forward, not yet confirmed; official flipped to false accordingly. Partial counter-evidence for the O-7+ ceiling logged in its figureTime note.",
+      "date": "2026-08-06"
     }
   ],
   "figureTime": {
@@ -81,14 +93,16 @@
       "authorityExpiresOn": "2026-12-31"
     },
     "siPayTables.hdipFlyingCrew": {
+      "effectiveFrom": "1998-10-01",
       "turnover": "fixed",
       "authorityExpiresOn": "2026-12-31",
-      "_note": "The flying-HDIP pages state NO effective date. Recorded as unknown rather than filled in — where a page states nothing, that is itself the finding."
+      "_note": "build 57 §5.1: effectiveFrom is now TRANSCRIBED — the DFAS flying pages state no date (the earlier finding, still true of them), but FMR Vol 7A Chapter 22 Table 22-5 prints EFFECTIVE OCTOBER 1, 1998 on this exact table. See the sources entry for the citation, the verification, and the ESCALATED conflict with DFAS's current service pages."
     },
     "siPayTables.hdipFlyingNonCrew": {
+      "effectiveFrom": "1998-10-01",
       "turnover": "fixed",
       "authorityExpiresOn": "2026-12-31",
-      "_note": "No effective date stated on the page."
+      "_note": "Same FMR table as hdipFlyingCrew — the non-air-crew line at its foot, same stated effective date."
     },
     "siPayTables.hdipParachute": {
       "turnover": "fixed",
@@ -111,18 +125,42 @@
       "_authority": "Duration of Authority, Chapter 10 Special Pay - Duty Subject to Hostile Fire or Imminent Danger, Hostile Fire Pay (HFP) — table rows 3-26, merged END DATE cell (rowspan 24), verified from the markup rather than from reading order.",
       "_note": "§3.7e: this figure still has no transcribed statutory SOURCE for its amount. That is unchanged and is not this round's job. Its shape now matches everything else so it can hold a state; no source was invented to make it validate."
     },
-    "limits.electiveDeferral": { "turnover": "annual" },
-    "limits.annualAdditions": { "turnover": "annual" },
-    "limits.catchUp50": { "turnover": "annual" },
-    "limits.catchUp60to63": { "turnover": "annual" },
-    "limits.rothCatchupWageThreshold": { "turnover": "annual" },
+    "_limitsWindowNote": "build 57 §2: the five limits' windows are transcribed from IRS Notice 2025-67 itself — heading 'Cost-of-Living Adjusted Limitations for 2026', opening sentence 'Effective January 1, 2026', each amount stated 'for 2026'. The notice designates a calendar plan year rather than printing an end date; the window below is that stated year and nothing else. Citation with page numbers and file hash in the sources entry and in PAY-AND-LIMIT-VERIFICATION-RECORD.md.",
+    "limits.electiveDeferral": {
+      "effectiveFrom": "2026-01-01",
+      "effectiveTo": "2026-12-31",
+      "turnover": "annual"
+    },
+    "limits.annualAdditions": {
+      "effectiveFrom": "2026-01-01",
+      "effectiveTo": "2026-12-31",
+      "turnover": "annual"
+    },
+    "limits.catchUp50": {
+      "effectiveFrom": "2026-01-01",
+      "effectiveTo": "2026-12-31",
+      "turnover": "annual"
+    },
+    "limits.catchUp60to63": {
+      "effectiveFrom": "2026-01-01",
+      "effectiveTo": "2026-12-31",
+      "turnover": "annual"
+    },
+    "limits.rothCatchupWageThreshold": {
+      "effectiveFrom": "2026-01-01",
+      "effectiveTo": "2026-12-31",
+      "turnover": "annual",
+      "_note": "The $150,000 is the notice's 'Roth catch-up wage threshold for 2025' — prior-year wages — applied to determine which 2026 catch-ups must be Roth. The window records the year it GOVERNS (2026), which is how the notice frames it."
+    },
     "basicPayCapO7AndAboveMonthly": {
       "turnover": "annual",
-      "_note": "State 4, not state 2 — and this is the case that shows why the model needs more than three. It DOES change with time, so 'still in force' would be a lie; but the military pay raise is not the mechanism that moves it, so scaling it by the raise is also a lie. Carried flat, marked unconfirmed."
+      "valueCarriedForward": true,
+      "_note": "RULED state 4a (user ruling 2026-08-06, directive build 57 §3, adopting Cowork's recommendation): the prior published value, carried forward, not yet confirmed. This note argued 4a from the start ('It DOES change with time, so still-in-force would be a lie; but the military pay raise is not the mechanism that moves it, so scaling it by the raise is also a lie'); the model could not express 4a for an annual figure until valueCarriedForward existed, and now note and model agree. NUANCE, recorded rather than hidden: the captured 2026 DFAS table's O-9/O-10 cells are capped AT this value and matched in the build-55 verify run — the amount has operational 2026 evidence even though no capture STATES it as the ceiling with a window. The ruling stands; the evidence is logged for a future refinement."
     },
     "basicPayCapO6AndBelowMonthly": {
       "turnover": "annual",
-      "_note": "Same as its sibling above."
+      "valueCarriedForward": true,
+      "_note": "Same ruling as its sibling above — and here 4a is unambiguous: this value appears NOWHERE in the captured pages (no O-6 cell reaches the Level V cap in 2026, so nothing prints it), making 'not yet confirmed' simply true."
     },
     "sgli": {
       "effectiveFrom": "2025-09-19",
@@ -131,7 +169,7 @@
     }
   },
   "publishedDate": "2026-01-01",
-  "notes": "rev 9 (build 56, v57 SS3.6): every FIGURE moved out of these notes and into `sources`. The superseded HALO figure now sits in a `sources` entry marked with supersededValue/supersededBy/supersededOn — a field, not a word in prose, so a reader can separate current from superseded without parsing English, and so the validator can refuse to let a superseded entry stand as evidence for a live figure. These notes keep the story; `sources` keeps the numbers. rev 8 (build 55): HALO / MILITARY FREE FALL PARACHUTE DUTY CORRECTED — the shipped figure was too LOW. Our source was a superseded FMR edition and our copy of it was simply old; DFAS's current published page is later and prints more. The ruling (DECISIONS.md D-17) is narrow: where our source is a superseded FMR edition and DFAS's current page is later, the DFAS page is sufficient authority. It is NOT a general licence — two current sources disagreeing, or DFAS against a current FMR edition, still escalates to the user. MEMBER-VISIBLE AND IN THE MEMBER'S FAVOUR: hdipParachuteHalo is an extra-pay category on the Pay screen, so a member on military free-fall status had been planning against LESS contribution room than DFAS publishes. The correction opens room; NOBODY WAS EVER OVER-CREDITED. Found by tool/verify_dfas.dart comparing every shipped figure against the captured DFAS pages — everything else matched exactly. NOT corrected in the same pass and deliberately still absent: DFAS also publishes an Army-specific static-line rate with its own effective window which this file does not carry. See EXTERNAL-DATA-REGISTER.md — it is a schema/shape change (branch- and date-aware rates) rather than a transcription, and it is knowingly deferred rather than undiscovered. rev 7 (v57 SS3): basicPayCapMonthly RENAMED to basicPayCapO7AndAboveMonthly. Value, official flag and source all unchanged — a naming correction only. The old name read as a single universal ceiling on basic pay; there are two, and this one binds O-7 through O-10 (Executive Schedule Level II) while basicPayCapO6AndBelowMonthly binds O-6 and below (Level V). A name that hides which grades a ceiling applies to is how the wrong one gets used. Neither is ever scaled by the raise. rev 6 (v56 SS2, audit D-19): CATCH-UP CORRECTION. catchUp50 carried a prototype-era estimate flagged official:false and was later read as a fact. The published CY2026 figure is transcribed from IRS Notice 2025-67 and cited in `sources`. A member aged 50 or over planning against the old estimate left tax-advantaged room unused every year — silently, and unrecoverably after 31 December. Note the direction, because it is why it survived: the estimate was CONSERVATIVE, so nothing overshot, nothing was refused, and no error ever fired. A wrong number that fails safely is a wrong number that survives. catchUp60to63 is unchanged — the same notice states this higher limit remains at its prior value — and is now flagged official:true, which it always should have been. NOTE FOR ANYONE TEMPTED BY THE STATUTE: the super catch-up is defined as the greater of a fixed statutory floor or one and a half times the standard catch-up, and that computation does NOT reproduce the published super catch-up. The two disagree. Transcribe, never derive. rev 5 (v52-3): sgli block added — the VA-published SGLI premium table, transcribed verbatim and carried as printed rather than derived from the rate; validation rejects any level that disagrees with the stated rate. Source and page date are in `sources`. rev 4 (v45 SS2): the statutory ceiling on monthly basic pay added, 37 U.S.C. 203(a)(2) — O-7 through O-10 basic pay limited to Executive Schedule Level II. It restates, with its rule, the in-file official figure whose capped O-9/O-10 rows are already transcribed in this file's payTable; the figure itself lives in basicPayCapO7AndAboveMonthly rather than being repeated here. rev 3: axisDateLabel on the AvIP byYears tables (v25 SS4, additive). Raise per NDAA FY26; limits per IRS Notice 2025-67, both cited in `sources`.",
+  "notes": "rev 11 (build 57 SS5.1): the flying-HDIP table is verified against the FMR at last — every grade matches, the FMR's stated effective date is transcribed onto both flying figures' clocks, and the citation carries the volume, chapter, table, page and file hash. It also surfaced a conflict the register had been calling 'not comparable': the current FMR edition's own printed table disagrees with DFAS's current service pages, grade by grade, and the FMR itself points readers to DFAS for current rates. ESCALATED under ruling D-17, not resolved — the figures in this file are unchanged, and the sources entry states both sides with their shapes. rev 10 (build 57 SS2 and SS3): the seven-contradiction repair. The five IRS limits gain their effective windows, transcribed from Notice 2025-67's own year designation (see the sources entry with the file hash) — they now resolve published-current for 2026 instead of 'projected', which falsely claimed the app computed numbers the IRS published. The two statutory ceilings are RULED state 4a (user ruling of 6 August 2026, adopting Cowork's recommendation): prior published value, carried forward, not yet confirmed — valueCarriedForward added to their clocks, official flipped to false, and the note-vs-model disagreement this file carried since rev 9 is closed with the model agreeing with the note. rev 9 (build 56, v57 SS3.6): every FIGURE moved out of these notes and into `sources`. The superseded HALO figure now sits in a `sources` entry marked with supersededValue/supersededBy/supersededOn — a field, not a word in prose, so a reader can separate current from superseded without parsing English, and so the validator can refuse to let a superseded entry stand as evidence for a live figure. These notes keep the story; `sources` keeps the numbers. rev 8 (build 55): HALO / MILITARY FREE FALL PARACHUTE DUTY CORRECTED — the shipped figure was too LOW. Our source was a superseded FMR edition and our copy of it was simply old; DFAS's current published page is later and prints more. The ruling (DECISIONS.md D-17) is narrow: where our source is a superseded FMR edition and DFAS's current page is later, the DFAS page is sufficient authority. It is NOT a general licence — two current sources disagreeing, or DFAS against a current FMR edition, still escalates to the user. MEMBER-VISIBLE AND IN THE MEMBER'S FAVOUR: hdipParachuteHalo is an extra-pay category on the Pay screen, so a member on military free-fall status had been planning against LESS contribution room than DFAS publishes. The correction opens room; NOBODY WAS EVER OVER-CREDITED. Found by tool/verify_dfas.dart comparing every shipped figure against the captured DFAS pages — everything else matched exactly. NOT corrected in the same pass and deliberately still absent: DFAS also publishes an Army-specific static-line rate with its own effective window which this file does not carry. See EXTERNAL-DATA-REGISTER.md — it is a schema/shape change (branch- and date-aware rates) rather than a transcription, and it is knowingly deferred rather than undiscovered. rev 7 (v57 SS3): basicPayCapMonthly RENAMED to basicPayCapO7AndAboveMonthly. Value, official flag and source all unchanged — a naming correction only. The old name read as a single universal ceiling on basic pay; there are two, and this one binds O-7 through O-10 (Executive Schedule Level II) while basicPayCapO6AndBelowMonthly binds O-6 and below (Level V). A name that hides which grades a ceiling applies to is how the wrong one gets used. Neither is ever scaled by the raise. rev 6 (v56 SS2, audit D-19): CATCH-UP CORRECTION. catchUp50 carried a prototype-era estimate flagged official:false and was later read as a fact. The published CY2026 figure is transcribed from IRS Notice 2025-67 and cited in `sources`. A member aged 50 or over planning against the old estimate left tax-advantaged room unused every year — silently, and unrecoverably after 31 December. Note the direction, because it is why it survived: the estimate was CONSERVATIVE, so nothing overshot, nothing was refused, and no error ever fired. A wrong number that fails safely is a wrong number that survives. catchUp60to63 is unchanged — the same notice states this higher limit remains at its prior value — and is now flagged official:true, which it always should have been. NOTE FOR ANYONE TEMPTED BY THE STATUTE: the super catch-up is defined as the greater of a fixed statutory floor or one and a half times the standard catch-up, and that computation does NOT reproduce the published super catch-up. The two disagree. Transcribe, never derive. rev 5 (v52-3): sgli block added — the VA-published SGLI premium table, transcribed verbatim and carried as printed rather than derived from the rate; validation rejects any level that disagrees with the stated rate. Source and page date are in `sources`. rev 4 (v45 SS2): the statutory ceiling on monthly basic pay added, 37 U.S.C. 203(a)(2) — O-7 through O-10 basic pay limited to Executive Schedule Level II. It restates, with its rule, the in-file official figure whose capped O-9/O-10 rows are already transcribed in this file's payTable; the figure itself lives in basicPayCapO7AndAboveMonthly rather than being repeated here. rev 3: axisDateLabel on the AvIP byYears tables (v25 SS4, additive). Raise per NDAA FY26; limits per IRS Notice 2025-67, both cited in `sources`.",
   "limits": {
     "electiveDeferral": {
       "amount": 24500,
@@ -174,8 +212,8 @@
     ]
   },
   "hfpMonthly": 225,
-  "basicPayCapO7AndAboveMonthly": { "amount": 18999.90, "official": true },
-  "basicPayCapO6AndBelowMonthly": { "amount": 15408.30, "official": true },
+  "basicPayCapO7AndAboveMonthly": { "amount": 18999.90, "official": false },
+  "basicPayCapO6AndBelowMonthly": { "amount": 15408.30, "official": false },
   "projectedRaisePct": 4.16,
   "raiseFromPriorYearPct": 4.16,
   "projectedRaiseToNextYearPct": 4.16,

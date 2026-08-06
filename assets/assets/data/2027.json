@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "year": 2027,
-  "rev": 6,
+  "rev": 8,
   "derivedFrom": {
     "sourceYear": 2026,
-    "sourceRev": 9,
+    "sourceRev": 11,
     "generator": "tool/project_year.dart",
     "generatedOn": "2026-08-06",
     "assumption": "basic pay scaled by the source file's projectedRaiseToNextYearPct of 4.16%, rounded to the cent, clamped at the Executive Schedule Level II ceiling where a row would exceed it. Special and incentive pay rates are NOT scaled — they are fixed statutory amounts carried forward as published. IRS limits are held at the prior value and marked not-official rather than projected. Nothing here is transcribed from a publisher; this file is a projection and every figure in it should be replaced by transcription when the real tables publish.",
@@ -1356,14 +1356,16 @@
       "authorityExpiresOn": "2026-12-31"
     },
     "siPayTables.hdipFlyingCrew": {
+      "effectiveFrom": "1998-10-01",
       "turnover": "fixed",
       "authorityExpiresOn": "2026-12-31",
-      "_note": "The flying-HDIP pages state NO effective date. Recorded as unknown rather than filled in — where a page states nothing, that is itself the finding."
+      "_note": "build 57 §5.1: effectiveFrom is now TRANSCRIBED — the DFAS flying pages state no date (the earlier finding, still true of them), but FMR Vol 7A Chapter 22 Table 22-5 prints EFFECTIVE OCTOBER 1, 1998 on this exact table. See the sources entry for the citation, the verification, and the ESCALATED conflict with DFAS's current service pages."
     },
     "siPayTables.hdipFlyingNonCrew": {
+      "effectiveFrom": "1998-10-01",
       "turnover": "fixed",
       "authorityExpiresOn": "2026-12-31",
-      "_note": "No effective date stated on the page."
+      "_note": "Same FMR table as hdipFlyingCrew — the non-air-crew line at its foot, same stated effective date."
     },
     "siPayTables.hdipParachute": {
       "turnover": "fixed",
@@ -1386,28 +1388,47 @@
       "_authority": "Duration of Authority, Chapter 10 Special Pay - Duty Subject to Hostile Fire or Imminent Danger, Hostile Fire Pay (HFP) — table rows 3-26, merged END DATE cell (rowspan 24), verified from the markup rather than from reading order.",
       "_note": "§3.7e: this figure still has no transcribed statutory SOURCE for its amount. That is unchanged and is not this round's job. Its shape now matches everything else so it can hold a state; no source was invented to make it validate."
     },
+    "_limitsWindowNote": "build 57 §2: the five limits' windows are transcribed from IRS Notice 2025-67 itself — heading 'Cost-of-Living Adjusted Limitations for 2026', opening sentence 'Effective January 1, 2026', each amount stated 'for 2026'. The notice designates a calendar plan year rather than printing an end date; the window below is that stated year and nothing else. Citation with page numbers and file hash in the sources entry and in PAY-AND-LIMIT-VERIFICATION-RECORD.md.",
     "limits.electiveDeferral": {
-      "turnover": "annual"
+      "effectiveFrom": "2026-01-01",
+      "effectiveTo": "2026-12-31",
+      "turnover": "annual",
+      "valueCarriedForward": true
     },
     "limits.annualAdditions": {
-      "turnover": "annual"
+      "effectiveFrom": "2026-01-01",
+      "effectiveTo": "2026-12-31",
+      "turnover": "annual",
+      "valueCarriedForward": true
     },
     "limits.catchUp50": {
-      "turnover": "annual"
+      "effectiveFrom": "2026-01-01",
+      "effectiveTo": "2026-12-31",
+      "turnover": "annual",
+      "valueCarriedForward": true
     },
     "limits.catchUp60to63": {
-      "turnover": "annual"
+      "effectiveFrom": "2026-01-01",
+      "effectiveTo": "2026-12-31",
+      "turnover": "annual",
+      "valueCarriedForward": true
     },
     "limits.rothCatchupWageThreshold": {
-      "turnover": "annual"
+      "effectiveFrom": "2026-01-01",
+      "effectiveTo": "2026-12-31",
+      "turnover": "annual",
+      "_note": "The $150,000 is the notice's 'Roth catch-up wage threshold for 2025' — prior-year wages — applied to determine which 2026 catch-ups must be Roth. The window records the year it GOVERNS (2026), which is how the notice frames it.",
+      "valueCarriedForward": true
     },
     "basicPayCapO7AndAboveMonthly": {
       "turnover": "annual",
-      "_note": "State 4, not state 2 — and this is the case that shows why the model needs more than three. It DOES change with time, so 'still in force' would be a lie; but the military pay raise is not the mechanism that moves it, so scaling it by the raise is also a lie. Carried flat, marked unconfirmed."
+      "valueCarriedForward": true,
+      "_note": "RULED state 4a (user ruling 2026-08-06, directive build 57 §3, adopting Cowork's recommendation): the prior published value, carried forward, not yet confirmed. This note argued 4a from the start ('It DOES change with time, so still-in-force would be a lie; but the military pay raise is not the mechanism that moves it, so scaling it by the raise is also a lie'); the model could not express 4a for an annual figure until valueCarriedForward existed, and now note and model agree. NUANCE, recorded rather than hidden: the captured 2026 DFAS table's O-9/O-10 cells are capped AT this value and matched in the build-55 verify run — the amount has operational 2026 evidence even though no capture STATES it as the ceiling with a window. The ruling stands; the evidence is logged for a future refinement."
     },
     "basicPayCapO6AndBelowMonthly": {
       "turnover": "annual",
-      "_note": "Same as its sibling above."
+      "valueCarriedForward": true,
+      "_note": "Same ruling as its sibling above — and here 4a is unambiguous: this value appears NOWHERE in the captured pages (no O-6 cell reaches the Level V cap in 2026, so nothing prints it), making 'not yet confirmed' simply true."
     },
     "sgli": {
       "effectiveFrom": "2025-09-19",

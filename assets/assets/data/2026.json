@@ -1,9 +1,48 @@
 {
   "schemaVersion": 1,
   "year": 2026,
-  "rev": 6,
+  "rev": 8,
+  "verifiedOn": "2026-08-06",
+  "sources": [
+    {
+      "figure": "payTable",
+      "authority": "DFAS",
+      "document": "Basic Pay tables (CO, CO_FE, WO, EM), https://www.dfas.mil/Military-Members/payentitlements/Pay-Tables/Basic-Pay/ — captured 2026-08-05 to cowork/reference/dfas-2026/, hashes in that folder's MANIFEST.txt. 265 cells compared by tool/verify_dfas.dart, all matching.",
+      "date": "2026-08-05"
+    },
+    {
+      "figure": "siPayTables.avip*",
+      "authority": "DFAS",
+      "document": "Aviation Incentive Pay rate tables AVIP2/3/5/6/8, https://www.dfas.mil/militarymembers/payentitlements/Pay-Tables/ — captured 2026-08-05, hashes in cowork/reference/dfas-2026/MANIFEST.txt. All four shipped tables matched.",
+      "date": "2026-08-05"
+    },
+    {
+      "figure": "siPayTables.hdipParachuteHalo",
+      "authority": "DFAS",
+      "document": "Hazardous Duty Incentive Pay Rates, https://www.dfas.mil/militarymembers/payentitlements/Pay-Tables/HDIP — page states 'Page updated March 5, 2026'; captured to cowork/reference/dfas-2026/hdip-other-than-flight.html, sha256 d03f8d8e1c761bb5167884c509694b0db7c20748ff2e4551bfc16e68f5bb1a3c",
+      "date": "2026-03-05"
+    },
+    {
+      "figure": "sgli",
+      "authority": "US Department of Veterans Affairs",
+      "document": "Servicemembers' Group Life Insurance (SGLI), https://www.va.gov/life-insurance/options-eligibility/sgli/ — page states 'Last updated: September 19, 2025'; captured 2026-08-06 to cowork/reference/va-2026/sgli.html, sha256 bc63e9e343e1194c28fb068caa30b72a833b192e221135ba21c15b441eda9415",
+      "date": "2025-09-19"
+    },
+    {
+      "figure": "limits.catchUp50, limits.catchUp60to63",
+      "authority": "Internal Revenue Service",
+      "document": "IRS Notice 2025-67, issued 13 November 2025, https://www.irs.gov/pub/irs-drop/n-25-67.pdf",
+      "date": "2025-11-13"
+    },
+    {
+      "figure": "basicPayCapO7AndAboveMonthly, basicPayCapO6AndBelowMonthly",
+      "authority": "DFAS",
+      "document": "DFAS basic pay table notes 4 and 5 (Executive Schedule Level II and Level V), 37 U.S.C. 203(a)(2). NOT verified in the 2026-08-05 run — the captured pages carry the table rows, and these ceilings are stated in the notes rather than as cells.",
+      "date": "2026-08-05"
+    }
+  ],
   "publishedDate": "2026-01-01",
-  "notes": "rev 6 (v56 SS2, audit D-19): CATCH-UP CORRECTION. catchUp50 was 7500 flagged official:false — an estimate carried over from the prototype and never verified. The real CY2026 figure is 8000, transcribed from IRS Notice 2025-67 (issued 13 November 2025, https://www.irs.gov/pub/irs-drop/n-25-67.pdf; summary IR-2025-111 at https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500, which states the age-50 catch-up 'is increased to $8,000'). A member aged 50+ planning against 7500 left $500 of tax-advantaged room unused each year, silently and unrecoverably after 31 December. catchUp60to63 stays 11250 — the same notice states this higher limit 'remains $11,250' — and is now flagged official:true, which it always should have been. NOTE FOR ANYONE TEMPTED BY THE STATUTE: the super catch-up is defined as the greater of $10,000 or 150% of the standard catch-up, and 150% of 8000 is 12000, which is NOT the published 11250. Transcribe, never derive. rev 5 (v52-3): sgli block added — the VA-published SGLI premium table, transcribed verbatim from https://www.va.gov/life-insurance/options-eligibility/sgli/ (page states last updated 2025-09-19), carried as printed rather than derived from the rate; validation rejects any level that disagrees with the stated rate. rev 4 (v45 SS2): basicPayCapMonthly added — the statutory ceiling on monthly basic pay, 37 U.S.C. 203(a)(2) (O-7 through O-10 basic pay limited to Executive Schedule Level II). CY2026 figure $18,999.90/mo as printed in the official DFAS 2026 basic pay table, whose capped O-9/O-10 rows are already transcribed in this file's payTable — the key restates that in-file official figure with its rule; Cowork to verify against the DFAS table note verbatim. rev 3: axisDateLabel on the AvIP byYears tables (v25 SS4, additive). 3.8% raise per NDAA FY26; limits per IRS Notice 2025-67.",
+  "notes": "rev 8 (build 55): HALO / MILITARY FREE FALL PARACHUTE DUTY CORRECTED, 225 to 240. The superseded figure was 225, sourced to 'DoD FMR Vol 7A Ch 24 para 3.3.2 (June 2025 ed.)' — that edition is superseded and our copy of it was simply old. DFAS's current published page (updated 5 March 2026) prints 240 for the Military Free Fall row, and the ruling (DECISIONS.md D-17) is that where our source is a superseded FMR edition and DFAS's current page is later, the DFAS page is sufficient authority. This is NOT a general licence: two current sources disagreeing, or DFAS against a current FMR edition, still escalates to the user. MEMBER-VISIBLE: hdipParachuteHalo is an extra-pay category on the Pay screen, so a member on military free-fall status was planning against 15/mo — 180/yr — LESS contribution room than DFAS publishes. The correction gives them more room, not less. Found by tool/verify_dfas.dart comparing every shipped figure against the captured DFAS pages; 271 others matched exactly. NOT corrected in the same pass and deliberately still absent: DFAS also publishes an Army-specific static-line rate effective Oct 1 2025 to May 20 2029 which this file does not carry — see EXTERNAL-DATA-REGISTER.md, it is a schema/shape change (branch- and date-aware rates) rather than a transcription, and it is knowingly deferred rather than undiscovered. rev 7 (v57 SS3): basicPayCapMonthly RENAMED to basicPayCapO7AndAboveMonthly. Value, official flag and source are all unchanged — this is a naming correction only. The old name read as a single universal ceiling on basic pay; there are two, and this one binds O-7 through O-10 (Executive Schedule Level II) while basicPayCapO6AndBelowMonthly binds O-6 and below (Level V). A name that hides which grades a ceiling applies to is how the wrong one gets used. Neither is ever scaled by projectedRaisePct. rev 6 (v56 SS2, audit D-19): CATCH-UP CORRECTION. catchUp50 was 7500 flagged official:false — an estimate carried over from the prototype and never verified. The real CY2026 figure is 8000, transcribed from IRS Notice 2025-67 (issued 13 November 2025, https://www.irs.gov/pub/irs-drop/n-25-67.pdf; summary IR-2025-111 at https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500, which states the age-50 catch-up is increased — to the figure now carried in limits.catchUp50, cited in sources). A member aged 50+ planning against the old estimate left tax-advantaged room unused each year, silently and unrecoverably after 31 December — the shortfall being the difference between the two figures, both of which are in limits and in the verification record rather than restated here. catchUp60to63 is unchanged — the same notice states this higher limit remains at its prior value — and is now flagged official:true, which it always should have been. NOTE FOR ANYONE TEMPTED BY THE STATUTE: the super catch-up is defined as the greater of a fixed statutory floor or 150% of the standard catch-up — and computing 150% of the current standard catch-up does NOT reproduce the published super catch-up. The two disagree. Transcribe, never derive; the published figures are in limits. Transcribe, never derive. rev 5 (v52-3): sgli block added — the VA-published SGLI premium table, transcribed verbatim from https://www.va.gov/life-insurance/options-eligibility/sgli/ (page states last updated 2025-09-19), carried as printed rather than derived from the rate; validation rejects any level that disagrees with the stated rate. rev 4 (v45 SS2): basicPayCapMonthly added — the statutory ceiling on monthly basic pay, 37 U.S.C. 203(a)(2) (O-7 through O-10 basic pay limited to Executive Schedule Level II). the CY2026 monthly figure as printed in the official DFAS 2026 basic pay table, whose capped O-9/O-10 rows are already transcribed in this file's payTable — the key restates that in-file official figure with its rule, and the figure itself lives in basicPayCapO7AndAboveMonthly rather than being repeated here. rev 3: axisDateLabel on the AvIP byYears tables (v25 SS4, additive). 3.8% raise per NDAA FY26; limits per IRS Notice 2025-67.",
   "limits": {
     "electiveDeferral": {
       "amount": 24500,
@@ -29,7 +68,7 @@
   "sgli": {
     "official": true,
     "asOf": "2025-09-19",
-    "source": "VA, \"Servicemembers' Group Life Insurance (SGLI)\", https://www.va.gov/life-insurance/options-eligibility/sgli/ — premium rate table transcribed verbatim; page states \"Last updated: September 19, 2025\". Coverage is offered to $500,000 in $50,000 increments at 5 cents per $1,000 per month, plus $1.00 per month for Traumatic Injury Protection (TSGLI). Cowork to verify against the page.",
+    "source": "VA, \"Servicemembers' Group Life Insurance (SGLI)\", https://www.va.gov/life-insurance/options-eligibility/sgli/ — premium rate table transcribed verbatim; page states \"Last updated: September 19, 2025\". Coverage is offered to $500,000 in $50,000 increments at 5 cents per $1,000 per month, plus $1.00 per month for Traumatic Injury Protection (TSGLI). VERIFIED FIRST-PARTY 2026-08-06 (v57 §9.1): va.gov answered 200 — it is not DFAS and does not refuse scripted requests — and the page was captured to cowork/reference/va-2026/sgli.html, sha256 bc63e9e343e1194c28fb068caa30b72a833b192e221135ba21c15b441eda9415. All ten coverage levels, the 0.05 per-$1,000 rate, the $1.00 TSGLI charge and the 2025-09-19 date match the live page exactly. The prior 'Cowork to verify' clause is discharged.",
     "ratePer1000Monthly": 0.05,
     "tsgliMonthly": 1.00,
     "levels": [
@@ -46,7 +85,7 @@
     ]
   },
   "hfpMonthly": 225,
-  "basicPayCapMonthly": { "amount": 18999.90, "official": true },
+  "basicPayCapO7AndAboveMonthly": { "amount": 18999.90, "official": true },
   "basicPayCapO6AndBelowMonthly": { "amount": 15408.30, "official": true },
   "projectedRaisePct": 4.16,
   "payTable": {
@@ -1267,9 +1306,9 @@
     "hdipParachuteHalo": {
       "label": "Parachute duty (military free fall / HALO)",
       "kind": "flat",
-      "amount": 225,
+      "amount": 240,
       "official": true,
-      "source": "DoD FMR Vol 7A Ch 24 para 3.3.2 (June 2025 ed.)"
+      "source": "DFAS Hazardous Duty Incentive Pay Rates, https://www.dfas.mil/militarymembers/payentitlements/Pay-Tables/HDIP — page states 'Page updated March 5, 2026'; row 'Parachute Duty / Military Free Fall'. Captured 2026-08-05 as cowork/reference/dfas-2026/hdip-other-than-flight.html, sha256 d03f8d8e1c761bb5167884c509694b0db7c20748ff2e4551bfc16e68f5bb1a3c (see that folder's MANIFEST.txt). The page cites DoD FMR Vol. 7A, Chapter 24."
     },
     "hdipDemolition": {
       "label": "Demolition duty",

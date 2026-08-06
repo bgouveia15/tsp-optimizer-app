@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "year": 2027,
-  "rev": 8,
+  "rev": 10,
   "derivedFrom": {
     "sourceYear": 2026,
-    "sourceRev": 11,
+    "sourceRev": 12,
     "generator": "tool/project_year.dart",
     "generatedOn": "2026-08-06",
     "assumption": "basic pay scaled by the source file's projectedRaiseToNextYearPct of 4.16%, rounded to the cent, clamped at the Executive Schedule Level II ceiling where a row would exceed it. Special and incentive pay rates are NOT scaled — they are fixed statutory amounts carried forward as published. IRS limits are held at the prior value and marked not-official rather than projected. Nothing here is transcribed from a publisher; this file is a projection and every figure in it should be replaced by transcription when the real tables publish.",
@@ -1386,7 +1386,8 @@
       "turnover": "fixed",
       "authorityExpiresOn": "2026-12-31",
       "_authority": "Duration of Authority, Chapter 10 Special Pay - Duty Subject to Hostile Fire or Imminent Danger, Hostile Fire Pay (HFP) — table rows 3-26, merged END DATE cell (rowspan 24), verified from the markup rather than from reading order.",
-      "_note": "§3.7e: this figure still has no transcribed statutory SOURCE for its amount. That is unchanged and is not this round's job. Its shape now matches everything else so it can hold a state; no source was invented to make it validate."
+      "effectiveFrom": "2024-10-01",
+      "_note": "build 57: the 'no transcribed SOURCE' gap recorded here since §3.7e is CLOSED — FMR Vol 7A Ch 10 para 2.1.1 states the rate outright, and Table 1-10 note 3 corroborates it in the app's own use (the officer combat-zone ceiling). See the sources entry. effectiveFrom is the captured chapter edition's date, which is the earliest date this rate is EVIDENCED here — the chapter states the rate without stating when it took effect, so this is a floor, not a claim about when Congress set it."
     },
     "_limitsWindowNote": "build 57 §2: the five limits' windows are transcribed from IRS Notice 2025-67 itself — heading 'Cost-of-Living Adjusted Limitations for 2026', opening sentence 'Effective January 1, 2026', each amount stated 'for 2026'. The notice designates a calendar plan year rather than printing an end date; the window below is that stated year and nothing else. Citation with page numbers and file hash in the sources entry and in PAY-AND-LIMIT-VERIFICATION-RECORD.md.",
     "limits.electiveDeferral": {

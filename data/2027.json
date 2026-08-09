@@ -1041,6 +1041,7 @@
   "siPayTables": {
     "avipArmyOfficer": {
       "label": "Flight pay (AvIP) — Army officer",
+      "services": ["army"],
       "kind": "byYears",
       "axisLabel": "years of aviation service",
       "axisDateLabel": "Date you entered aviation service (ASED)",
@@ -1075,6 +1076,7 @@
     },
     "avipNavyOfficer": {
       "label": "Flight pay (AvIP) — Navy officer",
+      "services": ["navy"],
       "kind": "byYears",
       "axisLabel": "years of aviation service",
       "axisDateLabel": "Date you entered aviation service (ASED)",
@@ -1125,6 +1127,7 @@
     },
     "avipAirForce": {
       "label": "Flight pay (AvIP) — Air Force",
+      "services": ["airforce"],
       "kind": "byYears",
       "axisLabel": "years of aviation service",
       "axisDateLabel": "Date you entered aviation service (ASED)",
@@ -1159,6 +1162,7 @@
     },
     "avipMarineOfficer": {
       "label": "Flight pay (AvIP) — Marine Corps officer",
+      "services": ["marines"],
       "kind": "byYears",
       "axisLabel": "years of aviation service",
       "axisDateLabel": "Date you entered aviation service (ASED)",
@@ -1274,6 +1278,53 @@
       "amount": 150,
       "official": true,
       "source": "DoD FMR Vol 7A Ch 24 Tables 24-2/24-3 (June 2025 ed.)"
+    },
+    "hdipParachuteArmyStaticLine": {
+      "label": "Parachute duty (static line) — Army",
+      "kind": "flat",
+      "services": ["army"],
+      "amount": 200,
+      "official": false,
+      "source": "CARRIED FORWARD from 2026, not separately published for 2027. The publisher's own window on this rate runs 1 Oct 2025 – 20 May 2029, which SPANS 2027 — this is the one carried rate whose source states it is still in force in the carried year. DFAS Hazardous Duty Incentive Pay Rates, page updated March 5, 2026, row 'Parachute Duty / Army Static Line (Oct. 1, 2025-May 20, 2029)'; captured 2026-08-05 as cowork/reference/dfas-2026/hdip-other-than-flight.html, sha256 d03f8d8e1c761bb5167884c509694b0db7c20748ff2e4551bfc16e68f5bb1a3c."
+    },
+    "hdipFlyingCrewDfas": {
+      "label": "HDIP for flying — air crew (DFAS, Army / Navy / Air Force)",
+      "kind": "flat",
+      "services": ["army", "navy", "airforce"],
+      "amount": 250,
+      "official": false,
+      "source": "CARRIED FORWARD from 2026, not separately published for 2027. DFAS 'Army, Navy and Air Force Monthly Hazardous Duty Incentive Pay', page updated September 12, 2025, row 'OFFICERS and ENLISTED AIR CREW'; captured 2026-08-05 as cowork/reference/dfas-2026/hdip-flying-army-navy-af.html, sha256 d14a83455f2182edb7b160e00f9a5e219f3c3126927b99770c1c022608e9cc9e."
+    },
+    "hdipFlyingNonCrewDfas": {
+      "label": "HDIP for flying — non-air crew (DFAS, Army / Navy / Air Force)",
+      "kind": "flat",
+      "services": ["army", "navy", "airforce"],
+      "amount": 150,
+      "official": false,
+      "source": "CARRIED FORWARD from 2026, not separately published for 2027. Same page and capture as hdipFlyingCrewDfas, row 'OFFICERS and ENLISTED NON-AIR CREW'."
+    },
+    "hdipFlyingCrewDfasMarines": {
+      "label": "HDIP for flying — crew member (DFAS, Marine Corps)",
+      "kind": "byYears",
+      "services": ["marines"],
+      "axisLabel": "years of service",
+      "rows": [
+        [0, 150],
+        [2, 165],
+        [4, 190],
+        [8, 215],
+        [12, 240]
+      ],
+      "official": false,
+      "source": "CARRIED FORWARD from 2026, not separately published for 2027. DFAS 'Marine Corps Monthly Hazardous Duty Incentive Pay for Flying', page updated September 19, 2025; captured 2026-08-05 as cowork/reference/dfas-2026/hdip-flying-marines.html, sha256 685fde34fa51a5ed8064b9cdfba5675f80e771685826e72cb708daff930caf93. THE AXIS IS YEARS OF SERVICE, not years of aviation service."
+    },
+    "hdipFlyingNonCrewDfasMarines": {
+      "label": "HDIP for flying — non-crew member (DFAS, Marine Corps)",
+      "kind": "flat",
+      "services": ["marines"],
+      "amount": 150,
+      "official": false,
+      "source": "CARRIED FORWARD from 2026, not separately published for 2027. Same page and capture as hdipFlyingCrewDfasMarines, row 'NON-CREWMEMBER OFFICER AND ENLISTED $150'."
     }
   },
   "sgli": {
@@ -1371,6 +1422,35 @@
       "turnover": "fixed",
       "authorityExpiresOn": "2026-12-31",
       "_authority": "Duration of Authority, Chapter 24 Incentive Pay - Hazardous Duty Other Than Aerial Flights, Parachute Duty."
+    },
+    "siPayTables.hdipParachuteArmyStaticLine": {
+      "effectiveFrom": "2025-10-01",
+      "effectiveTo": "2029-05-20",
+      "turnover": "fixed",
+      "valueCarriedForward": true,
+      "authorityExpiresOn": "2026-12-31",
+      "_note": "build 73 §5. Carried forward from 2026 — and it is the one carried S&I rate whose PUBLISHER states a window covering the carried year, since 'Oct. 1, 2025-May 20, 2029' spans 2027 on its face. That is a stronger footing than a bare carry-forward and is why the window is repeated here rather than dropped. The authority clock is unaffected and still expires 2026-12-31: being inside the rate window says nothing about whether the entitlement is authorized."
+    },
+    "siPayTables.hdipFlyingCrewDfas": {
+      "turnover": "fixed",
+      "valueCarriedForward": true,
+      "authorityExpiresOn": "2026-12-31",
+      "_note": "build 73 §4/§5. Carried forward from 2026. NO effectiveFrom — the DFAS flying pages state no effective date, and their 'Page updated' line is when the page changed, not when the rate took effect."
+    },
+    "siPayTables.hdipFlyingNonCrewDfas": {
+      "turnover": "fixed",
+      "valueCarriedForward": true,
+      "authorityExpiresOn": "2026-12-31"
+    },
+    "siPayTables.hdipFlyingCrewDfasMarines": {
+      "turnover": "fixed",
+      "valueCarriedForward": true,
+      "authorityExpiresOn": "2026-12-31"
+    },
+    "siPayTables.hdipFlyingNonCrewDfasMarines": {
+      "turnover": "fixed",
+      "valueCarriedForward": true,
+      "authorityExpiresOn": "2026-12-31"
     },
     "siPayTables.hdipParachuteHalo": {
       "turnover": "fixed",

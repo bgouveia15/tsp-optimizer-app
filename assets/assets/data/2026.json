@@ -56,6 +56,18 @@
       "date": "2026-08-06"
     },
     {
+      "figure": "siPayTables.hdipParachuteArmyStaticLine",
+      "authority": "DFAS",
+      "document": "Hazardous Duty Incentive Pay Rates, https://www.dfas.mil/militarymembers/payentitlements/Pay-Tables/HDIP — page states 'Page updated March 5, 2026'; row 'Parachute Duty / Army Static Line (Oct. 1, 2025-May 20, 2029)'. Captured 2026-08-05 as cowork/reference/dfas-2026/hdip-other-than-flight.html, sha256 d03f8d8e1c761bb5167884c509694b0db7c20748ff2e4551bfc16e68f5bb1a3c. TRANSCRIBED AT BUILD 73, having been deliberately deferred at build 57 for the reason the register records: siPayTables had no notion of branch or of an effective window, and giving one entry a service dimension while its siblings lacked one was judged worse than the honest gap. This round gave every entry that dimension, so the gap closes as a transcription rather than as a special case. CROSS-CHECK: the same page's unqualified 'Static Line' row reads 150 and the app's hdipParachute carries 150, so the two rows on one page corroborate each other's transcription.",
+      "date": "2026-08-08"
+    },
+    {
+      "figure": "siPayTables.hdipFlyingCrewDfas, siPayTables.hdipFlyingNonCrewDfas, siPayTables.hdipFlyingCrewDfasMarines, siPayTables.hdipFlyingNonCrewDfasMarines",
+      "authority": "DFAS",
+      "document": "Two pages. 'Army, Navy and Air Force Monthly Hazardous Duty Incentive Pay', page updated September 12, 2025, captured as cowork/reference/dfas-2026/hdip-flying-army-navy-af.html, sha256 d14a83455f2182edb7b160e00f9a5e219f3c3126927b99770c1c022608e9cc9e — air crew 250, non-air crew 150, flat. 'Marine Corps Monthly Hazardous Duty Incentive Pay for Flying', page updated September 19, 2025, captured as cowork/reference/dfas-2026/hdip-flying-marines.html, sha256 685fde34fa51a5ed8064b9cdfba5675f80e771685826e72cb708daff930caf93 — crewmember by years of service (<2 150, over 2 165, over 4 190, over 8 215, over 12 240), non-crewmember 150 flat. BOTH CAPTURES RE-VERIFIED AGAINST THIS MANIFEST AT TRANSCRIPTION TIME, all seven S&I captures hashing clean. STORED, NOT CHOSEN (build 73 §4): the app continues to show the FMR by-grade transcription it has always shown, and the conflict between these shapes and the FMR's remains ESCALATED under D-17. What changes is that both shapes are now representable, so the ruling when it comes is a data change and not a code change. CROSS-CHECK WORTH RECORDING: the Marine page's five by-YOS amounts (150/165/190/215/240) are the same five distinct amounts the FMR's enlisted by-grade rows carry. That is a corroboration of the transcription, NOT evidence the two shapes agree — they place the same amounts on different axes, which is precisely the conflict.",
+      "date": "2026-08-08"
+    },
+    {
       "figure": "limits.* effective windows (all five)",
       "authority": "Internal Revenue Service",
       "document": "IRS Notice 2025-67 — captured to cowork/reference/irs-2026/n-25-67.pdf, sha256 1eea8f141b0cddd182f9f09b3bc8ffad683d27ceb806dfc6da126811dc0a1f8d, provenance proven by re-fetch (bytes identical to irs.gov). Window transcribed from the notice's own designation: heading 'Cost-of-Living Adjusted Limitations for 2026', opening 'Effective January 1, 2026' (p.1); 415(c) $72,000 'increased in 2026' (p.1); 402(g) $24,500 and 414(v)(2)(B)(i) $8,000 (p.1); 414(v)(2)(E)(i) 'remains $11,250' for those attaining 60-63 in 2026 and the $150,000 Roth catch-up wage threshold governing 2026 (p.2). All five amounts re-verified against the app's copies during this transcription: all match.",
@@ -114,6 +126,34 @@
       "turnover": "fixed",
       "authorityExpiresOn": "2026-12-31",
       "_authority": "Duration of Authority, Chapter 24 Incentive Pay - Hazardous Duty Other Than Aerial Flights, Parachute Duty."
+    },
+    "siPayTables.hdipParachuteArmyStaticLine": {
+      "effectiveFrom": "2025-10-01",
+      "effectiveTo": "2029-05-20",
+      "turnover": "fixed",
+      "authorityExpiresOn": "2026-12-31",
+      "_note": "build 73 §5. THE PUBLISHER PRINTS THIS WINDOW IN THE ROW LABEL ITSELF — 'Army Static Line (Oct. 1, 2025-May 20, 2029)' — which is the only rate on that page carrying one. Transcribed from the label, not inferred. The two clocks stay independent: the rate window runs to 2029 while the AUTHORITY to pay parachute duty at all is on the same Chapter 24 expiry as its siblings, so a member can be inside the rate window and outside the authority."
+    },
+    "siPayTables.hdipFlyingCrewDfas": {
+      "turnover": "fixed",
+      "authorityExpiresOn": "2026-12-31",
+      "_authority": "Duration of Authority, Chapter 22 — same authority row as the FMR-shaped flying figures; it is the entitlement that is authorized, not a publisher's table.",
+      "_note": "build 73 §4/§5. NO effectiveFrom: the DFAS flying pages state no effective date (the build 57 finding, still true of them at this capture). 'Page updated September 12, 2025' is when the PAGE changed, which is not when the RATE took effect, and recording it as one would be the same mistake in the other direction. NOT ESTABLISHED rather than guessed."
+    },
+    "siPayTables.hdipFlyingNonCrewDfas": {
+      "turnover": "fixed",
+      "authorityExpiresOn": "2026-12-31",
+      "_note": "Same page and same silence on the effective date as hdipFlyingCrewDfas."
+    },
+    "siPayTables.hdipFlyingCrewDfasMarines": {
+      "turnover": "fixed",
+      "authorityExpiresOn": "2026-12-31",
+      "_note": "Same silence on the effective date; 'Page updated September 19, 2025' is a page date, not a rate date."
+    },
+    "siPayTables.hdipFlyingNonCrewDfasMarines": {
+      "turnover": "fixed",
+      "authorityExpiresOn": "2026-12-31",
+      "_note": "Same silence on the effective date."
     },
     "siPayTables.hdipParachuteHalo": {
       "turnover": "fixed",
@@ -1219,6 +1259,7 @@
   "siPayTables": {
     "avipArmyOfficer": {
       "label": "Flight pay (AvIP) — Army officer",
+      "services": ["army"],
       "kind": "byYears",
       "axisLabel": "years of aviation service",
       "axisDateLabel": "Date you entered aviation service (ASED)",
@@ -1253,6 +1294,7 @@
     },
     "avipNavyOfficer": {
       "label": "Flight pay (AvIP) — Navy officer",
+      "services": ["navy"],
       "kind": "byYears",
       "axisLabel": "years of aviation service",
       "axisDateLabel": "Date you entered aviation service (ASED)",
@@ -1303,6 +1345,7 @@
     },
     "avipAirForce": {
       "label": "Flight pay (AvIP) — Air Force",
+      "services": ["airforce"],
       "kind": "byYears",
       "axisLabel": "years of aviation service",
       "axisDateLabel": "Date you entered aviation service (ASED)",
@@ -1337,6 +1380,7 @@
     },
     "avipMarineOfficer": {
       "label": "Flight pay (AvIP) — Marine Corps officer",
+      "services": ["marines"],
       "kind": "byYears",
       "axisLabel": "years of aviation service",
       "axisDateLabel": "Date you entered aviation service (ASED)",
@@ -1452,6 +1496,53 @@
       "amount": 150,
       "official": true,
       "source": "DoD FMR Vol 7A Ch 24 Tables 24-2/24-3 (June 2025 ed.)"
+    },
+    "hdipParachuteArmyStaticLine": {
+      "label": "Parachute duty (static line) — Army",
+      "kind": "flat",
+      "services": ["army"],
+      "amount": 200,
+      "official": true,
+      "source": "DFAS Hazardous Duty Incentive Pay Rates, https://www.dfas.mil/militarymembers/payentitlements/Pay-Tables/HDIP — page states 'Page updated March 5, 2026'; row 'Parachute Duty / Army Static Line (Oct. 1, 2025-May 20, 2029)'. Captured 2026-08-05 as cowork/reference/dfas-2026/hdip-other-than-flight.html, sha256 d03f8d8e1c761bb5167884c509694b0db7c20748ff2e4551bfc16e68f5bb1a3c (see that folder's MANIFEST.txt). The publisher prints the effective window in the row label itself; it is on this figure's clocks."
+    },
+    "hdipFlyingCrewDfas": {
+      "label": "HDIP for flying — air crew (DFAS, Army / Navy / Air Force)",
+      "kind": "flat",
+      "services": ["army", "navy", "airforce"],
+      "amount": 250,
+      "official": true,
+      "source": "DFAS 'Army, Navy and Air Force Monthly Hazardous Duty Incentive Pay', https://www.dfas.mil/militarymembers/payentitlements/Pay-Tables/ — page states 'Page updated September 12, 2025'; row 'OFFICERS and ENLISTED AIR CREW'. Captured 2026-08-05 as cowork/reference/dfas-2026/hdip-flying-army-navy-af.html, sha256 d14a83455f2182edb7b160e00f9a5e219f3c3126927b99770c1c022608e9cc9e. The page cites DoD FMR Volume 7A Chapter 22. ONE PAGE COVERS THREE SERVICES AND IS TRANSCRIBED THAT WAY — see the register."
+    },
+    "hdipFlyingNonCrewDfas": {
+      "label": "HDIP for flying — non-air crew (DFAS, Army / Navy / Air Force)",
+      "kind": "flat",
+      "services": ["army", "navy", "airforce"],
+      "amount": 150,
+      "official": true,
+      "source": "DFAS 'Army, Navy and Air Force Monthly Hazardous Duty Incentive Pay', https://www.dfas.mil/militarymembers/payentitlements/Pay-Tables/ — page states 'Page updated September 12, 2025'; row 'OFFICERS and ENLISTED NON-AIR CREW'. Captured 2026-08-05 as cowork/reference/dfas-2026/hdip-flying-army-navy-af.html, sha256 d14a83455f2182edb7b160e00f9a5e219f3c3126927b99770c1c022608e9cc9e."
+    },
+    "hdipFlyingCrewDfasMarines": {
+      "label": "HDIP for flying — crew member (DFAS, Marine Corps)",
+      "kind": "byYears",
+      "services": ["marines"],
+      "axisLabel": "years of service",
+      "rows": [
+        [0, 150],
+        [2, 165],
+        [4, 190],
+        [8, 215],
+        [12, 240]
+      ],
+      "official": true,
+      "source": "DFAS 'Marine Corps Monthly Hazardous Duty Incentive Pay for Flying', https://www.dfas.mil/militarymembers/payentitlements/Pay-Tables/ — page states 'Page updated September 19, 2025'; rows 'CREWMEMBER OFFICER AND ENLISTED' by years of service ('< 2 YOS' 150, 'Over 2 YOS' 165, 'Over 4 YOS' 190, 'Over 8 YOS' 215, 'Over 12 YOS' 240). Captured 2026-08-05 as cowork/reference/dfas-2026/hdip-flying-marines.html, sha256 685fde34fa51a5ed8064b9cdfba5675f80e771685826e72cb708daff930caf93. The page cites DoD FMR Volume 7A Chapter 22. THE AXIS IS YEARS OF SERVICE, not years of aviation service — the Marine page keys this pay differently from every AvIP page."
+    },
+    "hdipFlyingNonCrewDfasMarines": {
+      "label": "HDIP for flying — non-crew member (DFAS, Marine Corps)",
+      "kind": "flat",
+      "services": ["marines"],
+      "amount": 150,
+      "official": true,
+      "source": "DFAS 'Marine Corps Monthly Hazardous Duty Incentive Pay for Flying', https://www.dfas.mil/militarymembers/payentitlements/Pay-Tables/ — page states 'Page updated September 19, 2025'; row 'NON-CREWMEMBER OFFICER AND ENLISTED $150'. Captured 2026-08-05 as cowork/reference/dfas-2026/hdip-flying-marines.html, sha256 685fde34fa51a5ed8064b9cdfba5675f80e771685826e72cb708daff930caf93."
     }
   }
 }

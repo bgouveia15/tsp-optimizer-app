@@ -118386,7 +118386,7 @@ return A.yf(A.pm(new A.ZB(b==null?B.ah:b,null),r),1.3,1)},
 $S:65}
 A.ZB.prototype={
 F(a){var s=null,r=A.bx(a,B.cy,t.w).w,q=B.l.AP(0.55),p=A.ab(999)
-return A.iz(B.cg,A.b([this.c,A.lX(48+r.r.d+6,A.hq(A.aq(s,A.i("b84",B.aiK,s,s,s,B.abJ,s,s,s),B.i,s,s,new A.at(q,s,s,p,s,s,B.r),s,s,s,s,B.mW,s,s,s),!0,s),s,s,s,6,s,s)],t.p),B.L,B.cb,s)}}
+return A.iz(B.cg,A.b([this.c,A.lX(48+r.r.d+6,A.hq(A.aq(s,A.i("b85",B.aiK,s,s,s,B.abJ,s,s,s),B.i,s,s,new A.at(q,s,s,p,s,s,B.r),s,s,s,s,B.mW,s,s,s),!0,s),s,s,s,6,s,s)],t.p),B.L,B.cb,s)}}
 A.zs.prototype={
 cO(){var s,r=this,q=A.r(t.N,t.z)
 q.k(0,"period",r.a)
@@ -120334,7 +120334,7 @@ A.kd.prototype={
 F(a){var s=null,r=A.ab(12),q=A.ab(12),p=A.cx(B.I,1),o=A.ab(12),n=t.p
 return new A.t(B.t2,A.ds(!1,B.T,!0,r,A.au(!1,q,!0,A.aq(s,A.aV(A.b([A.b8(A.aT(A.b([A.i(this.c,s,s,s,s,B.u.hP(B.a1),s,s,s),new A.t(B.ai,A.i(this.d,s,s,s,s,B.f,s,s,s),s)],n),B.O,s,B.h,B.o),1),B.nM],n),B.t,s,B.h,B.o,s),B.i,s,s,new A.at(s,s,p,o,s,s,B.r),s,s,s,s,B.N0,s,s,s),s,!0,s,s,s,s,s,s,s,s,this.e,s,s,s),B.i,B.m,0,s,s,s,s,s,B.aO),s)}}
 A.YJ.prototype={
-F(a){var s=null,r=$.l4!=null?A.I().c.h(0,A.Y(A.I().b.$0())):s,q=t.p,p=A.b([B.dL,A.i("Mil Pay Planner Beta",s,s,s,s,B.u.hP(B.a1),s,s,s),new A.t(B.ai,A.i("Version 1.0.0 \xb7 Build 84",B.ajy,s,s,s,B.f,s,s,s),s),new A.t(B.aD,A.i("This app works out how much to put into your TSP each month, and what to enter in MyPay to make it happen. It reads the numbers off your own Leave and Earnings Statement so you are planning against what you are actually paid, not an estimate.",s,s,s,s,B.u,s,s,s),s)],q),o=r==null,n=A.b([new A.t(B.P,A.i(o?"Pay tables and contribution limits come from the app's yearly data file.":"Pay tables and contribution limits for "+A.Y(A.I().b.$0())+" come from the app's yearly data file (revision "+r.c+", published "+r.d+"). In its own words:",s,s,s,s,B.u,s,s,s),s)],q)
+F(a){var s=null,r=$.l4!=null?A.I().c.h(0,A.Y(A.I().b.$0())):s,q=t.p,p=A.b([B.dL,A.i("Mil Pay Planner Beta",s,s,s,s,B.u.hP(B.a1),s,s,s),new A.t(B.ai,A.i("Version 1.0.0 \xb7 Build 85",B.ajy,s,s,s,B.f,s,s,s),s),new A.t(B.aD,A.i("This app works out how much to put into your TSP each month, and what to enter in MyPay to make it happen. It reads the numbers off your own Leave and Earnings Statement so you are planning against what you are actually paid, not an estimate.",s,s,s,s,B.u,s,s,s),s)],q),o=r==null,n=A.b([new A.t(B.P,A.i(o?"Pay tables and contribution limits come from the app's yearly data file.":"Pay tables and contribution limits for "+A.Y(A.I().b.$0())+" come from the app's yearly data file (revision "+r.c+", published "+r.d+"). In its own words:",s,s,s,s,B.u,s,s,s),s)],q)
 if(!o)n.push(new A.t(B.P,A.i(r.e,B.ahp,s,s,s,B.f,s,s,s),s))
 return A.h9(A.b([new A.cf("About this app",!0,p,s),new A.cf("Where the figures come from",!0,n,s),new A.cf("Please read",!0,A.b([new A.t(B.P,A.i("This app is not affiliated with, endorsed by, or connected to DFAS, the Department of Defense, or the Federal Retirement Thrift Investment Board. It is a planning tool. The figures it shows are yours to check against your own statement and MyPay before you act on them.",B.aiu,s,s,s,B.u,s,s,s),s)],q),s)],q),s,B.ahC,B.ew,s,!1)}}
 A.a7m.prototype={
@@ -126174,7 +126174,7 @@ return A.Tl(this.b,r,s.w)},
 $S:0}
 A.Yl.prototype={
 F(a){var s=null,r=A.a93(a).a
-return new A.t(new A.a9(0,18,0,r[2]-r[0]+8),A.hk(A.i("Version 1.0.0 \xb7 Build 84",B.ahl,s,s,s,B.f.eR(B.E,11),B.aP,s,s),s,s),s)}}
+return new A.t(new A.a9(0,18,0,r[2]-r[0]+8),A.hk(A.i("Version 1.0.0 \xb7 Build 85",B.ahl,s,s,s,B.f.eR(B.E,11),B.aP,s,s),s,s),s)}}
 A.tF.prototype={
 bR(a){var s=a.a,r=this.a,q=s[8]
 r.$flags&2&&A.f(r)

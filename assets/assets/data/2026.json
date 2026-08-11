@@ -1346,6 +1346,8 @@
     "avipAirForce": {
       "label": "Flight pay (AvIP) — Air Force",
       "services": ["airforce"],
+      "servicesUnconfirmed": ["spaceforce"],
+      "_scopeNote": "Ruled build 88 §8 (2026-08-10): a Space Force member may select this table; the UI must disclose the application is unconfirmed. The DFAS source names the Air Force only. When an official source (FMR Vol 7A Ch 22 / 37 USC) confirms Space Force, move the token into services and delete this entry.",
       "kind": "byYears",
       "axisLabel": "years of aviation service",
       "axisDateLabel": "Date you entered aviation service (ASED)",

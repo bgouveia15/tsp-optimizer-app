@@ -34,8 +34,77 @@
 
   <title>Mil Pay Planner Beta</title>
   <link rel="manifest" href="manifest.json">
+  <!--
+    round 136c R10 (P25; rulings 540 (c), 541 (a), 542; the spec table of
+    cowork/renders/round136c-startup/StartupLoader_v1.html governs): the
+    start-up loader, drawn by the page itself from the first paint, on the
+    navy screen — the app icon's three bars, motion B2 (a 2.4 s loop that
+    shows activity, never progress), held still under Reduce Motion. The
+    app's own first frame is the same drawing (lib/startup.dart), so there
+    is no grey between them. No outside address (T-26).
+  -->
+  <style>
+    html, body { margin: 0; height: 100%; background: #182430; }
+    #startup { position: fixed; inset: 0; z-index: 2147483647; background: #182430;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      padding: 0 36px; text-align: center; }
+    #startup .ldr { display: flex; align-items: flex-end; gap: 10px; height: 72px; }
+    #startup .ldr i { display: block; width: 18px; border-radius: 2px; background: #fff;
+      transform-origin: bottom; animation-duration: 2.4s; animation-iteration-count: infinite; }
+    #startup .ldr i:nth-child(1) { height: 42%; animation-name: b1; }
+    #startup .ldr i:nth-child(2) { height: 66%; animation-name: b2; }
+    #startup .ldr i:nth-child(3) { height: 100%; background: #F5D77A; animation-name: b3; }
+    @keyframes b1 { 0% { transform: scaleY(.12); animation-timing-function: cubic-bezier(.3,1.26,.6,1); }
+      24.0%, 61.5% { transform: scaleY(1); animation-timing-function: cubic-bezier(.5,0,.75,0); }
+      75.0%, 100% { transform: scaleY(.12); } }
+    @keyframes b2 { 0%, 10.4% { transform: scaleY(.12); animation-timing-function: cubic-bezier(.3,1.26,.6,1); }
+      34.4%, 61.5% { transform: scaleY(1); animation-timing-function: cubic-bezier(.5,0,.75,0); }
+      75.0%, 100% { transform: scaleY(.12); } }
+    @keyframes b3 { 0%, 20.8% { transform: scaleY(.12); animation-timing-function: cubic-bezier(.3,1.26,.6,1); }
+      44.8%, 61.5% { transform: scaleY(1); animation-timing-function: cubic-bezier(.5,0,.75,0); }
+      75.0%, 100% { transform: scaleY(.12); } }
+    @media (prefers-reduced-motion: reduce) { #startup .ldr i { animation: none; } }
+    #startup .m { font-family: system-ui, -apple-system, sans-serif; font-size: 16px;
+      line-height: 23px; color: #F1F4F6; max-width: 300px; }
+    #startup .e { margin-top: 14px; font-family: ui-monospace, monospace; font-size: 11.5px;
+      color: #93A4B2; max-width: 300px; overflow-wrap: anywhere; }
+  </style>
 </head>
 <body>
+  <div id="startup" aria-busy="true"><div class="ldr"><i></i><i></i><i></i></div></div>
+  <script>
+    // round 136c R10 (a): a failure BEFORE Dart's first frame replaces the
+    // loader with the failed start-up — the ruled sentence (pinned equal to
+    // lib/startup.dart's by test/startup_136c_test.dart) and the error's first
+    // line. The app's first frame removes the loader and disarms this; after
+    // it, Dart shows its own failure screen. Dart never reaches into the page.
+    (function () {
+      var SENTENCE = 'Something went wrong while opening. Restart the app to try again.';
+      var armed = true;
+      function fail(err) {
+        var box = document.getElementById('startup');
+        if (!armed || !box) return;
+        var line = String((err && (err.message || err)) || '').split('\n')[0];
+        if (line.length > 120) line = line.slice(0, 117) + '...';
+        box.removeAttribute('aria-busy');
+        box.textContent = '';
+        var m = document.createElement('div'); m.className = 'm'; m.textContent = SENTENCE;
+        var e = document.createElement('div'); e.className = 'e'; e.textContent = line;
+        box.appendChild(m); box.appendChild(e);
+      }
+      function onError(ev) { fail(ev.error || ev.message); }
+      function onRejection(ev) { fail(ev.reason); }
+      window.addEventListener('error', onError);
+      window.addEventListener('unhandledrejection', onRejection);
+      window.addEventListener('flutter-first-frame', function () {
+        armed = false;
+        window.removeEventListener('error', onError);
+        window.removeEventListener('unhandledrejection', onRejection);
+        var box = document.getElementById('startup');
+        if (box) box.remove();
+      });
+    })();
+  </script>
   <!--
     You can customize the "flutter_bootstrap.js" script.
     This is useful to provide a custom configuration to the Flutter loader

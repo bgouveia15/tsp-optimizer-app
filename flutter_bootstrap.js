@@ -74,10 +74,14 @@ if (!window._flutter) {
 _flutter.buildConfig = {"engineRevision":"69c8c61792f04cc809dfef0c910414fb9afc06cd","builds":[{"compileTarget":"dart2js","renderer":"canvaskit","mainJsPath":"main.dart.js"},{}],"useLocalCanvasKit":true};
 
 
+// round 146b D-4: NO `serviceWorkerSettings`. Passing it made the loader
+// register Flutter's generated flutter_service_worker.js — a stub that
+// unregisters itself (§0.6 measured it doing so) and is deprecated by the
+// loader's own warning. At the same scope it could unregister OUR worker,
+// web/shell_worker.js, which index.html registers after the first frame. The
+// stub file is still built and left alone. tool/shell_probe.sh step 1 proves
+// our worker survives a second load.
 _flutter.loader.load({
-  serviceWorkerSettings: {
-    serviceWorkerVersion: "3385831867" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */
-  },
   config: {
     // A path on our own origin. Nothing is served from it by design.
     fontFallbackBaseUrl: "assets/fonts/fallback/"

@@ -25,7 +25,16 @@
 
   <!-- iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!--
+    round 146 item 3 (611 (d), 569 (a), 572; D-1): the band behind the clock.
+    Navy from here, over the loader and the failure screen; the app turns the
+    theme colour light when the real app replaces the loader, through
+    lib/ui/startup_platform_web.dart. `default` and not `black-translucent`,
+    whose white clock would be unreadable over the light pages. One form,
+    UNVERIFIED ON A DEVICE until his walk (D-2).
+  -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#182430">
   <meta name="apple-mobile-web-app-title" content="Mil Pay Plan">
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 
@@ -47,9 +56,17 @@
     html, body { margin: 0; height: 100%; background: #182430; }
     #startup { position: fixed; inset: 0; z-index: 2147483647; background: #182430;
       display: flex; flex-direction: column; align-items: center; justify-content: center;
-      padding: 0 36px; text-align: center; }
-    #startup .ldr { display: flex; align-items: flex-end; gap: 10px; height: 72px; }
-    #startup .ldr i { display: block; width: 18px; border-radius: 2px; background: #fff;
+      padding: 0 30px; text-align: center; }
+    #startup .g { position: relative; display: flex; flex-direction: column; align-items: center; }
+    #startup .a { margin-top: 22px; font-family: system-ui, -apple-system, sans-serif;
+      font-size: 20px; font-weight: 600; letter-spacing: .01em; color: #F1F4F6; }
+    #startup .s { position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+      width: calc(100vw - 60px); margin-top: 26px; font-family: system-ui, -apple-system, sans-serif;
+      font-size: 15px; line-height: 1.4; color: #C9D3DC; }
+    #startup .l { display: block; margin: 0 auto; padding: 10px 24px 12px; border: 0; background: none;
+      color: #fff; font: inherit; text-decoration: underline; text-underline-offset: 3px; }
+    #startup .ldr { display: flex; align-items: flex-end; gap: 12px; height: 94px; }
+    #startup .ldr i { display: block; width: 23px; border-radius: 2px; background: #fff;
       transform-origin: bottom; animation-duration: 2.4s; animation-iteration-count: infinite; }
     #startup .ldr i:nth-child(1) { height: 42%; animation-name: b1; }
     #startup .ldr i:nth-child(2) { height: 66%; animation-name: b2; }
@@ -64,33 +81,136 @@
       44.8%, 61.5% { transform: scaleY(1); animation-timing-function: cubic-bezier(.5,0,.75,0); }
       75.0%, 100% { transform: scaleY(.12); } }
     @media (prefers-reduced-motion: reduce) { #startup .ldr i { animation: none; } }
-    #startup .m { font-family: system-ui, -apple-system, sans-serif; font-size: 16px;
-      line-height: 23px; color: #F1F4F6; max-width: 300px; }
-    #startup .e { margin-top: 14px; font-family: ui-monospace, monospace; font-size: 11.5px;
-      color: #93A4B2; max-width: 300px; overflow-wrap: anywhere; }
+    #startup .m { font-family: system-ui, -apple-system, sans-serif; font-size: 23px;
+      line-height: 1.3; font-weight: 600; color: #F1F4F6; max-width: 260px; }
+    #startup .n { margin-top: 10px; font-family: system-ui, -apple-system, sans-serif;
+      font-size: 17px; color: #C9D3DC; max-width: 260px; }
+    #startup .r { margin-top: 24px; width: 220px; padding: 13px 0; border: 0; border-radius: 12px;
+      background: #fff; color: #182430; font-family: system-ui, -apple-system, sans-serif;
+      font-size: 17px; font-weight: 700; }
+    #startup .e { margin-top: 22px; font-family: ui-monospace, monospace; font-size: 11.5px;
+      color: #93A4B2; max-width: 260px; overflow-wrap: anywhere; }
   </style>
 </head>
 <body>
-  <div id="startup" aria-busy="true"><div class="ldr"><i></i><i></i><i></i></div></div>
+  <div id="startup" aria-busy="true"><div class="g"><div class="ldr"><i></i><i></i><i></i></div><div class="a">Military Pay Planner</div></div></div>
   <script>
-    // round 136c R10 (a): a failure BEFORE Dart's first frame replaces the
-    // loader with the failed start-up — the ruled sentence (pinned equal to
-    // lib/startup.dart's by test/startup_136c_test.dart) and the error's first
-    // line. The app's first frame removes the loader and disarms this; after
-    // it, Dart shows its own failure screen. Dart never reaches into the page.
+    // round 136c R10 (a), round 146 item 1 (r41-fail, 611 (a)): a failure
+    // BEFORE Dart's first frame replaces the loader with the failed start-up —
+    // the two sentences (pinned equal to lib/startup.dart's by
+    // test/startup_146_test.dart), Reload, which reloads this page (since
+    // round 146b, clearing the offline shell first when the server answers), and the
+    // error's first line. The app's first frame removes the loader and disarms
+    // this; after it, Dart shows its own failure screen.
     (function () {
-      var SENTENCE = 'Something went wrong while opening. Restart the app to try again.';
+      var SENTENCE = 'Something went wrong while opening.';
+      var NEXT = 'Tap Reload to try again.';
+      var RELOAD = 'Reload';
+      var SLOW = 'Still loading. This may take a minute.';
       var armed = true;
+      // round 146 item 2 (r42-loader, 611 (g), D-6, D-7): after 15 s from the
+      // page's own start, the slow line under the name. It is placed outside
+      // the column's flow, so the bars do not move. The app's first frame and a
+      // failure each clear this, so it never shows beside the failure screen.
+      // round 146b D-8 (629 (a), "Yes, Reload clears it"): BOTH Reloads here,
+      // the failure's and the slow line's, clear the offline shell before they
+      // reload, but ONLY when the server answers: version.json (never stamped,
+      // so neither our worker nor the HTTP cache can answer it) is asked with
+      // no-store and a 3 s timeout, and only an ok, same-origin, unredirected
+      // answer that parses as JSON clears. A portal's page, a 5xx or no answer
+      // reloads WITHOUT clearing, since the network could not replace the set.
+      // navigator.onLine is not read: it is true on a portal and a dead line.
+      // The clear deletes our caches (the `shell-` prefix, 146b §2) and
+      // unregisters our worker, bounded at 2 s so a hung clear still reloads.
+      // lib/ui/startup_platform_web.dart does the same for the app's Reloads.
+      function serverAnswers() {
+        if (!window.fetch) return Promise.resolve(false);
+        var ctl = window.AbortController ? new AbortController() : null;
+        var init = { cache: 'no-store' };
+        if (ctl) init.signal = ctl.signal;
+        var timer = setTimeout(function () { if (ctl) ctl.abort(); }, 3000);
+        var asked = fetch('version.json', init).then(function (r) {
+          if (!r.ok || r.redirected || new URL(r.url).origin !== location.origin) return false;
+          return r.text().then(function (t) { JSON.parse(t); return true; });
+        }).catch(function () { return false; });
+        var late = new Promise(function (res) { setTimeout(function () { res(false); }, 3000); });
+        return Promise.race([asked, late]).then(function (v) { clearTimeout(timer); return v; });
+      }
+      function ours(r) {
+        var w = r.active || r.waiting || r.installing;
+        return !!w && /\/shell_worker\.js$/.test(new URL(w.scriptURL).pathname);
+      }
+      function clearShell() {
+        var work = Promise.all([
+          window.caches ? caches.keys().then(function (ks) {
+            return Promise.all(ks.filter(function (k) { return k.indexOf('shell-') === 0; })
+              .map(function (k) { return caches.delete(k); }));
+          }) : null,
+          navigator.serviceWorker ? navigator.serviceWorker.getRegistrations().then(function (rs) {
+            return Promise.all(rs.filter(ours).map(function (r) { return r.unregister(); }));
+          }) : null
+        ]).catch(function () {});
+        var bound = new Promise(function (res) { setTimeout(res, 2000); });
+        return Promise.race([work, bound]);
+      }
+      function reload() {
+        function go() { window.location.reload(); }
+        serverAnswers().then(function (yes) { return yes ? clearShell() : null; }).then(go, go);
+      }
+      // round 146b D-11, D-6: the offline shell's worker is registered AFTER the
+      // app's first frame, never before it and never blocking it, with
+      // updateViaCache 'none'. A worker already waiting, or one that reaches
+      // `installed` while this page runs (each load asks for an update check),
+      // is told to skipWaiting — but only
+      // while nothing else is installing (third review P-2 (b)); that install's
+      // own `installed` posts instead. Nothing listens for `controllerchange`,
+      // so nothing here can reload the page in a loop. A failed registration is
+      // silent and the app runs as it does without one.
+      function registerShell() {
+        if (!('serviceWorker' in navigator)) return;
+        navigator.serviceWorker.register('shell_worker.js', { updateViaCache: 'none' }).then(function (reg) {
+          function post() {
+            if (reg.waiting && !reg.installing) reg.waiting.postMessage('skipWaiting');
+          }
+          function watch(w) {
+            w.addEventListener('statechange', function () { if (w.state === 'installed') post(); });
+          }
+          if (reg.installing) watch(reg.installing);
+          reg.addEventListener('updatefound', function () { if (reg.installing) watch(reg.installing); });
+          post();
+          // register() resolves at once for a worker already registered, with
+          // no update check, and Chromium's own check after a navigation can
+          // come late (the probe saw none), so each load asks for one: past
+          // the HTTP cache, by updateViaCache 'none' (D-11, guard 1).
+          return reg.update();
+        }).catch(function () {});
+      }
+      function slow() {
+        var group = document.querySelector('#startup .g');
+        if (!armed || !group) return;
+        var s = document.createElement('div'); s.className = 's'; s.textContent = SLOW;
+        var l = document.createElement('button'); l.className = 'l'; l.type = 'button';
+        l.textContent = RELOAD;
+        l.addEventListener('click', reload);
+        s.appendChild(l);
+        group.appendChild(s);
+      }
+      var slowTimer = setTimeout(slow, Math.max(0, 15000 - performance.now()));
       function fail(err) {
         var box = document.getElementById('startup');
         if (!armed || !box) return;
+        clearTimeout(slowTimer);
         var line = String((err && (err.message || err)) || '').split('\n')[0];
         if (line.length > 120) line = line.slice(0, 117) + '...';
         box.removeAttribute('aria-busy');
         box.textContent = '';
         var m = document.createElement('div'); m.className = 'm'; m.textContent = SENTENCE;
+        var n = document.createElement('div'); n.className = 'n'; n.textContent = NEXT;
+        var r = document.createElement('button'); r.className = 'r'; r.type = 'button';
+        r.textContent = RELOAD;
+        r.addEventListener('click', reload);
         var e = document.createElement('div'); e.className = 'e'; e.textContent = line;
-        box.appendChild(m); box.appendChild(e);
+        box.appendChild(m); box.appendChild(n); box.appendChild(r); box.appendChild(e);
       }
       function onError(ev) { fail(ev.error || ev.message); }
       function onRejection(ev) { fail(ev.reason); }
@@ -98,10 +218,12 @@
       window.addEventListener('unhandledrejection', onRejection);
       window.addEventListener('flutter-first-frame', function () {
         armed = false;
+        clearTimeout(slowTimer);
         window.removeEventListener('error', onError);
         window.removeEventListener('unhandledrejection', onRejection);
         var box = document.getElementById('startup');
         if (box) box.remove();
+        registerShell();
       });
     })();
   </script>

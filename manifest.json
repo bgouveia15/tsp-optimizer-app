@@ -4,7 +4,7 @@
     "start_url": ".",
     "display": "standalone",
     "background_color": "#182430",
-    "theme_color": "#182430",
+    "theme_color": "#EEF1F4",
     "description": "Plan your TSP contributions from your own LES numbers.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,

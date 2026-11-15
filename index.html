@@ -34,7 +34,39 @@
     UNVERIFIED ON A DEVICE until his walk (D-2).
   -->
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="theme-color" content="#182430">
+  <!-- Round 164 item 12 - `r70-band` B (ruling 711 (a)): navy -> #EEF1F4,
+       `Tok.paper`'s own value, so the strip over the app's pages is paper
+       rather than navy. LOW, web-only.
+       ⚠ THE OLD VALUE IS NAMED AS "navy" AND NOT WRITTEN OUT, ON PURPOSE.
+       D-41 says four OTHER occurrences of it remain in this file and are
+       not this item; a comment that quoted it would make five, and the next
+       reader counting them would be told the wrong number by a comment
+       whose whole job is to keep the count honest. The value this line held
+       is in the commit message and is still `manifest.json`'s
+       `background_color`.
+       D-39b: a runtime seam ALREADY sets this - `startup_platform_web.dart`'s
+       `setPagesBand()` writes `kPagesBandColor` (#EEF1F4) into this meta
+       after Dart starts, so what this literal controls is the colour shown
+       BEFORE Dart runs. Two consequences, stated rather than discovered:
+       `setPagesBand()` is now a no-op in the served build, and this literal
+       and `kPagesBandColor` must not drift apart - `test/startup_146_test`
+       asserts they are equal.
+       D-41: the four OTHER #182430s in this file are NOT this item -
+       `html, body`'s background, `#startup`'s background and a `color`
+       below. 711 (a) names the theme colour; repainting the launch screen
+       is something nobody drew.
+       ⚠ D-40: on iOS a STANDALONE home-screen app's status bar is governed
+       by the Apple status-bar meta on the line above (named once in this
+       file ON PURPOSE - `test/startup_146_test` counts it and fails on a
+       second mention, which is how it caught this comment's first draft),
+       not by this meta, which Safari uses to tint its BROWSER UI.
+       So the navy he reported at
+       the top of his home-screen app is most likely `html, body`'s
+       background showing through the safe-area inset, and THIS CHANGE MAY
+       NOT BE WHAT HE SEES CHANGE. Verified on his phone, on the walk
+       (D-43) - and iOS reads a home-screen app's manifest when the icon is
+       ADDED, so the icon must be deleted and added again before looking. -->
+  <meta name="theme-color" content="#EEF1F4">
   <meta name="apple-mobile-web-app-title" content="Mil Pay Plan">
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 
